@@ -82,6 +82,8 @@
             this.browseWindow = new System.Windows.Forms.WebBrowser();
             this.btnSave = new System.Windows.Forms.Button();
             this.treeAreaList = new System.Windows.Forms.TreeView();
+            this.btnSelectAll = new System.Windows.Forms.Button();
+            this.btnExpandAll = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // panel1
@@ -89,9 +91,9 @@
             this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.panel1.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.panel1.Location = new System.Drawing.Point(160, 0);
+            this.panel1.Location = new System.Drawing.Point(199, 12);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(142, 445);
+            this.panel1.Size = new System.Drawing.Size(220, 525);
             this.panel1.TabIndex = 1;
             // 
             // browseWindow
@@ -99,16 +101,17 @@
             this.browseWindow.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.browseWindow.Location = new System.Drawing.Point(308, 0);
+            this.browseWindow.Location = new System.Drawing.Point(425, 12);
             this.browseWindow.MinimumSize = new System.Drawing.Size(20, 20);
             this.browseWindow.Name = "browseWindow";
-            this.browseWindow.Size = new System.Drawing.Size(609, 398);
+            this.browseWindow.Size = new System.Drawing.Size(673, 525);
             this.browseWindow.TabIndex = 2;
             // 
             // btnSave
             // 
+            this.btnSave.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnSave.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSave.Location = new System.Drawing.Point(739, 404);
+            this.btnSave.Location = new System.Drawing.Point(920, 584);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(178, 31);
             this.btnSave.TabIndex = 3;
@@ -121,9 +124,9 @@
             | System.Windows.Forms.AnchorStyles.Left)));
             this.treeAreaList.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.treeAreaList.CheckBoxes = true;
-            this.treeAreaList.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.treeAreaList.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.treeAreaList.Indent = 15;
-            this.treeAreaList.Location = new System.Drawing.Point(0, 0);
+            this.treeAreaList.Location = new System.Drawing.Point(0, 12);
             this.treeAreaList.Name = "treeAreaList";
             treeNode1.Name = "nodeAll";
             treeNode1.Text = "All";
@@ -186,14 +189,42 @@
             treeNode17,
             treeNode27});
             this.treeAreaList.ShowLines = false;
-            this.treeAreaList.Size = new System.Drawing.Size(154, 435);
+            this.treeAreaList.Size = new System.Drawing.Size(193, 525);
             this.treeAreaList.TabIndex = 4;
+            this.treeAreaList.AfterCheck += new System.Windows.Forms.TreeViewEventHandler(this.treeAreaList_AfterCheck);
+            // 
+            // btnSelectAll
+            // 
+            this.btnSelectAll.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnSelectAll.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSelectAll.Location = new System.Drawing.Point(0, 580);
+            this.btnSelectAll.Name = "btnSelectAll";
+            this.btnSelectAll.Size = new System.Drawing.Size(193, 31);
+            this.btnSelectAll.TabIndex = 5;
+            this.btnSelectAll.Text = "Select All";
+            this.btnSelectAll.UseVisualStyleBackColor = true;
+            this.btnSelectAll.Click += new System.EventHandler(this.btnSelectAll_Click);
+            // 
+            // btnExpandAll
+            // 
+            this.btnExpandAll.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnExpandAll.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExpandAll.Location = new System.Drawing.Point(0, 543);
+            this.btnExpandAll.Name = "btnExpandAll";
+            this.btnExpandAll.Size = new System.Drawing.Size(193, 31);
+            this.btnExpandAll.TabIndex = 7;
+            this.btnExpandAll.Text = "Expand All";
+            this.btnExpandAll.UseVisualStyleBackColor = true;
+            this.btnExpandAll.Click += new System.EventHandler(this.btnExpandAll_Click);
             // 
             // frmBrowse
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(929, 438);
+            this.BackColor = System.Drawing.SystemColors.Control;
+            this.ClientSize = new System.Drawing.Size(1110, 623);
+            this.Controls.Add(this.btnExpandAll);
+            this.Controls.Add(this.btnSelectAll);
             this.Controls.Add(this.treeAreaList);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.browseWindow);
@@ -210,5 +241,7 @@
         private System.Windows.Forms.WebBrowser browseWindow;
         private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.TreeView treeAreaList;
+        private System.Windows.Forms.Button btnSelectAll;
+        private System.Windows.Forms.Button btnExpandAll;
     }
 }

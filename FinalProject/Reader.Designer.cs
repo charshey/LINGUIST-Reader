@@ -66,6 +66,7 @@
             this.btnMyIssues.TabIndex = 1;
             this.btnMyIssues.Text = "Read My Saved Issues";
             this.btnMyIssues.UseVisualStyleBackColor = true;
+            this.btnMyIssues.Click += new System.EventHandler(this.btnMyIssues_Click);
             // 
             // btnQuit
             // 

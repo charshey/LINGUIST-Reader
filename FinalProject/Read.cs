@@ -10,12 +10,12 @@ using System.Windows.Forms;
 
 namespace FinalProject
 {
-    public partial class frmBrowse : Form
+    public partial class frmRead : Form
     {
         private bool expanded;
         private bool selectedAll;
 
-        public frmBrowse()
+        public frmRead()
         {
             InitializeComponent();
             expanded = false;
@@ -24,26 +24,26 @@ namespace FinalProject
 
         private void CheckAllChildNodes(TreeNode treeNode, bool nodeChecked)
         {
-            foreach(TreeNode node in treeNode.Nodes)
+            foreach (TreeNode node in treeNode.Nodes)
             {
                 node.Checked = nodeChecked;
-                if(node.Nodes.Count > 0)
+                if (node.Nodes.Count > 0)
                 {
                     this.CheckAllChildNodes(node, nodeChecked);
                 }
-                
+
             }
         }
 
         private void treeAreaList_AfterCheck(object sender, TreeViewEventArgs e)
         {
-                if (e.Action != TreeViewAction.Unknown)
+            if (e.Action != TreeViewAction.Unknown)
+            {
+                if (e.Node.Nodes.Count > 0)
                 {
-                    if (e.Node.Nodes.Count > 0)
-                    {
-                        this.CheckAllChildNodes(e.Node, e.Node.Checked);
-                    }
+                    this.CheckAllChildNodes(e.Node, e.Node.Checked);
                 }
+            }
 
         }
 
@@ -54,7 +54,7 @@ namespace FinalProject
                 treeAreaList.ExpandAll();
                 btnExpandAll.Text = "Collapse All";
             }
-            if(expanded)
+            if (expanded)
             {
                 treeAreaList.CollapseAll();
                 btnExpandAll.Text = "Expand All";
@@ -78,7 +78,7 @@ namespace FinalProject
 
             }
 
-            if(selectedAll)
+            if (selectedAll)
             {
                 foreach (TreeNode node in treeAreaList.Nodes)
                 {

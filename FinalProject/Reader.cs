@@ -38,5 +38,10 @@ namespace FinalProject
             frmBrowse browseWindow = new frmBrowse();
             browseWindow.Show();
         }
+
+        private void btnMyIssues_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }
