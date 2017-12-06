@@ -41,7 +41,8 @@ namespace FinalProject
 
         private void btnMyIssues_Click(object sender, EventArgs e)
         {
-            
+            frmRead readWindow = new frmRead();
+            readWindow.Show();
         }
     }
 }
