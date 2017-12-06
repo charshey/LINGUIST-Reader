@@ -28,55 +28,55 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.TreeNode treeNode1 = new System.Windows.Forms.TreeNode("All");
-            System.Windows.Forms.TreeNode treeNode2 = new System.Windows.Forms.TreeNode("FYI");
-            System.Windows.Forms.TreeNode treeNode3 = new System.Windows.Forms.TreeNode("Media");
-            System.Windows.Forms.TreeNode treeNode4 = new System.Windows.Forms.TreeNode("Notice Board");
-            System.Windows.Forms.TreeNode treeNode5 = new System.Windows.Forms.TreeNode("Announcements", new System.Windows.Forms.TreeNode[] {
-            treeNode1,
-            treeNode2,
-            treeNode3,
-            treeNode4});
-            System.Windows.Forms.TreeNode treeNode6 = new System.Windows.Forms.TreeNode("Internships");
-            System.Windows.Forms.TreeNode treeNode7 = new System.Windows.Forms.TreeNode("Jobs");
-            System.Windows.Forms.TreeNode treeNode8 = new System.Windows.Forms.TreeNode("Supports");
-            System.Windows.Forms.TreeNode treeNode9 = new System.Windows.Forms.TreeNode("Careers", new System.Windows.Forms.TreeNode[] {
-            treeNode6,
-            treeNode7,
-            treeNode8});
-            System.Windows.Forms.TreeNode treeNode10 = new System.Windows.Forms.TreeNode("Discussions");
-            System.Windows.Forms.TreeNode treeNode11 = new System.Windows.Forms.TreeNode("Queries");
-            System.Windows.Forms.TreeNode treeNode12 = new System.Windows.Forms.TreeNode("Summaries");
-            System.Windows.Forms.TreeNode treeNode13 = new System.Windows.Forms.TreeNode("Discussion", new System.Windows.Forms.TreeNode[] {
-            treeNode10,
-            treeNode11,
-            treeNode12});
-            System.Windows.Forms.TreeNode treeNode14 = new System.Windows.Forms.TreeNode("Conferences");
-            System.Windows.Forms.TreeNode treeNode15 = new System.Windows.Forms.TreeNode("Local Events");
-            System.Windows.Forms.TreeNode treeNode16 = new System.Windows.Forms.TreeNode("Summer Schools");
-            System.Windows.Forms.TreeNode treeNode17 = new System.Windows.Forms.TreeNode("Events", new System.Windows.Forms.TreeNode[] {
-            treeNode14,
-            treeNode15,
-            treeNode16});
-            System.Windows.Forms.TreeNode treeNode18 = new System.Windows.Forms.TreeNode("Books");
-            System.Windows.Forms.TreeNode treeNode19 = new System.Windows.Forms.TreeNode("Calls for Papers");
-            System.Windows.Forms.TreeNode treeNode20 = new System.Windows.Forms.TreeNode("Dissertations");
-            System.Windows.Forms.TreeNode treeNode21 = new System.Windows.Forms.TreeNode("Journals");
-            System.Windows.Forms.TreeNode treeNode22 = new System.Windows.Forms.TreeNode("Papers");
-            System.Windows.Forms.TreeNode treeNode23 = new System.Windows.Forms.TreeNode("Publishers");
-            System.Windows.Forms.TreeNode treeNode24 = new System.Windows.Forms.TreeNode("Reviews");
-            System.Windows.Forms.TreeNode treeNode25 = new System.Windows.Forms.TreeNode("Software");
-            System.Windows.Forms.TreeNode treeNode26 = new System.Windows.Forms.TreeNode("Tables of Contents");
-            System.Windows.Forms.TreeNode treeNode27 = new System.Windows.Forms.TreeNode("Publications", new System.Windows.Forms.TreeNode[] {
-            treeNode18,
-            treeNode19,
-            treeNode20,
-            treeNode21,
-            treeNode22,
-            treeNode23,
-            treeNode24,
-            treeNode25,
-            treeNode26});
+            System.Windows.Forms.TreeNode treeNode28 = new System.Windows.Forms.TreeNode("All");
+            System.Windows.Forms.TreeNode treeNode29 = new System.Windows.Forms.TreeNode("FYI");
+            System.Windows.Forms.TreeNode treeNode30 = new System.Windows.Forms.TreeNode("Media");
+            System.Windows.Forms.TreeNode treeNode31 = new System.Windows.Forms.TreeNode("Notice Board");
+            System.Windows.Forms.TreeNode treeNode32 = new System.Windows.Forms.TreeNode("Announcements", new System.Windows.Forms.TreeNode[] {
+            treeNode28,
+            treeNode29,
+            treeNode30,
+            treeNode31});
+            System.Windows.Forms.TreeNode treeNode33 = new System.Windows.Forms.TreeNode("Internships");
+            System.Windows.Forms.TreeNode treeNode34 = new System.Windows.Forms.TreeNode("Jobs");
+            System.Windows.Forms.TreeNode treeNode35 = new System.Windows.Forms.TreeNode("Supports");
+            System.Windows.Forms.TreeNode treeNode36 = new System.Windows.Forms.TreeNode("Careers", new System.Windows.Forms.TreeNode[] {
+            treeNode33,
+            treeNode34,
+            treeNode35});
+            System.Windows.Forms.TreeNode treeNode37 = new System.Windows.Forms.TreeNode("Discussions");
+            System.Windows.Forms.TreeNode treeNode38 = new System.Windows.Forms.TreeNode("Queries");
+            System.Windows.Forms.TreeNode treeNode39 = new System.Windows.Forms.TreeNode("Summaries");
+            System.Windows.Forms.TreeNode treeNode40 = new System.Windows.Forms.TreeNode("Discussion", new System.Windows.Forms.TreeNode[] {
+            treeNode37,
+            treeNode38,
+            treeNode39});
+            System.Windows.Forms.TreeNode treeNode41 = new System.Windows.Forms.TreeNode("Conferences");
+            System.Windows.Forms.TreeNode treeNode42 = new System.Windows.Forms.TreeNode("Local Events");
+            System.Windows.Forms.TreeNode treeNode43 = new System.Windows.Forms.TreeNode("Summer Schools");
+            System.Windows.Forms.TreeNode treeNode44 = new System.Windows.Forms.TreeNode("Events", new System.Windows.Forms.TreeNode[] {
+            treeNode41,
+            treeNode42,
+            treeNode43});
+            System.Windows.Forms.TreeNode treeNode45 = new System.Windows.Forms.TreeNode("Books");
+            System.Windows.Forms.TreeNode treeNode46 = new System.Windows.Forms.TreeNode("Calls for Papers");
+            System.Windows.Forms.TreeNode treeNode47 = new System.Windows.Forms.TreeNode("Dissertations");
+            System.Windows.Forms.TreeNode treeNode48 = new System.Windows.Forms.TreeNode("Journals");
+            System.Windows.Forms.TreeNode treeNode49 = new System.Windows.Forms.TreeNode("Papers");
+            System.Windows.Forms.TreeNode treeNode50 = new System.Windows.Forms.TreeNode("Publishers");
+            System.Windows.Forms.TreeNode treeNode51 = new System.Windows.Forms.TreeNode("Reviews");
+            System.Windows.Forms.TreeNode treeNode52 = new System.Windows.Forms.TreeNode("Software");
+            System.Windows.Forms.TreeNode treeNode53 = new System.Windows.Forms.TreeNode("Tables of Contents");
+            System.Windows.Forms.TreeNode treeNode54 = new System.Windows.Forms.TreeNode("Publications", new System.Windows.Forms.TreeNode[] {
+            treeNode45,
+            treeNode46,
+            treeNode47,
+            treeNode48,
+            treeNode49,
+            treeNode50,
+            treeNode51,
+            treeNode52,
+            treeNode53});
             this.browseWindow = new System.Windows.Forms.WebBrowser();
             this.panel1 = new System.Windows.Forms.Panel();
             this.treeAreaList = new System.Windows.Forms.TreeView();
@@ -90,18 +90,19 @@
             this.browseWindow.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.browseWindow.Location = new System.Drawing.Point(425, 12);
+            this.browseWindow.Location = new System.Drawing.Point(440, 12);
             this.browseWindow.MinimumSize = new System.Drawing.Size(20, 20);
             this.browseWindow.Name = "browseWindow";
-            this.browseWindow.Size = new System.Drawing.Size(673, 525);
+            this.browseWindow.Size = new System.Drawing.Size(658, 525);
             this.browseWindow.TabIndex = 3;
+            this.browseWindow.Url = new System.Uri("", System.UriKind.Relative);
             // 
             // panel1
             // 
             this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.panel1.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.panel1.Location = new System.Drawing.Point(199, 12);
+            this.panel1.Location = new System.Drawing.Point(214, 12);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(220, 525);
             this.panel1.TabIndex = 4;
@@ -114,68 +115,68 @@
             this.treeAreaList.CheckBoxes = true;
             this.treeAreaList.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.treeAreaList.Indent = 15;
-            this.treeAreaList.Location = new System.Drawing.Point(0, 12);
+            this.treeAreaList.Location = new System.Drawing.Point(12, 12);
             this.treeAreaList.Name = "treeAreaList";
-            treeNode1.Name = "nodeAll";
-            treeNode1.Text = "All";
-            treeNode2.Name = "nodeFYI";
-            treeNode2.Text = "FYI";
-            treeNode3.Name = "nodeMedia";
-            treeNode3.Text = "Media";
-            treeNode4.Name = "nodeNoticeBoard";
-            treeNode4.Text = "Notice Board";
-            treeNode5.Name = "nodeAnnouncements";
-            treeNode5.Text = "Announcements";
-            treeNode6.Name = "nodeInternships";
-            treeNode6.Text = "Internships";
-            treeNode7.Name = "nodeJobs";
-            treeNode7.Text = "Jobs";
-            treeNode8.Name = "nodeSupports";
-            treeNode8.Text = "Supports";
-            treeNode9.Name = "nodeCareers";
-            treeNode9.Text = "Careers";
-            treeNode10.Name = "nodeDisccusions";
-            treeNode10.Text = "Discussions";
-            treeNode11.Name = "nodeQueries";
-            treeNode11.Text = "Queries";
-            treeNode12.Name = "nodeSummaries";
-            treeNode12.Text = "Summaries";
-            treeNode13.Name = "nodeDiscussion";
-            treeNode13.Text = "Discussion";
-            treeNode14.Name = "nodeConferences";
-            treeNode14.Text = "Conferences";
-            treeNode15.Name = "nodeLocalEvents";
-            treeNode15.Text = "Local Events";
-            treeNode16.Name = "nodeSummerSchools";
-            treeNode16.Text = "Summer Schools";
-            treeNode17.Name = "nodeEvents";
-            treeNode17.Text = "Events";
-            treeNode18.Name = "nodeBooks";
-            treeNode18.Text = "Books";
-            treeNode19.Name = "nodeCalls";
-            treeNode19.Text = "Calls for Papers";
-            treeNode20.Name = "nodeDiss";
-            treeNode20.Text = "Dissertations";
-            treeNode21.Name = "nodeJournals";
-            treeNode21.Text = "Journals";
-            treeNode22.Name = "nodePapers";
-            treeNode22.Text = "Papers";
-            treeNode23.Name = "nodePublishers";
-            treeNode23.Text = "Publishers";
-            treeNode24.Name = "nodeReviews";
-            treeNode24.Text = "Reviews";
-            treeNode25.Name = "nodeSoftware";
-            treeNode25.Text = "Software";
-            treeNode26.Name = "nodeTOCs";
-            treeNode26.Text = "Tables of Contents";
-            treeNode27.Name = "nodePubs";
-            treeNode27.Text = "Publications";
+            treeNode28.Name = "nodeAll";
+            treeNode28.Text = "All";
+            treeNode29.Name = "nodeFYI";
+            treeNode29.Text = "FYI";
+            treeNode30.Name = "nodeMedia";
+            treeNode30.Text = "Media";
+            treeNode31.Name = "nodeNoticeBoard";
+            treeNode31.Text = "Notice Board";
+            treeNode32.Name = "nodeAnnouncements";
+            treeNode32.Text = "Announcements";
+            treeNode33.Name = "nodeInternships";
+            treeNode33.Text = "Internships";
+            treeNode34.Name = "nodeJobs";
+            treeNode34.Text = "Jobs";
+            treeNode35.Name = "nodeSupports";
+            treeNode35.Text = "Supports";
+            treeNode36.Name = "nodeCareers";
+            treeNode36.Text = "Careers";
+            treeNode37.Name = "nodeDisccusions";
+            treeNode37.Text = "Discussions";
+            treeNode38.Name = "nodeQueries";
+            treeNode38.Text = "Queries";
+            treeNode39.Name = "nodeSummaries";
+            treeNode39.Text = "Summaries";
+            treeNode40.Name = "nodeDiscussion";
+            treeNode40.Text = "Discussion";
+            treeNode41.Name = "nodeConferences";
+            treeNode41.Text = "Conferences";
+            treeNode42.Name = "nodeLocalEvents";
+            treeNode42.Text = "Local Events";
+            treeNode43.Name = "nodeSummerSchools";
+            treeNode43.Text = "Summer Schools";
+            treeNode44.Name = "nodeEvents";
+            treeNode44.Text = "Events";
+            treeNode45.Name = "nodeBooks";
+            treeNode45.Text = "Books";
+            treeNode46.Name = "nodeCalls";
+            treeNode46.Text = "Calls for Papers";
+            treeNode47.Name = "nodeDiss";
+            treeNode47.Text = "Dissertations";
+            treeNode48.Name = "nodeJournals";
+            treeNode48.Text = "Journals";
+            treeNode49.Name = "nodePapers";
+            treeNode49.Text = "Papers";
+            treeNode50.Name = "nodePublishers";
+            treeNode50.Text = "Publishers";
+            treeNode51.Name = "nodeReviews";
+            treeNode51.Text = "Reviews";
+            treeNode52.Name = "nodeSoftware";
+            treeNode52.Text = "Software";
+            treeNode53.Name = "nodeTOCs";
+            treeNode53.Text = "Tables of Contents";
+            treeNode54.Name = "nodePubs";
+            treeNode54.Text = "Publications";
             this.treeAreaList.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
-            treeNode5,
-            treeNode9,
-            treeNode13,
-            treeNode17,
-            treeNode27});
+            treeNode32,
+            treeNode36,
+            treeNode40,
+            treeNode44,
+            treeNode54});
             this.treeAreaList.ShowLines = false;
             this.treeAreaList.Size = new System.Drawing.Size(193, 525);
             this.treeAreaList.TabIndex = 5;
@@ -184,7 +185,7 @@
             // 
             this.btnExpandAll.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnExpandAll.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnExpandAll.Location = new System.Drawing.Point(0, 543);
+            this.btnExpandAll.Location = new System.Drawing.Point(12, 543);
             this.btnExpandAll.Name = "btnExpandAll";
             this.btnExpandAll.Size = new System.Drawing.Size(193, 31);
             this.btnExpandAll.TabIndex = 8;
@@ -196,7 +197,7 @@
             // 
             this.btnSelectAll.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnSelectAll.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSelectAll.Location = new System.Drawing.Point(0, 580);
+            this.btnSelectAll.Location = new System.Drawing.Point(12, 580);
             this.btnSelectAll.Name = "btnSelectAll";
             this.btnSelectAll.Size = new System.Drawing.Size(193, 31);
             this.btnSelectAll.TabIndex = 9;
