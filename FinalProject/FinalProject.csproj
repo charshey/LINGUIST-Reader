@@ -57,6 +57,8 @@
     <Compile Include="Browse.Designer.cs">
       <DependentUpon>Browse.cs</DependentUpon>
     </Compile>
+    <Compile Include="Database.cs" />
+    <Compile Include="Issue.cs" />
     <Compile Include="Read.cs">
       <SubType>Form</SubType>
     </Compile>

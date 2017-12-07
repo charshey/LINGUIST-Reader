@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -14,12 +15,15 @@ namespace FinalProject
     {
         private bool expanded;
         private bool selectedAll;
+        private Database issues;
 
         public frmBrowse()
         {
             InitializeComponent();
             expanded = false;
             selectedAll = false;
+            string path = Path.GetFullPath(Path.Combine(System.IO.Directory.GetCurrentDirectory(),@"..\..\..\")) + @"\Issues";
+            issues = new Database(path);
         }
 
         private void CheckAllChildNodes(TreeNode treeNode, bool nodeChecked)
@@ -94,5 +98,25 @@ namespace FinalProject
 
         }
 
+        private void btnCloseWindow_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void panelPreview_Paint(object sender, PaintEventArgs e)
+        {
+            foreach(TreeNode node in treeAreaList.Nodes)
+            {
+                if(node.Checked)
+                {
+                    foreach(Issue issue in issues.getIssues(node.Text))
+                    {
+                        Button b = new Button();
+                        b.Text = issue.getTitle();
+                        panelPreview.Controls.Add(b);
+                    }
+                }
+            }
+        }
     }
 }

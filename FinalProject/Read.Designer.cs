@@ -78,11 +78,11 @@
             treeNode52,
             treeNode53});
             this.browseWindow = new System.Windows.Forms.WebBrowser();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.treeAreaList = new System.Windows.Forms.TreeView();
             this.btnExpandAll = new System.Windows.Forms.Button();
             this.btnSelectAll = new System.Windows.Forms.Button();
             this.btnSave = new System.Windows.Forms.Button();
+            this.panelPreview = new System.Windows.Forms.FlowLayoutPanel();
             this.SuspendLayout();
             // 
             // browseWindow
@@ -96,16 +96,6 @@
             this.browseWindow.Size = new System.Drawing.Size(658, 525);
             this.browseWindow.TabIndex = 3;
             this.browseWindow.Url = new System.Uri("", System.UriKind.Relative);
-            // 
-            // panel1
-            // 
-            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
-            this.panel1.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.panel1.Location = new System.Drawing.Point(214, 12);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(220, 525);
-            this.panel1.TabIndex = 4;
             // 
             // treeAreaList
             // 
@@ -216,16 +206,26 @@
             this.btnSave.Text = "Save this Issue";
             this.btnSave.UseVisualStyleBackColor = true;
             // 
+            // panelPreview
+            // 
+            this.panelPreview.AutoScroll = true;
+            this.panelPreview.BackColor = System.Drawing.SystemColors.Window;
+            this.panelPreview.Location = new System.Drawing.Point(211, 12);
+            this.panelPreview.Name = "panelPreview";
+            this.panelPreview.Size = new System.Drawing.Size(223, 525);
+            this.panelPreview.TabIndex = 12;
+            this.panelPreview.Paint += new System.Windows.Forms.PaintEventHandler(this.flowLayoutPanel1_Paint);
+            // 
             // frmRead
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1110, 623);
+            this.Controls.Add(this.panelPreview);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.btnSelectAll);
             this.Controls.Add(this.btnExpandAll);
             this.Controls.Add(this.treeAreaList);
-            this.Controls.Add(this.panel1);
             this.Controls.Add(this.browseWindow);
             this.Name = "frmRead";
             this.Text = "Read";
@@ -236,10 +236,10 @@
         #endregion
 
         private System.Windows.Forms.WebBrowser browseWindow;
-        private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.TreeView treeAreaList;
         private System.Windows.Forms.Button btnExpandAll;
         private System.Windows.Forms.Button btnSelectAll;
         private System.Windows.Forms.Button btnSave;
+        private System.Windows.Forms.FlowLayoutPanel panelPreview;
     }
 }
