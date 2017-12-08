@@ -37,7 +37,7 @@ namespace FinalProject
             Regex r = new Regex(pattern, RegexOptions.IgnoreCase);
             Match m = r.Match(text);
             string striptags = Regex.Replace(m.Value,"<.*?>",String.Empty);
-            title = striptags.Substring(13, striptags.Length - 13);
+            title = striptags.Replace("LINGUIST List ", "");
         }
 
         public void setComment(string inputComment)

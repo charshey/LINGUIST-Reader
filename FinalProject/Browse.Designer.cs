@@ -33,21 +33,18 @@
             this.btnSave = new System.Windows.Forms.Button();
             this.btnSelectAll = new System.Windows.Forms.Button();
             this.btnCloseWindow = new System.Windows.Forms.Button();
-            this.panelPreview = new System.Windows.Forms.FlowLayoutPanel();
+            this.panelPreview = new DBFlowLayoutPanel();
             this.areaPanel = new System.Windows.Forms.Panel();
             this.Software = new System.Windows.Forms.CheckBox();
-            this.Papers = new System.Windows.Forms.CheckBox();
             this.Diss = new System.Windows.Forms.CheckBox();
             this.TOC = new System.Windows.Forms.CheckBox();
             this.Calls = new System.Windows.Forms.CheckBox();
             this.Journal = new System.Windows.Forms.CheckBox();
-            this.Publisher = new System.Windows.Forms.CheckBox();
             this.checkBooks = new System.Windows.Forms.CheckBox();
             this.checkReviews = new System.Windows.Forms.CheckBox();
             this.summerSchools = new System.Windows.Forms.CheckBox();
             this.noticeBoard = new System.Windows.Forms.CheckBox();
             this.Confs = new System.Windows.Forms.CheckBox();
-            this.localEvents = new System.Windows.Forms.CheckBox();
             this.Qs = new System.Windows.Forms.CheckBox();
             this.Disc = new System.Windows.Forms.CheckBox();
             this.Sum = new System.Windows.Forms.CheckBox();
@@ -131,18 +128,15 @@
             | System.Windows.Forms.AnchorStyles.Left)));
             this.areaPanel.BackColor = System.Drawing.SystemColors.Window;
             this.areaPanel.Controls.Add(this.Software);
-            this.areaPanel.Controls.Add(this.Papers);
             this.areaPanel.Controls.Add(this.Diss);
             this.areaPanel.Controls.Add(this.TOC);
             this.areaPanel.Controls.Add(this.Calls);
             this.areaPanel.Controls.Add(this.Journal);
-            this.areaPanel.Controls.Add(this.Publisher);
             this.areaPanel.Controls.Add(this.checkBooks);
             this.areaPanel.Controls.Add(this.checkReviews);
             this.areaPanel.Controls.Add(this.summerSchools);
             this.areaPanel.Controls.Add(this.noticeBoard);
             this.areaPanel.Controls.Add(this.Confs);
-            this.areaPanel.Controls.Add(this.localEvents);
             this.areaPanel.Controls.Add(this.Qs);
             this.areaPanel.Controls.Add(this.Disc);
             this.areaPanel.Controls.Add(this.Sum);
@@ -166,7 +160,7 @@
             // 
             this.Software.AutoSize = true;
             this.Software.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Software.Location = new System.Drawing.Point(102, 503);
+            this.Software.Location = new System.Drawing.Point(14, 450);
             this.Software.Name = "Software";
             this.Software.Size = new System.Drawing.Size(74, 19);
             this.Software.TabIndex = 28;
@@ -174,23 +168,11 @@
             this.Software.UseVisualStyleBackColor = true;
             this.Software.CheckedChanged += new System.EventHandler(this.anyBox_Checked);
             // 
-            // Papers
-            // 
-            this.Papers.AutoSize = true;
-            this.Papers.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Papers.Location = new System.Drawing.Point(14, 503);
-            this.Papers.Name = "Papers";
-            this.Papers.Size = new System.Drawing.Size(66, 19);
-            this.Papers.TabIndex = 27;
-            this.Papers.Text = "Papers";
-            this.Papers.UseVisualStyleBackColor = true;
-            this.Papers.CheckedChanged += new System.EventHandler(this.anyBox_Checked);
-            // 
             // Diss
             // 
             this.Diss.AutoSize = true;
             this.Diss.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Diss.Location = new System.Drawing.Point(102, 478);
+            this.Diss.Location = new System.Drawing.Point(97, 450);
             this.Diss.Name = "Diss";
             this.Diss.Size = new System.Drawing.Size(100, 19);
             this.Diss.TabIndex = 26;
@@ -202,7 +184,7 @@
             // 
             this.TOC.AutoSize = true;
             this.TOC.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TOC.Location = new System.Drawing.Point(15, 478);
+            this.TOC.Location = new System.Drawing.Point(97, 425);
             this.TOC.Name = "TOC";
             this.TOC.Size = new System.Drawing.Size(58, 19);
             this.TOC.TabIndex = 25;
@@ -214,7 +196,7 @@
             // 
             this.Calls.AutoSize = true;
             this.Calls.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Calls.Location = new System.Drawing.Point(14, 528);
+            this.Calls.Location = new System.Drawing.Point(14, 475);
             this.Calls.Name = "Calls";
             this.Calls.Size = new System.Drawing.Size(115, 19);
             this.Calls.TabIndex = 24;
@@ -226,7 +208,7 @@
             // 
             this.Journal.AutoSize = true;
             this.Journal.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Journal.Location = new System.Drawing.Point(102, 453);
+            this.Journal.Location = new System.Drawing.Point(97, 400);
             this.Journal.Name = "Journal";
             this.Journal.Size = new System.Drawing.Size(74, 19);
             this.Journal.TabIndex = 23;
@@ -234,23 +216,11 @@
             this.Journal.UseVisualStyleBackColor = true;
             this.Journal.CheckedChanged += new System.EventHandler(this.anyBox_Checked);
             // 
-            // Publisher
-            // 
-            this.Publisher.AutoSize = true;
-            this.Publisher.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Publisher.Location = new System.Drawing.Point(102, 428);
-            this.Publisher.Name = "Publisher";
-            this.Publisher.Size = new System.Drawing.Size(86, 19);
-            this.Publisher.TabIndex = 22;
-            this.Publisher.Text = "Publishers";
-            this.Publisher.UseVisualStyleBackColor = true;
-            this.Publisher.CheckedChanged += new System.EventHandler(this.anyBox_Checked);
-            // 
             // checkBooks
             // 
             this.checkBooks.AutoSize = true;
             this.checkBooks.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBooks.Location = new System.Drawing.Point(15, 428);
+            this.checkBooks.Location = new System.Drawing.Point(14, 400);
             this.checkBooks.Name = "checkBooks";
             this.checkBooks.Size = new System.Drawing.Size(61, 19);
             this.checkBooks.TabIndex = 21;
@@ -262,7 +232,7 @@
             // 
             this.checkReviews.AutoSize = true;
             this.checkReviews.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkReviews.Location = new System.Drawing.Point(15, 453);
+            this.checkReviews.Location = new System.Drawing.Point(15, 425);
             this.checkReviews.Name = "checkReviews";
             this.checkReviews.Size = new System.Drawing.Size(73, 19);
             this.checkReviews.TabIndex = 20;
@@ -274,7 +244,7 @@
             // 
             this.summerSchools.AutoSize = true;
             this.summerSchools.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.summerSchools.Location = new System.Drawing.Point(14, 359);
+            this.summerSchools.Location = new System.Drawing.Point(14, 334);
             this.summerSchools.Name = "summerSchools";
             this.summerSchools.Size = new System.Drawing.Size(122, 19);
             this.summerSchools.TabIndex = 19;
@@ -304,18 +274,6 @@
             this.Confs.Text = "Conferences";
             this.Confs.UseVisualStyleBackColor = true;
             this.Confs.CheckedChanged += new System.EventHandler(this.anyBox_Checked);
-            // 
-            // localEvents
-            // 
-            this.localEvents.AutoSize = true;
-            this.localEvents.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.localEvents.Location = new System.Drawing.Point(14, 334);
-            this.localEvents.Name = "localEvents";
-            this.localEvents.Size = new System.Drawing.Size(96, 19);
-            this.localEvents.TabIndex = 15;
-            this.localEvents.Text = "Local Events";
-            this.localEvents.UseVisualStyleBackColor = true;
-            this.localEvents.CheckedChanged += new System.EventHandler(this.anyBox_Checked);
             // 
             // Qs
             // 
@@ -428,7 +386,7 @@
             // 
             this.labelPubs.AutoSize = true;
             this.labelPubs.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelPubs.Location = new System.Drawing.Point(12, 395);
+            this.labelPubs.Location = new System.Drawing.Point(12, 372);
             this.labelPubs.Name = "labelPubs";
             this.labelPubs.Size = new System.Drawing.Size(86, 16);
             this.labelPubs.TabIndex = 4;
@@ -503,7 +461,6 @@
         private System.Windows.Forms.FlowLayoutPanel panelPreview;
         private System.Windows.Forms.Panel areaPanel;
         private System.Windows.Forms.CheckBox Confs;
-        private System.Windows.Forms.CheckBox localEvents;
         private System.Windows.Forms.CheckBox Qs;
         private System.Windows.Forms.CheckBox Disc;
         private System.Windows.Forms.CheckBox Sum;
@@ -521,12 +478,10 @@
         private System.Windows.Forms.CheckBox noticeBoard;
         private System.Windows.Forms.CheckBox summerSchools;
         private System.Windows.Forms.CheckBox Software;
-        private System.Windows.Forms.CheckBox Papers;
         private System.Windows.Forms.CheckBox Diss;
         private System.Windows.Forms.CheckBox TOC;
         private System.Windows.Forms.CheckBox Calls;
         private System.Windows.Forms.CheckBox Journal;
-        private System.Windows.Forms.CheckBox Publisher;
         private System.Windows.Forms.CheckBox checkBooks;
         private System.Windows.Forms.CheckBox checkReviews;
     }

@@ -33,7 +33,6 @@ namespace FinalProject
 
         private void anyBox_Checked(object sender, EventArgs e)
         {
-            System.Diagnostics.Debug.Write("in areaPanel_AfterCheck method");
             this.getCheckedBoxes();
             DrawingControl.SuspendDrawing(panelPreview);
             panelPreview_Update();
@@ -44,6 +43,7 @@ namespace FinalProject
 
         private void btnSelectAll_Click(object sender, EventArgs e)
         {
+            DrawingControl.SuspendDrawing(panelPreview);
 
             if (!selectedAll)
             {
@@ -77,6 +77,8 @@ namespace FinalProject
 
             selectedAll = !selectedAll;
 
+            DrawingControl.ResumeDrawing(panelPreview);
+
         }
 
         private void btnCloseWindow_Click(object sender, EventArgs e)
@@ -86,8 +88,6 @@ namespace FinalProject
 
         private void panelPreview_Update()
         {
-            System.Diagnostics.Debug.Write("panelPreview_Update is happening\n");
-
             List<Control> controls = new List<Control>();
             foreach(Control control in panelPreview.Controls)
             {
@@ -101,7 +101,6 @@ namespace FinalProject
 
                 foreach(CheckBox box in checkedBoxes)
                 {
-                System.Diagnostics.Debug.Write(box.Name);
                     foreach(Issue issue in issuesDB.getIssues(box.Text, box.Name))
                     {
                         Button b = new Button();
@@ -154,9 +153,7 @@ namespace FinalProject
 
         private void getCheckedBoxes()
         {
-            System.Diagnostics.Debug.Write("In getCheckedBoxes function");
             checkedBoxes.Clear();
-            System.Diagnostics.Debug.Write("Starting to loop through controls");
             foreach(CheckBox box in checkBoxes)
             {
                 System.Diagnostics.Debug.Write(box);
