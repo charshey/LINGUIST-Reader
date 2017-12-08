@@ -39,7 +39,7 @@
             treeNode4});
             System.Windows.Forms.TreeNode treeNode6 = new System.Windows.Forms.TreeNode("Internships");
             System.Windows.Forms.TreeNode treeNode7 = new System.Windows.Forms.TreeNode("Jobs");
-            System.Windows.Forms.TreeNode treeNode8 = new System.Windows.Forms.TreeNode("Supports");
+            System.Windows.Forms.TreeNode treeNode8 = new System.Windows.Forms.TreeNode("Support");
             System.Windows.Forms.TreeNode treeNode9 = new System.Windows.Forms.TreeNode("Careers", new System.Windows.Forms.TreeNode[] {
             treeNode6,
             treeNode7,
@@ -84,7 +84,7 @@
             this.btnSelectAll = new System.Windows.Forms.Button();
             this.btnExpandAll = new System.Windows.Forms.Button();
             this.btnCloseWindow = new System.Windows.Forms.Button();
-            this.panelPreview = new System.Windows.Forms.FlowLayoutPanel();
+            this.panelPreview = new System.Windows.Forms.Panel();
             this.SuspendLayout();
             // 
             // browseWindow
@@ -95,7 +95,7 @@
             this.browseWindow.Location = new System.Drawing.Point(438, 12);
             this.browseWindow.MinimumSize = new System.Drawing.Size(20, 20);
             this.browseWindow.Name = "browseWindow";
-            this.browseWindow.Size = new System.Drawing.Size(660, 525);
+            this.browseWindow.Size = new System.Drawing.Size(731, 525);
             this.browseWindow.TabIndex = 2;
             this.browseWindow.Url = new System.Uri("", System.UriKind.Relative);
             // 
@@ -103,12 +103,13 @@
             // 
             this.btnSave.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnSave.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSave.Location = new System.Drawing.Point(920, 543);
+            this.btnSave.Location = new System.Drawing.Point(991, 543);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(178, 31);
             this.btnSave.TabIndex = 3;
             this.btnSave.Text = "Save this Issue";
             this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // treeAreaList
             // 
@@ -134,8 +135,8 @@
             treeNode6.Text = "Internships";
             treeNode7.Name = "nodeJobs";
             treeNode7.Text = "Jobs";
-            treeNode8.Name = "nodeSupports";
-            treeNode8.Text = "Supports";
+            treeNode8.Name = "nodeSupport";
+            treeNode8.Text = "Support";
             treeNode9.Name = "nodeCareers";
             treeNode9.Text = "Careers";
             treeNode10.Name = "nodeDisccusions";
@@ -187,8 +188,7 @@
             // 
             // btnSelectAll
             // 
-            this.btnSelectAll.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
+            this.btnSelectAll.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.btnSelectAll.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSelectAll.Location = new System.Drawing.Point(12, 580);
             this.btnSelectAll.Name = "btnSelectAll";
@@ -200,8 +200,7 @@
             // 
             // btnExpandAll
             // 
-            this.btnExpandAll.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
+            this.btnExpandAll.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.btnExpandAll.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnExpandAll.Location = new System.Drawing.Point(12, 543);
             this.btnExpandAll.Name = "btnExpandAll";
@@ -215,7 +214,7 @@
             // 
             this.btnCloseWindow.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnCloseWindow.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCloseWindow.Location = new System.Drawing.Point(920, 580);
+            this.btnCloseWindow.Location = new System.Drawing.Point(991, 580);
             this.btnCloseWindow.Name = "btnCloseWindow";
             this.btnCloseWindow.Size = new System.Drawing.Size(178, 31);
             this.btnCloseWindow.TabIndex = 13;
@@ -225,20 +224,20 @@
             // 
             // panelPreview
             // 
-            this.panelPreview.AutoScroll = true;
+            this.panelPreview.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.panelPreview.BackColor = System.Drawing.SystemColors.Window;
             this.panelPreview.Location = new System.Drawing.Point(211, 12);
             this.panelPreview.Name = "panelPreview";
-            this.panelPreview.Size = new System.Drawing.Size(223, 525);
+            this.panelPreview.Size = new System.Drawing.Size(221, 525);
             this.panelPreview.TabIndex = 14;
-            this.panelPreview.Paint += new System.Windows.Forms.PaintEventHandler(this.panelPreview_Paint);
             // 
             // frmBrowse
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(1110, 623);
+            this.ClientSize = new System.Drawing.Size(1181, 623);
             this.Controls.Add(this.panelPreview);
             this.Controls.Add(this.btnCloseWindow);
             this.Controls.Add(this.btnExpandAll);
@@ -260,6 +259,6 @@
         private System.Windows.Forms.Button btnSelectAll;
         private System.Windows.Forms.Button btnExpandAll;
         private System.Windows.Forms.Button btnCloseWindow;
-        private System.Windows.Forms.FlowLayoutPanel panelPreview;
+        private System.Windows.Forms.Panel panelPreview;
     }
 }

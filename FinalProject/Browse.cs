@@ -1,12 +1,6 @@
 ﻿using System;
-using System.IO;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.IO;
 using System.Windows.Forms;
 
 namespace FinalProject
@@ -15,15 +9,21 @@ namespace FinalProject
     {
         private bool expanded;
         private bool selectedAll;
-        private Database issues;
+        private List<TreeNode> checkedNodes;
+        private Database issuesDB;
 
-        public frmBrowse()
+        private Issue focus;
+
+        public frmBrowse(Database db)
         {
             InitializeComponent();
             expanded = false;
             selectedAll = false;
-            string path = Path.GetFullPath(Path.Combine(System.IO.Directory.GetCurrentDirectory(),@"..\..\..\")) + @"\Issues";
-            issues = new Database(path);
+            checkedNodes = new List<TreeNode>();
+            browseWindow.ScriptErrorsSuppressed = true;
+            btnSave.Enabled = false;
+            issuesDB = db;
+
         }
 
         private void CheckAllChildNodes(TreeNode treeNode, bool nodeChecked)
@@ -35,7 +35,6 @@ namespace FinalProject
                 {
                     this.CheckAllChildNodes(node, nodeChecked);
                 }
-                
             }
         }
 
@@ -48,6 +47,8 @@ namespace FinalProject
                         this.CheckAllChildNodes(e.Node, e.Node.Checked);
                     }
                 }
+
+            panelPreview_Update();
 
         }
 
@@ -103,20 +104,79 @@ namespace FinalProject
             this.Close();
         }
 
-        private void panelPreview_Paint(object sender, PaintEventArgs e)
+        private void panelPreview_Update()
         {
-            foreach(TreeNode node in treeAreaList.Nodes)
+            List<Control> controls = new List<Control>();
+            foreach(Control control in panelPreview.Controls)
             {
-                if(node.Checked)
+                controls.Add(control);
+            }
+            panelPreview.Controls.Clear();
+            foreach(Control control in controls)
+            {
+                control.Dispose();
+            }
+
+            this.getCheckedNodes(treeAreaList);
+
+                foreach(TreeNode node in this.checkedNodes)
                 {
-                    foreach(Issue issue in issues.getIssues(node.Text))
+                    foreach(Issue issue in issuesDB.getIssues(node.Text))
                     {
                         Button b = new Button();
                         b.Text = issue.getTitle();
+
+                        b.BackColor = System.Drawing.SystemColors.Window;
+                        b.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+                        b.Size = new System.Drawing.Size(220, 128);
+                        b.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+                        b.UseVisualStyleBackColor = false;
+                        b.Click += new EventHandler(this.B_Click);
+                        b.Tag = issue;
+                    
+
                         panelPreview.Controls.Add(b);
                     }
                 }
+        }
+
+        private void B_Click(object sender, EventArgs e)
+        {
+            Button b = (Button)sender;
+            b.BackColor = System.Drawing.SystemColors.ButtonFace;
+            focus = (Issue)b.Tag;
+            this.loadIssue(focus);
+            btnSave.Enabled = true;
+        }
+
+        private void loadIssue(Issue issue)
+        {
+            this.browseWindow.Navigate(issue.getURI());
+        }
+
+        private void getCheckedNodes(TreeView tree)
+        {
+            foreach(TreeNode node in tree.Nodes)
+            {
+                if (node.Nodes.Count > 0)
+                {
+                    foreach(TreeNode childNode in node.Nodes)
+                    {
+                        if(childNode.Checked)
+                        {
+                            checkedNodes.Add(childNode);
+                        }
+                    }
+                }
+
             }
+
+        }
+
+        private void btnSave_Click(object sender, EventArgs e)
+        {
+            frmSaveIssue saveWindow = new frmSaveIssue(focus);
+            saveWindow.ShowDialog();
         }
     }
 }

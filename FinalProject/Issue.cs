@@ -3,13 +3,12 @@ using System.IO;
 using System.Text;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 using System.Text.RegularExpressions;
 
 namespace FinalProject
 {
-    class Issue
+    public class Issue
     {
 
         private string path;
@@ -20,14 +19,16 @@ namespace FinalProject
         private string area;
         private bool starred;
 
-        public Issue(string p)
+        public Issue(FileInfo p)
         {
-            path = p;
+            path = p.FullName;
             text = File.ReadAllText(path);
             setTitle(text);
             uri = new System.Uri(path);
             starred = false;
             this.setArea();
+
+            System.Diagnostics.Debug.Write("Area: " + area);
         }
 
         public void setTitle(string text)
@@ -35,7 +36,8 @@ namespace FinalProject
             string pattern = @"<TITLE>(.*?)<\/TITLE>";
             Regex r = new Regex(pattern, RegexOptions.IgnoreCase);
             Match m = r.Match(text);
-            title = m.Value;
+            string striptags = Regex.Replace(m.Value,"<.*?>",String.Empty);
+            title = striptags.Substring(13, striptags.Length - 13);
         }
 
         public void setComment(string inputComment)
@@ -50,11 +52,15 @@ namespace FinalProject
 
         private void setArea()
         {
-            string pattern = @":\s(.*):";
+            string pattern = @":\s*([a-zA-Z]+)\s*:";
             Regex r = new Regex(pattern, RegexOptions.IgnoreCase);
             Match m = r.Match(this.title);
-            char[] stripChars = { ' ', ':' };
-            area = m.Value.TrimEnd(stripChars).TrimStart(stripChars);
+            area = m.Groups[1].Value;
+        }
+
+        public System.Uri getURI()
+        {
+            return uri;
         }
 
         public string getTitle()

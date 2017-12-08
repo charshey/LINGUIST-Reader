@@ -12,9 +12,12 @@ namespace FinalProject
 {
     public partial class Reader : Form
     {
-        public Reader()
+        private Database issuesDB;
+
+        public Reader(Database db)
         {
             InitializeComponent();
+            issuesDB = db;
         }
 
         private void lblWelcome_Click(object sender, EventArgs e)
@@ -30,12 +33,12 @@ namespace FinalProject
         private void btnAbout_Click(object sender, EventArgs e)
         {
             frmAbout aboutWindow = new frmAbout();
-            aboutWindow.Show();
+            aboutWindow.ShowDialog();
         }
 
         private void btnBrowse_Click(object sender, EventArgs e)
         {
-            frmBrowse browseWindow = new frmBrowse();
+            frmBrowse browseWindow = new frmBrowse(issuesDB);
             browseWindow.Show();
         }
 

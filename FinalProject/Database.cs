@@ -8,21 +8,21 @@ using System.Threading.Tasks;
 namespace FinalProject
 {
 
-    class Database
+    public class Database
     {
-        private string location;
+        private DirectoryInfo location;
         private Issue[] issueArray;
         
         public Database(string path)
         {
-            location = path;
-            string[] files = Directory.GetFiles(location, "*.htm", SearchOption.AllDirectories);
+            location = new DirectoryInfo(path);
+            FileInfo[] files = location.GetFiles("*.htm");
             int fileCount = files.Length;
             issueArray = new Issue[fileCount];
 
             int index = 0;
 
-            foreach(string file in files)
+            foreach(FileInfo file in files)
             {
                 issueArray[index] = new Issue(file);  
                 index += 1;
@@ -41,7 +41,6 @@ namespace FinalProject
                     matchingIssues.Add(issue);
                 }
             }
-
             return matchingIssues;
         }
     }
