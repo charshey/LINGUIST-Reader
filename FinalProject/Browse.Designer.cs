@@ -28,63 +28,41 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.TreeNode treeNode1 = new System.Windows.Forms.TreeNode("All");
-            System.Windows.Forms.TreeNode treeNode2 = new System.Windows.Forms.TreeNode("FYI");
-            System.Windows.Forms.TreeNode treeNode3 = new System.Windows.Forms.TreeNode("Media");
-            System.Windows.Forms.TreeNode treeNode4 = new System.Windows.Forms.TreeNode("Notice Board");
-            System.Windows.Forms.TreeNode treeNode5 = new System.Windows.Forms.TreeNode("Announcements", new System.Windows.Forms.TreeNode[] {
-            treeNode1,
-            treeNode2,
-            treeNode3,
-            treeNode4});
-            System.Windows.Forms.TreeNode treeNode6 = new System.Windows.Forms.TreeNode("Internships");
-            System.Windows.Forms.TreeNode treeNode7 = new System.Windows.Forms.TreeNode("Jobs");
-            System.Windows.Forms.TreeNode treeNode8 = new System.Windows.Forms.TreeNode("Support");
-            System.Windows.Forms.TreeNode treeNode9 = new System.Windows.Forms.TreeNode("Careers", new System.Windows.Forms.TreeNode[] {
-            treeNode6,
-            treeNode7,
-            treeNode8});
-            System.Windows.Forms.TreeNode treeNode10 = new System.Windows.Forms.TreeNode("Discussions");
-            System.Windows.Forms.TreeNode treeNode11 = new System.Windows.Forms.TreeNode("Queries");
-            System.Windows.Forms.TreeNode treeNode12 = new System.Windows.Forms.TreeNode("Summaries");
-            System.Windows.Forms.TreeNode treeNode13 = new System.Windows.Forms.TreeNode("Discussion", new System.Windows.Forms.TreeNode[] {
-            treeNode10,
-            treeNode11,
-            treeNode12});
-            System.Windows.Forms.TreeNode treeNode14 = new System.Windows.Forms.TreeNode("Conferences");
-            System.Windows.Forms.TreeNode treeNode15 = new System.Windows.Forms.TreeNode("Local Events");
-            System.Windows.Forms.TreeNode treeNode16 = new System.Windows.Forms.TreeNode("Summer Schools");
-            System.Windows.Forms.TreeNode treeNode17 = new System.Windows.Forms.TreeNode("Events", new System.Windows.Forms.TreeNode[] {
-            treeNode14,
-            treeNode15,
-            treeNode16});
-            System.Windows.Forms.TreeNode treeNode18 = new System.Windows.Forms.TreeNode("Books");
-            System.Windows.Forms.TreeNode treeNode19 = new System.Windows.Forms.TreeNode("Calls for Papers");
-            System.Windows.Forms.TreeNode treeNode20 = new System.Windows.Forms.TreeNode("Dissertations");
-            System.Windows.Forms.TreeNode treeNode21 = new System.Windows.Forms.TreeNode("Journals");
-            System.Windows.Forms.TreeNode treeNode22 = new System.Windows.Forms.TreeNode("Papers");
-            System.Windows.Forms.TreeNode treeNode23 = new System.Windows.Forms.TreeNode("Publishers");
-            System.Windows.Forms.TreeNode treeNode24 = new System.Windows.Forms.TreeNode("Reviews");
-            System.Windows.Forms.TreeNode treeNode25 = new System.Windows.Forms.TreeNode("Software");
-            System.Windows.Forms.TreeNode treeNode26 = new System.Windows.Forms.TreeNode("Tables of Contents");
-            System.Windows.Forms.TreeNode treeNode27 = new System.Windows.Forms.TreeNode("Publications", new System.Windows.Forms.TreeNode[] {
-            treeNode18,
-            treeNode19,
-            treeNode20,
-            treeNode21,
-            treeNode22,
-            treeNode23,
-            treeNode24,
-            treeNode25,
-            treeNode26});
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmBrowse));
             this.browseWindow = new System.Windows.Forms.WebBrowser();
             this.btnSave = new System.Windows.Forms.Button();
-            this.treeAreaList = new System.Windows.Forms.TreeView();
             this.btnSelectAll = new System.Windows.Forms.Button();
-            this.btnExpandAll = new System.Windows.Forms.Button();
             this.btnCloseWindow = new System.Windows.Forms.Button();
-            this.panelPreview = new System.Windows.Forms.Panel();
+            this.panelPreview = new System.Windows.Forms.FlowLayoutPanel();
+            this.areaPanel = new System.Windows.Forms.Panel();
+            this.Software = new System.Windows.Forms.CheckBox();
+            this.Papers = new System.Windows.Forms.CheckBox();
+            this.Diss = new System.Windows.Forms.CheckBox();
+            this.TOC = new System.Windows.Forms.CheckBox();
+            this.Calls = new System.Windows.Forms.CheckBox();
+            this.Journal = new System.Windows.Forms.CheckBox();
+            this.Publisher = new System.Windows.Forms.CheckBox();
+            this.checkBooks = new System.Windows.Forms.CheckBox();
+            this.checkReviews = new System.Windows.Forms.CheckBox();
+            this.summerSchools = new System.Windows.Forms.CheckBox();
+            this.noticeBoard = new System.Windows.Forms.CheckBox();
+            this.Confs = new System.Windows.Forms.CheckBox();
+            this.localEvents = new System.Windows.Forms.CheckBox();
+            this.Qs = new System.Windows.Forms.CheckBox();
+            this.Disc = new System.Windows.Forms.CheckBox();
+            this.Sum = new System.Windows.Forms.CheckBox();
+            this.checkInternships = new System.Windows.Forms.CheckBox();
+            this.checkJobs = new System.Windows.Forms.CheckBox();
+            this.Support = new System.Windows.Forms.CheckBox();
+            this.Media = new System.Windows.Forms.CheckBox();
+            this.FYI = new System.Windows.Forms.CheckBox();
+            this.All = new System.Windows.Forms.CheckBox();
+            this.labelPubs = new System.Windows.Forms.Label();
+            this.labelEvents = new System.Windows.Forms.Label();
+            this.labelDiscussion = new System.Windows.Forms.Label();
+            this.labelCareers = new System.Windows.Forms.Label();
+            this.labelAnnouncements = new System.Windows.Forms.Label();
+            this.areaPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // browseWindow
@@ -92,10 +70,10 @@
             this.browseWindow.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.browseWindow.Location = new System.Drawing.Point(438, 12);
+            this.browseWindow.Location = new System.Drawing.Point(494, 12);
             this.browseWindow.MinimumSize = new System.Drawing.Size(20, 20);
             this.browseWindow.Name = "browseWindow";
-            this.browseWindow.Size = new System.Drawing.Size(731, 525);
+            this.browseWindow.Size = new System.Drawing.Size(720, 562);
             this.browseWindow.TabIndex = 2;
             this.browseWindow.Url = new System.Uri("", System.UriKind.Relative);
             // 
@@ -103,88 +81,13 @@
             // 
             this.btnSave.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnSave.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSave.Location = new System.Drawing.Point(991, 543);
+            this.btnSave.Location = new System.Drawing.Point(852, 580);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(178, 31);
             this.btnSave.TabIndex = 3;
             this.btnSave.Text = "Save this Issue";
             this.btnSave.UseVisualStyleBackColor = true;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
-            // 
-            // treeAreaList
-            // 
-            this.treeAreaList.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
-            this.treeAreaList.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.treeAreaList.CheckBoxes = true;
-            this.treeAreaList.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.treeAreaList.Indent = 15;
-            this.treeAreaList.Location = new System.Drawing.Point(12, 12);
-            this.treeAreaList.Name = "treeAreaList";
-            treeNode1.Name = "nodeAll";
-            treeNode1.Text = "All";
-            treeNode2.Name = "nodeFYI";
-            treeNode2.Text = "FYI";
-            treeNode3.Name = "nodeMedia";
-            treeNode3.Text = "Media";
-            treeNode4.Name = "nodeNoticeBoard";
-            treeNode4.Text = "Notice Board";
-            treeNode5.Name = "nodeAnnouncements";
-            treeNode5.Text = "Announcements";
-            treeNode6.Name = "nodeInternships";
-            treeNode6.Text = "Internships";
-            treeNode7.Name = "nodeJobs";
-            treeNode7.Text = "Jobs";
-            treeNode8.Name = "nodeSupport";
-            treeNode8.Text = "Support";
-            treeNode9.Name = "nodeCareers";
-            treeNode9.Text = "Careers";
-            treeNode10.Name = "nodeDisccusions";
-            treeNode10.Text = "Discussions";
-            treeNode11.Name = "nodeQueries";
-            treeNode11.Text = "Queries";
-            treeNode12.Name = "nodeSummaries";
-            treeNode12.Text = "Summaries";
-            treeNode13.Name = "nodeDiscussion";
-            treeNode13.Text = "Discussion";
-            treeNode14.Name = "nodeConferences";
-            treeNode14.Text = "Conferences";
-            treeNode15.Name = "nodeLocalEvents";
-            treeNode15.Text = "Local Events";
-            treeNode16.Name = "nodeSummerSchools";
-            treeNode16.Text = "Summer Schools";
-            treeNode17.Name = "nodeEvents";
-            treeNode17.Text = "Events";
-            treeNode18.Name = "nodeBooks";
-            treeNode18.Text = "Books";
-            treeNode19.Name = "nodeCalls";
-            treeNode19.Text = "Calls for Papers";
-            treeNode20.Name = "nodeDiss";
-            treeNode20.Text = "Dissertations";
-            treeNode21.Name = "nodeJournals";
-            treeNode21.Text = "Journals";
-            treeNode22.Name = "nodePapers";
-            treeNode22.Text = "Papers";
-            treeNode23.Name = "nodePublishers";
-            treeNode23.Text = "Publishers";
-            treeNode24.Name = "nodeReviews";
-            treeNode24.Text = "Reviews";
-            treeNode25.Name = "nodeSoftware";
-            treeNode25.Text = "Software";
-            treeNode26.Name = "nodeTOCs";
-            treeNode26.Text = "Tables of Contents";
-            treeNode27.Name = "nodePubs";
-            treeNode27.Text = "Publications";
-            this.treeAreaList.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
-            treeNode5,
-            treeNode9,
-            treeNode13,
-            treeNode17,
-            treeNode27});
-            this.treeAreaList.ShowLines = false;
-            this.treeAreaList.Size = new System.Drawing.Size(193, 525);
-            this.treeAreaList.TabIndex = 4;
-            this.treeAreaList.AfterCheck += new System.Windows.Forms.TreeViewEventHandler(this.treeAreaList_AfterCheck);
             // 
             // btnSelectAll
             // 
@@ -198,23 +101,11 @@
             this.btnSelectAll.UseVisualStyleBackColor = true;
             this.btnSelectAll.Click += new System.EventHandler(this.btnSelectAll_Click);
             // 
-            // btnExpandAll
-            // 
-            this.btnExpandAll.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.btnExpandAll.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnExpandAll.Location = new System.Drawing.Point(12, 543);
-            this.btnExpandAll.Name = "btnExpandAll";
-            this.btnExpandAll.Size = new System.Drawing.Size(193, 31);
-            this.btnExpandAll.TabIndex = 7;
-            this.btnExpandAll.Text = "Expand All";
-            this.btnExpandAll.UseVisualStyleBackColor = true;
-            this.btnExpandAll.Click += new System.EventHandler(this.btnExpandAll_Click);
-            // 
             // btnCloseWindow
             // 
             this.btnCloseWindow.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnCloseWindow.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCloseWindow.Location = new System.Drawing.Point(991, 580);
+            this.btnCloseWindow.Location = new System.Drawing.Point(1036, 580);
             this.btnCloseWindow.Name = "btnCloseWindow";
             this.btnCloseWindow.Size = new System.Drawing.Size(178, 31);
             this.btnCloseWindow.TabIndex = 13;
@@ -226,28 +117,380 @@
             // 
             this.panelPreview.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
+            this.panelPreview.AutoScroll = true;
             this.panelPreview.BackColor = System.Drawing.SystemColors.Window;
-            this.panelPreview.Location = new System.Drawing.Point(211, 12);
+            this.panelPreview.Location = new System.Drawing.Point(245, 12);
             this.panelPreview.Name = "panelPreview";
-            this.panelPreview.Size = new System.Drawing.Size(221, 525);
+            this.panelPreview.Size = new System.Drawing.Size(243, 562);
             this.panelPreview.TabIndex = 14;
+            this.panelPreview.Paint += new System.Windows.Forms.PaintEventHandler(this.panelPreview_Paint);
+            // 
+            // areaPanel
+            // 
+            this.areaPanel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.areaPanel.BackColor = System.Drawing.SystemColors.Window;
+            this.areaPanel.Controls.Add(this.Software);
+            this.areaPanel.Controls.Add(this.Papers);
+            this.areaPanel.Controls.Add(this.Diss);
+            this.areaPanel.Controls.Add(this.TOC);
+            this.areaPanel.Controls.Add(this.Calls);
+            this.areaPanel.Controls.Add(this.Journal);
+            this.areaPanel.Controls.Add(this.Publisher);
+            this.areaPanel.Controls.Add(this.checkBooks);
+            this.areaPanel.Controls.Add(this.checkReviews);
+            this.areaPanel.Controls.Add(this.summerSchools);
+            this.areaPanel.Controls.Add(this.noticeBoard);
+            this.areaPanel.Controls.Add(this.Confs);
+            this.areaPanel.Controls.Add(this.localEvents);
+            this.areaPanel.Controls.Add(this.Qs);
+            this.areaPanel.Controls.Add(this.Disc);
+            this.areaPanel.Controls.Add(this.Sum);
+            this.areaPanel.Controls.Add(this.checkInternships);
+            this.areaPanel.Controls.Add(this.checkJobs);
+            this.areaPanel.Controls.Add(this.Support);
+            this.areaPanel.Controls.Add(this.Media);
+            this.areaPanel.Controls.Add(this.FYI);
+            this.areaPanel.Controls.Add(this.All);
+            this.areaPanel.Controls.Add(this.labelPubs);
+            this.areaPanel.Controls.Add(this.labelEvents);
+            this.areaPanel.Controls.Add(this.labelDiscussion);
+            this.areaPanel.Controls.Add(this.labelCareers);
+            this.areaPanel.Controls.Add(this.labelAnnouncements);
+            this.areaPanel.Location = new System.Drawing.Point(12, 12);
+            this.areaPanel.Name = "areaPanel";
+            this.areaPanel.Size = new System.Drawing.Size(227, 562);
+            this.areaPanel.TabIndex = 15;
+            // 
+            // Software
+            // 
+            this.Software.AutoSize = true;
+            this.Software.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Software.Location = new System.Drawing.Point(102, 503);
+            this.Software.Name = "Software";
+            this.Software.Size = new System.Drawing.Size(74, 19);
+            this.Software.TabIndex = 28;
+            this.Software.Text = "Software";
+            this.Software.UseVisualStyleBackColor = true;
+            this.Software.CheckedChanged += new System.EventHandler(this.anyBox_Checked);
+            // 
+            // Papers
+            // 
+            this.Papers.AutoSize = true;
+            this.Papers.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Papers.Location = new System.Drawing.Point(14, 503);
+            this.Papers.Name = "Papers";
+            this.Papers.Size = new System.Drawing.Size(66, 19);
+            this.Papers.TabIndex = 27;
+            this.Papers.Text = "Papers";
+            this.Papers.UseVisualStyleBackColor = true;
+            this.Papers.CheckedChanged += new System.EventHandler(this.anyBox_Checked);
+            // 
+            // Diss
+            // 
+            this.Diss.AutoSize = true;
+            this.Diss.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Diss.Location = new System.Drawing.Point(102, 478);
+            this.Diss.Name = "Diss";
+            this.Diss.Size = new System.Drawing.Size(100, 19);
+            this.Diss.TabIndex = 26;
+            this.Diss.Text = "Dissertations";
+            this.Diss.UseVisualStyleBackColor = true;
+            this.Diss.CheckedChanged += new System.EventHandler(this.anyBox_Checked);
+            // 
+            // TOC
+            // 
+            this.TOC.AutoSize = true;
+            this.TOC.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TOC.Location = new System.Drawing.Point(15, 478);
+            this.TOC.Name = "TOC";
+            this.TOC.Size = new System.Drawing.Size(58, 19);
+            this.TOC.TabIndex = 25;
+            this.TOC.Text = "TOCs";
+            this.TOC.UseVisualStyleBackColor = true;
+            this.TOC.CheckedChanged += new System.EventHandler(this.anyBox_Checked);
+            // 
+            // Calls
+            // 
+            this.Calls.AutoSize = true;
+            this.Calls.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Calls.Location = new System.Drawing.Point(14, 528);
+            this.Calls.Name = "Calls";
+            this.Calls.Size = new System.Drawing.Size(115, 19);
+            this.Calls.TabIndex = 24;
+            this.Calls.Text = "Calls for Papers";
+            this.Calls.UseVisualStyleBackColor = true;
+            this.Calls.CheckedChanged += new System.EventHandler(this.anyBox_Checked);
+            // 
+            // Journal
+            // 
+            this.Journal.AutoSize = true;
+            this.Journal.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Journal.Location = new System.Drawing.Point(102, 453);
+            this.Journal.Name = "Journal";
+            this.Journal.Size = new System.Drawing.Size(74, 19);
+            this.Journal.TabIndex = 23;
+            this.Journal.Text = "Journals";
+            this.Journal.UseVisualStyleBackColor = true;
+            this.Journal.CheckedChanged += new System.EventHandler(this.anyBox_Checked);
+            // 
+            // Publisher
+            // 
+            this.Publisher.AutoSize = true;
+            this.Publisher.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Publisher.Location = new System.Drawing.Point(102, 428);
+            this.Publisher.Name = "Publisher";
+            this.Publisher.Size = new System.Drawing.Size(86, 19);
+            this.Publisher.TabIndex = 22;
+            this.Publisher.Text = "Publishers";
+            this.Publisher.UseVisualStyleBackColor = true;
+            this.Publisher.CheckedChanged += new System.EventHandler(this.anyBox_Checked);
+            // 
+            // checkBooks
+            // 
+            this.checkBooks.AutoSize = true;
+            this.checkBooks.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBooks.Location = new System.Drawing.Point(15, 428);
+            this.checkBooks.Name = "checkBooks";
+            this.checkBooks.Size = new System.Drawing.Size(61, 19);
+            this.checkBooks.TabIndex = 21;
+            this.checkBooks.Text = "Books";
+            this.checkBooks.UseVisualStyleBackColor = true;
+            this.checkBooks.CheckedChanged += new System.EventHandler(this.anyBox_Checked);
+            // 
+            // checkReviews
+            // 
+            this.checkReviews.AutoSize = true;
+            this.checkReviews.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkReviews.Location = new System.Drawing.Point(15, 453);
+            this.checkReviews.Name = "checkReviews";
+            this.checkReviews.Size = new System.Drawing.Size(73, 19);
+            this.checkReviews.TabIndex = 20;
+            this.checkReviews.Text = "Reviews";
+            this.checkReviews.UseVisualStyleBackColor = true;
+            this.checkReviews.CheckedChanged += new System.EventHandler(this.anyBox_Checked);
+            // 
+            // summerSchools
+            // 
+            this.summerSchools.AutoSize = true;
+            this.summerSchools.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.summerSchools.Location = new System.Drawing.Point(14, 359);
+            this.summerSchools.Name = "summerSchools";
+            this.summerSchools.Size = new System.Drawing.Size(122, 19);
+            this.summerSchools.TabIndex = 19;
+            this.summerSchools.Text = "Summer Schools";
+            this.summerSchools.UseVisualStyleBackColor = true;
+            this.summerSchools.CheckedChanged += new System.EventHandler(this.anyBox_Checked);
+            // 
+            // noticeBoard
+            // 
+            this.noticeBoard.AutoSize = true;
+            this.noticeBoard.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.noticeBoard.Location = new System.Drawing.Point(91, 63);
+            this.noticeBoard.Name = "noticeBoard";
+            this.noticeBoard.Size = new System.Drawing.Size(97, 19);
+            this.noticeBoard.TabIndex = 18;
+            this.noticeBoard.Text = "Notice Board";
+            this.noticeBoard.UseVisualStyleBackColor = true;
+            // 
+            // Confs
+            // 
+            this.Confs.AutoSize = true;
+            this.Confs.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Confs.Location = new System.Drawing.Point(14, 309);
+            this.Confs.Name = "Confs";
+            this.Confs.Size = new System.Drawing.Size(97, 19);
+            this.Confs.TabIndex = 17;
+            this.Confs.Text = "Conferences";
+            this.Confs.UseVisualStyleBackColor = true;
+            this.Confs.CheckedChanged += new System.EventHandler(this.anyBox_Checked);
+            // 
+            // localEvents
+            // 
+            this.localEvents.AutoSize = true;
+            this.localEvents.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.localEvents.Location = new System.Drawing.Point(14, 334);
+            this.localEvents.Name = "localEvents";
+            this.localEvents.Size = new System.Drawing.Size(96, 19);
+            this.localEvents.TabIndex = 15;
+            this.localEvents.Text = "Local Events";
+            this.localEvents.UseVisualStyleBackColor = true;
+            this.localEvents.CheckedChanged += new System.EventHandler(this.anyBox_Checked);
+            // 
+            // Qs
+            // 
+            this.Qs.AutoSize = true;
+            this.Qs.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Qs.Location = new System.Drawing.Point(15, 222);
+            this.Qs.Name = "Qs";
+            this.Qs.Size = new System.Drawing.Size(70, 19);
+            this.Qs.TabIndex = 14;
+            this.Qs.Text = "Queries";
+            this.Qs.UseVisualStyleBackColor = true;
+            this.Qs.CheckedChanged += new System.EventHandler(this.anyBox_Checked);
+            // 
+            // Disc
+            // 
+            this.Disc.AutoSize = true;
+            this.Disc.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Disc.Location = new System.Drawing.Point(15, 247);
+            this.Disc.Name = "Disc";
+            this.Disc.Size = new System.Drawing.Size(89, 19);
+            this.Disc.TabIndex = 13;
+            this.Disc.Text = "Discussion";
+            this.Disc.UseVisualStyleBackColor = true;
+            this.Disc.CheckedChanged += new System.EventHandler(this.anyBox_Checked);
+            // 
+            // Sum
+            // 
+            this.Sum.AutoSize = true;
+            this.Sum.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Sum.Location = new System.Drawing.Point(97, 222);
+            this.Sum.Name = "Sum";
+            this.Sum.Size = new System.Drawing.Size(91, 19);
+            this.Sum.TabIndex = 12;
+            this.Sum.Text = "Summaries";
+            this.Sum.UseVisualStyleBackColor = true;
+            this.Sum.CheckedChanged += new System.EventHandler(this.anyBox_Checked);
+            // 
+            // checkInternships
+            // 
+            this.checkInternships.AutoSize = true;
+            this.checkInternships.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkInternships.Location = new System.Drawing.Point(15, 153);
+            this.checkInternships.Name = "checkInternships";
+            this.checkInternships.Size = new System.Drawing.Size(88, 19);
+            this.checkInternships.TabIndex = 11;
+            this.checkInternships.Text = "Internships";
+            this.checkInternships.UseVisualStyleBackColor = true;
+            this.checkInternships.CheckedChanged += new System.EventHandler(this.anyBox_Checked);
+            // 
+            // checkJobs
+            // 
+            this.checkJobs.AutoSize = true;
+            this.checkJobs.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkJobs.Location = new System.Drawing.Point(15, 128);
+            this.checkJobs.Name = "checkJobs";
+            this.checkJobs.Size = new System.Drawing.Size(53, 19);
+            this.checkJobs.TabIndex = 10;
+            this.checkJobs.Text = "Jobs";
+            this.checkJobs.UseVisualStyleBackColor = true;
+            this.checkJobs.CheckedChanged += new System.EventHandler(this.anyBox_Checked);
+            // 
+            // Support
+            // 
+            this.Support.AutoSize = true;
+            this.Support.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Support.Location = new System.Drawing.Point(97, 128);
+            this.Support.Name = "Support";
+            this.Support.Size = new System.Drawing.Size(76, 19);
+            this.Support.TabIndex = 9;
+            this.Support.Text = "Supports";
+            this.Support.UseVisualStyleBackColor = true;
+            this.Support.CheckedChanged += new System.EventHandler(this.anyBox_Checked);
+            // 
+            // Media
+            // 
+            this.Media.AutoSize = true;
+            this.Media.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Media.Location = new System.Drawing.Point(91, 38);
+            this.Media.Name = "Media";
+            this.Media.Size = new System.Drawing.Size(59, 19);
+            this.Media.TabIndex = 8;
+            this.Media.Text = "Media";
+            this.Media.UseVisualStyleBackColor = true;
+            this.Media.CheckedChanged += new System.EventHandler(this.anyBox_Checked);
+            // 
+            // FYI
+            // 
+            this.FYI.AutoSize = true;
+            this.FYI.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FYI.Location = new System.Drawing.Point(15, 63);
+            this.FYI.Name = "FYI";
+            this.FYI.Size = new System.Drawing.Size(43, 19);
+            this.FYI.TabIndex = 7;
+            this.FYI.Text = "FYI";
+            this.FYI.UseVisualStyleBackColor = true;
+            // 
+            // All
+            // 
+            this.All.AutoSize = true;
+            this.All.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.All.Location = new System.Drawing.Point(15, 38);
+            this.All.Name = "All";
+            this.All.Size = new System.Drawing.Size(39, 19);
+            this.All.TabIndex = 5;
+            this.All.Text = "All";
+            this.All.UseVisualStyleBackColor = true;
+            this.All.CheckedChanged += new System.EventHandler(this.anyBox_Checked);
+            // 
+            // labelPubs
+            // 
+            this.labelPubs.AutoSize = true;
+            this.labelPubs.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelPubs.Location = new System.Drawing.Point(12, 395);
+            this.labelPubs.Name = "labelPubs";
+            this.labelPubs.Size = new System.Drawing.Size(86, 16);
+            this.labelPubs.TabIndex = 4;
+            this.labelPubs.Text = "Publications";
+            // 
+            // labelEvents
+            // 
+            this.labelEvents.AutoSize = true;
+            this.labelEvents.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelEvents.Location = new System.Drawing.Point(12, 278);
+            this.labelEvents.Name = "labelEvents";
+            this.labelEvents.Size = new System.Drawing.Size(49, 16);
+            this.labelEvents.TabIndex = 3;
+            this.labelEvents.Text = "Events";
+            // 
+            // labelDiscussion
+            // 
+            this.labelDiscussion.AutoSize = true;
+            this.labelDiscussion.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelDiscussion.Location = new System.Drawing.Point(12, 189);
+            this.labelDiscussion.Name = "labelDiscussion";
+            this.labelDiscussion.Size = new System.Drawing.Size(74, 16);
+            this.labelDiscussion.TabIndex = 2;
+            this.labelDiscussion.Text = "Discussion";
+            // 
+            // labelCareers
+            // 
+            this.labelCareers.AutoSize = true;
+            this.labelCareers.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelCareers.Location = new System.Drawing.Point(12, 97);
+            this.labelCareers.Name = "labelCareers";
+            this.labelCareers.Size = new System.Drawing.Size(57, 16);
+            this.labelCareers.TabIndex = 1;
+            this.labelCareers.Text = "Careers";
+            // 
+            // labelAnnouncements
+            // 
+            this.labelAnnouncements.AutoSize = true;
+            this.labelAnnouncements.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelAnnouncements.Location = new System.Drawing.Point(12, 10);
+            this.labelAnnouncements.Name = "labelAnnouncements";
+            this.labelAnnouncements.Size = new System.Drawing.Size(110, 16);
+            this.labelAnnouncements.TabIndex = 0;
+            this.labelAnnouncements.Text = "Announcements";
             // 
             // frmBrowse
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(1181, 623);
+            this.ClientSize = new System.Drawing.Size(1226, 623);
+            this.Controls.Add(this.areaPanel);
             this.Controls.Add(this.panelPreview);
             this.Controls.Add(this.btnCloseWindow);
-            this.Controls.Add(this.btnExpandAll);
             this.Controls.Add(this.btnSelectAll);
-            this.Controls.Add(this.treeAreaList);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.browseWindow);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmBrowse";
             this.Text = "Browse";
+            this.areaPanel.ResumeLayout(false);
+            this.areaPanel.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -255,10 +498,36 @@
         #endregion
         private System.Windows.Forms.WebBrowser browseWindow;
         private System.Windows.Forms.Button btnSave;
-        private System.Windows.Forms.TreeView treeAreaList;
         private System.Windows.Forms.Button btnSelectAll;
-        private System.Windows.Forms.Button btnExpandAll;
         private System.Windows.Forms.Button btnCloseWindow;
-        private System.Windows.Forms.Panel panelPreview;
+        private System.Windows.Forms.FlowLayoutPanel panelPreview;
+        private System.Windows.Forms.Panel areaPanel;
+        private System.Windows.Forms.CheckBox Confs;
+        private System.Windows.Forms.CheckBox localEvents;
+        private System.Windows.Forms.CheckBox Qs;
+        private System.Windows.Forms.CheckBox Disc;
+        private System.Windows.Forms.CheckBox Sum;
+        private System.Windows.Forms.CheckBox checkInternships;
+        private System.Windows.Forms.CheckBox checkJobs;
+        private System.Windows.Forms.CheckBox Support;
+        private System.Windows.Forms.CheckBox Media;
+        private System.Windows.Forms.CheckBox FYI;
+        private System.Windows.Forms.CheckBox All;
+        private System.Windows.Forms.Label labelPubs;
+        private System.Windows.Forms.Label labelEvents;
+        private System.Windows.Forms.Label labelDiscussion;
+        private System.Windows.Forms.Label labelCareers;
+        private System.Windows.Forms.Label labelAnnouncements;
+        private System.Windows.Forms.CheckBox noticeBoard;
+        private System.Windows.Forms.CheckBox summerSchools;
+        private System.Windows.Forms.CheckBox Software;
+        private System.Windows.Forms.CheckBox Papers;
+        private System.Windows.Forms.CheckBox Diss;
+        private System.Windows.Forms.CheckBox TOC;
+        private System.Windows.Forms.CheckBox Calls;
+        private System.Windows.Forms.CheckBox Journal;
+        private System.Windows.Forms.CheckBox Publisher;
+        private System.Windows.Forms.CheckBox checkBooks;
+        private System.Windows.Forms.CheckBox checkReviews;
     }
 }

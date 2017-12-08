@@ -7,65 +7,39 @@ namespace FinalProject
 {
     public partial class frmBrowse : Form
     {
-        private bool expanded;
         private bool selectedAll;
-        private List<TreeNode> checkedNodes;
         private Database issuesDB;
-
+        private List<CheckBox> checkBoxes;
+        private List<CheckBox> checkedBoxes;
         private Issue focus;
 
         public frmBrowse(Database db)
         {
             InitializeComponent();
-            expanded = false;
             selectedAll = false;
-            checkedNodes = new List<TreeNode>();
+
+            checkBoxes = new List<CheckBox>();
+            foreach(Control control in areaPanel.Controls)
+            {
+                if(control is CheckBox) { checkBoxes.Add((CheckBox)control); }
+            }
+
+            checkedBoxes = new List<CheckBox>();
             browseWindow.ScriptErrorsSuppressed = true;
             btnSave.Enabled = false;
             issuesDB = db;
 
         }
 
-        private void CheckAllChildNodes(TreeNode treeNode, bool nodeChecked)
+        private void anyBox_Checked(object sender, EventArgs e)
         {
-            foreach(TreeNode node in treeNode.Nodes)
-            {
-                node.Checked = nodeChecked;
-                if(node.Nodes.Count > 0)
-                {
-                    this.CheckAllChildNodes(node, nodeChecked);
-                }
-            }
-        }
-
-        private void treeAreaList_AfterCheck(object sender, TreeViewEventArgs e)
-        {
-                if (e.Action != TreeViewAction.Unknown)
-                {
-                    if (e.Node.Nodes.Count > 0)
-                    {
-                        this.CheckAllChildNodes(e.Node, e.Node.Checked);
-                    }
-                }
-
+            System.Diagnostics.Debug.Write("in areaPanel_AfterCheck method");
+            this.getCheckedBoxes();
+            DrawingControl.SuspendDrawing(panelPreview);
             panelPreview_Update();
+            DrawingControl.ResumeDrawing(panelPreview);
+            panelPreview.Refresh();
 
-        }
-
-        private void btnExpandAll_Click(object sender, EventArgs e)
-        {
-            if (!expanded)
-            {
-                treeAreaList.ExpandAll();
-                btnExpandAll.Text = "Collapse All";
-            }
-            if(expanded)
-            {
-                treeAreaList.CollapseAll();
-                btnExpandAll.Text = "Expand All";
-            }
-
-            expanded = !expanded;
         }
 
         private void btnSelectAll_Click(object sender, EventArgs e)
@@ -73,10 +47,13 @@ namespace FinalProject
 
             if (!selectedAll)
             {
-                foreach (TreeNode node in treeAreaList.Nodes)
+                foreach (Control control in areaPanel.Controls)
                 {
-                    node.Checked = true;
-                    this.CheckAllChildNodes(node, true);
+                    if(control is CheckBox)
+                    {
+                        CheckBox box = (CheckBox)control;
+                        box.Checked = true;
+                    }   
                 }
 
                 btnSelectAll.Text = "Clear All";
@@ -85,10 +62,13 @@ namespace FinalProject
 
             if(selectedAll)
             {
-                foreach (TreeNode node in treeAreaList.Nodes)
+                foreach (Control control in areaPanel.Controls)
                 {
-                    node.Checked = false;
-                    this.CheckAllChildNodes(node, false);
+                    if (control is CheckBox)
+                    {
+                        CheckBox box = (CheckBox)control;
+                        box.Checked = false;
+                    }
                 }
 
                 btnSelectAll.Text = "Select All";
@@ -106,6 +86,8 @@ namespace FinalProject
 
         private void panelPreview_Update()
         {
+            System.Diagnostics.Debug.Write("panelPreview_Update is happening\n");
+
             List<Control> controls = new List<Control>();
             foreach(Control control in panelPreview.Controls)
             {
@@ -117,25 +99,35 @@ namespace FinalProject
                 control.Dispose();
             }
 
-            this.getCheckedNodes(treeAreaList);
-
-                foreach(TreeNode node in this.checkedNodes)
+                foreach(CheckBox box in checkedBoxes)
                 {
-                    foreach(Issue issue in issuesDB.getIssues(node.Text))
+                System.Diagnostics.Debug.Write(box.Name);
+                    foreach(Issue issue in issuesDB.getIssues(box.Text, box.Name))
                     {
                         Button b = new Button();
                         b.Text = issue.getTitle();
 
                         b.BackColor = System.Drawing.SystemColors.Window;
-                        b.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+                        b.FlatStyle = FlatStyle.Flat;
+                        b.FlatAppearance.BorderColor = System.Drawing.SystemColors.Window;
+                        b.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
                         b.Size = new System.Drawing.Size(220, 128);
                         b.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
                         b.UseVisualStyleBackColor = false;
                         b.Click += new EventHandler(this.B_Click);
                         b.Tag = issue;
-                    
-
+                 
                         panelPreview.Controls.Add(b);
+
+                        Label line = new Label();
+                        line.Text = String.Empty;
+                        line.BorderStyle = BorderStyle.Fixed3D;
+                        line.BackColor = System.Drawing.SystemColors.ActiveBorder;
+                        line.AutoSize = false;
+                        line.Height = 2;
+                        line.Width = 260;
+
+                        panelPreview.Controls.Add(line);
                     }
                 }
         }
@@ -143,7 +135,13 @@ namespace FinalProject
         private void B_Click(object sender, EventArgs e)
         {
             Button b = (Button)sender;
-            b.BackColor = System.Drawing.SystemColors.ButtonFace;
+
+            foreach(Control control in panelPreview.Controls)
+            {
+                control.BackColor = System.Drawing.SystemColors.Window;
+            }
+
+            b.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             focus = (Issue)b.Tag;
             this.loadIssue(focus);
             btnSave.Enabled = true;
@@ -154,21 +152,16 @@ namespace FinalProject
             this.browseWindow.Navigate(issue.getURI());
         }
 
-        private void getCheckedNodes(TreeView tree)
+        private void getCheckedBoxes()
         {
-            foreach(TreeNode node in tree.Nodes)
+            System.Diagnostics.Debug.Write("In getCheckedBoxes function");
+            checkedBoxes.Clear();
+            System.Diagnostics.Debug.Write("Starting to loop through controls");
+            foreach(CheckBox box in checkBoxes)
             {
-                if (node.Nodes.Count > 0)
-                {
-                    foreach(TreeNode childNode in node.Nodes)
-                    {
-                        if(childNode.Checked)
-                        {
-                            checkedNodes.Add(childNode);
-                        }
-                    }
-                }
-
+                System.Diagnostics.Debug.Write(box);
+                if (box.Checked) { checkedBoxes.Add(box); }
+                
             }
 
         }
@@ -178,5 +171,11 @@ namespace FinalProject
             frmSaveIssue saveWindow = new frmSaveIssue(focus);
             saveWindow.ShowDialog();
         }
+
+        private void panelPreview_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
     }
 }

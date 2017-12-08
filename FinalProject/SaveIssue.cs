@@ -25,13 +25,14 @@ namespace FinalProject
         {
             thisIssue.setComment(this.commentBox.Text);
             this.label1.Visible = true;
+
+
+
         }
 
         private void btnClose_Click(object sender, EventArgs e)
         {
             this.Close();
         }
-
-
     }
 }

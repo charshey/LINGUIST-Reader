@@ -30,13 +30,13 @@ namespace FinalProject
             
         }
 
-        public List<Issue> getIssues(string area)
+        public List<Issue> getIssues(string name, string text)
         {
             List<Issue> matchingIssues = new List<Issue>();
 
             foreach(Issue issue in issueArray)
             {
-                if(issue.getArea() == area)
+                if(issue.getArea() == name || issue.getArea() == text)
                 {
                     matchingIssues.Add(issue);
                 }
