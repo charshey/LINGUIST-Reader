@@ -27,8 +27,6 @@ namespace FinalProject
             uri = new System.Uri(path);
             starred = false;
             this.setArea();
-
-            System.Diagnostics.Debug.Write("Area: " + area);
         }
 
         public void setTitle(string text)

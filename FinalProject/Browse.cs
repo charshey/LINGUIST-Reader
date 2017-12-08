@@ -17,7 +17,7 @@ namespace FinalProject
         {
             InitializeComponent();
             selectedAll = false;
-
+            All.Focus();
             checkBoxes = new List<CheckBox>();
             foreach(Control control in areaPanel.Controls)
             {
@@ -105,7 +105,6 @@ namespace FinalProject
                     {
                         Button b = new Button();
                         b.Text = issue.getTitle();
-
                         b.BackColor = System.Drawing.SystemColors.Window;
                         b.FlatStyle = FlatStyle.Flat;
                         b.FlatAppearance.BorderColor = System.Drawing.SystemColors.Window;
@@ -134,7 +133,7 @@ namespace FinalProject
         private void B_Click(object sender, EventArgs e)
         {
             Button b = (Button)sender;
-
+            b.Focus();
             foreach(Control control in panelPreview.Controls)
             {
                 control.BackColor = System.Drawing.SystemColors.Window;

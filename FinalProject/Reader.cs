@@ -20,11 +20,6 @@ namespace FinalProject
             issuesDB = db;
         }
 
-        private void lblWelcome_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnQuit_Click(object sender, EventArgs e)
         {
             Close();
@@ -42,10 +37,5 @@ namespace FinalProject
             browseWindow.Show();
         }
 
-        private void btnMyIssues_Click(object sender, EventArgs e)
-        {
-            frmRead readWindow = new frmRead();
-            readWindow.Show();
-        }
     }
 }

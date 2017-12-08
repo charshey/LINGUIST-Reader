@@ -33,7 +33,6 @@
             this.btnSave = new System.Windows.Forms.Button();
             this.btnSelectAll = new System.Windows.Forms.Button();
             this.btnCloseWindow = new System.Windows.Forms.Button();
-            this.panelPreview = new DBFlowLayoutPanel();
             this.areaPanel = new System.Windows.Forms.Panel();
             this.Software = new System.Windows.Forms.CheckBox();
             this.Diss = new System.Windows.Forms.CheckBox();
@@ -59,6 +58,7 @@
             this.labelDiscussion = new System.Windows.Forms.Label();
             this.labelCareers = new System.Windows.Forms.Label();
             this.labelAnnouncements = new System.Windows.Forms.Label();
+            this.panelPreview = new FinalProject.DBFlowLayoutPanel();
             this.areaPanel.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -77,50 +77,47 @@
             // btnSave
             // 
             this.btnSave.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnSave.BackColor = System.Drawing.SystemColors.Window;
+            this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSave.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSave.ForeColor = System.Drawing.SystemColors.WindowText;
             this.btnSave.Location = new System.Drawing.Point(852, 580);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(178, 31);
             this.btnSave.TabIndex = 3;
             this.btnSave.Text = "Save this Issue";
-            this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.UseVisualStyleBackColor = false;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // btnSelectAll
             // 
             this.btnSelectAll.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.btnSelectAll.BackColor = System.Drawing.SystemColors.Window;
+            this.btnSelectAll.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSelectAll.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSelectAll.ForeColor = System.Drawing.SystemColors.WindowText;
             this.btnSelectAll.Location = new System.Drawing.Point(12, 580);
             this.btnSelectAll.Name = "btnSelectAll";
             this.btnSelectAll.Size = new System.Drawing.Size(193, 31);
             this.btnSelectAll.TabIndex = 5;
             this.btnSelectAll.Text = "Select All";
-            this.btnSelectAll.UseVisualStyleBackColor = true;
+            this.btnSelectAll.UseVisualStyleBackColor = false;
             this.btnSelectAll.Click += new System.EventHandler(this.btnSelectAll_Click);
             // 
             // btnCloseWindow
             // 
             this.btnCloseWindow.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnCloseWindow.BackColor = System.Drawing.SystemColors.Window;
+            this.btnCloseWindow.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCloseWindow.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCloseWindow.ForeColor = System.Drawing.SystemColors.WindowText;
             this.btnCloseWindow.Location = new System.Drawing.Point(1036, 580);
             this.btnCloseWindow.Name = "btnCloseWindow";
             this.btnCloseWindow.Size = new System.Drawing.Size(178, 31);
             this.btnCloseWindow.TabIndex = 13;
             this.btnCloseWindow.Text = "Close Window";
-            this.btnCloseWindow.UseVisualStyleBackColor = true;
+            this.btnCloseWindow.UseVisualStyleBackColor = false;
             this.btnCloseWindow.Click += new System.EventHandler(this.btnCloseWindow_Click);
-            // 
-            // panelPreview
-            // 
-            this.panelPreview.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
-            this.panelPreview.AutoScroll = true;
-            this.panelPreview.BackColor = System.Drawing.SystemColors.Window;
-            this.panelPreview.Location = new System.Drawing.Point(245, 12);
-            this.panelPreview.Name = "panelPreview";
-            this.panelPreview.Size = new System.Drawing.Size(243, 562);
-            this.panelPreview.TabIndex = 14;
-            this.panelPreview.Paint += new System.Windows.Forms.PaintEventHandler(this.panelPreview_Paint);
             // 
             // areaPanel
             // 
@@ -432,11 +429,23 @@
             this.labelAnnouncements.TabIndex = 0;
             this.labelAnnouncements.Text = "Announcements";
             // 
+            // panelPreview
+            // 
+            this.panelPreview.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.panelPreview.AutoScroll = true;
+            this.panelPreview.BackColor = System.Drawing.SystemColors.Window;
+            this.panelPreview.Location = new System.Drawing.Point(245, 12);
+            this.panelPreview.Name = "panelPreview";
+            this.panelPreview.Size = new System.Drawing.Size(243, 562);
+            this.panelPreview.TabIndex = 14;
+            this.panelPreview.Paint += new System.Windows.Forms.PaintEventHandler(this.panelPreview_Paint);
+            // 
             // frmBrowse
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.Control;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
             this.ClientSize = new System.Drawing.Size(1226, 623);
             this.Controls.Add(this.areaPanel);
             this.Controls.Add(this.panelPreview);
@@ -458,7 +467,6 @@
         private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.Button btnSelectAll;
         private System.Windows.Forms.Button btnCloseWindow;
-        private System.Windows.Forms.FlowLayoutPanel panelPreview;
         private System.Windows.Forms.Panel areaPanel;
         private System.Windows.Forms.CheckBox Confs;
         private System.Windows.Forms.CheckBox Qs;
@@ -484,5 +492,6 @@
         private System.Windows.Forms.CheckBox Journal;
         private System.Windows.Forms.CheckBox checkBooks;
         private System.Windows.Forms.CheckBox checkReviews;
+        private DBFlowLayoutPanel panelPreview;
     }
 }
