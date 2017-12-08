@@ -30,7 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmBrowse));
             this.browseWindow = new System.Windows.Forms.WebBrowser();
-            this.btnSave = new System.Windows.Forms.Button();
             this.btnSelectAll = new System.Windows.Forms.Button();
             this.btnCloseWindow = new System.Windows.Forms.Button();
             this.areaPanel = new System.Windows.Forms.Panel();
@@ -42,7 +41,7 @@
             this.checkBooks = new System.Windows.Forms.CheckBox();
             this.checkReviews = new System.Windows.Forms.CheckBox();
             this.summerSchools = new System.Windows.Forms.CheckBox();
-            this.noticeBoard = new System.Windows.Forms.CheckBox();
+            this.checkBox4 = new System.Windows.Forms.CheckBox();
             this.Confs = new System.Windows.Forms.CheckBox();
             this.Qs = new System.Windows.Forms.CheckBox();
             this.Disc = new System.Windows.Forms.CheckBox();
@@ -50,14 +49,16 @@
             this.checkInternships = new System.Windows.Forms.CheckBox();
             this.checkJobs = new System.Windows.Forms.CheckBox();
             this.Support = new System.Windows.Forms.CheckBox();
-            this.Media = new System.Windows.Forms.CheckBox();
-            this.FYI = new System.Windows.Forms.CheckBox();
-            this.All = new System.Windows.Forms.CheckBox();
+            this.checkBox3 = new System.Windows.Forms.CheckBox();
+            this.checkBox2 = new System.Windows.Forms.CheckBox();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.labelPubs = new System.Windows.Forms.Label();
             this.labelEvents = new System.Windows.Forms.Label();
             this.labelDiscussion = new System.Windows.Forms.Label();
             this.labelCareers = new System.Windows.Forms.Label();
-            this.labelAnnouncements = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.btnStar = new System.Windows.Forms.Button();
+            this.notesBox = new System.Windows.Forms.RichTextBox();
             this.panelPreview = new FinalProject.DBFlowLayoutPanel();
             this.areaPanel.SuspendLayout();
             this.SuspendLayout();
@@ -67,27 +68,12 @@
             this.browseWindow.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.browseWindow.Location = new System.Drawing.Point(494, 12);
+            this.browseWindow.Location = new System.Drawing.Point(504, 12);
             this.browseWindow.MinimumSize = new System.Drawing.Size(20, 20);
             this.browseWindow.Name = "browseWindow";
-            this.browseWindow.Size = new System.Drawing.Size(720, 562);
+            this.browseWindow.Size = new System.Drawing.Size(710, 593);
             this.browseWindow.TabIndex = 2;
             this.browseWindow.Url = new System.Uri("", System.UriKind.Relative);
-            // 
-            // btnSave
-            // 
-            this.btnSave.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnSave.BackColor = System.Drawing.SystemColors.Window;
-            this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSave.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSave.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.btnSave.Location = new System.Drawing.Point(852, 580);
-            this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(178, 31);
-            this.btnSave.TabIndex = 3;
-            this.btnSave.Text = "Save this Issue";
-            this.btnSave.UseVisualStyleBackColor = false;
-            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // btnSelectAll
             // 
@@ -96,9 +82,9 @@
             this.btnSelectAll.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSelectAll.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSelectAll.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.btnSelectAll.Location = new System.Drawing.Point(12, 580);
+            this.btnSelectAll.Location = new System.Drawing.Point(12, 626);
             this.btnSelectAll.Name = "btnSelectAll";
-            this.btnSelectAll.Size = new System.Drawing.Size(193, 31);
+            this.btnSelectAll.Size = new System.Drawing.Size(227, 48);
             this.btnSelectAll.TabIndex = 5;
             this.btnSelectAll.Text = "Select All";
             this.btnSelectAll.UseVisualStyleBackColor = false;
@@ -111,9 +97,9 @@
             this.btnCloseWindow.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCloseWindow.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCloseWindow.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.btnCloseWindow.Location = new System.Drawing.Point(1036, 580);
+            this.btnCloseWindow.Location = new System.Drawing.Point(1036, 626);
             this.btnCloseWindow.Name = "btnCloseWindow";
-            this.btnCloseWindow.Size = new System.Drawing.Size(178, 31);
+            this.btnCloseWindow.Size = new System.Drawing.Size(178, 50);
             this.btnCloseWindow.TabIndex = 13;
             this.btnCloseWindow.Text = "Close Window";
             this.btnCloseWindow.UseVisualStyleBackColor = false;
@@ -132,7 +118,7 @@
             this.areaPanel.Controls.Add(this.checkBooks);
             this.areaPanel.Controls.Add(this.checkReviews);
             this.areaPanel.Controls.Add(this.summerSchools);
-            this.areaPanel.Controls.Add(this.noticeBoard);
+            this.areaPanel.Controls.Add(this.checkBox4);
             this.areaPanel.Controls.Add(this.Confs);
             this.areaPanel.Controls.Add(this.Qs);
             this.areaPanel.Controls.Add(this.Disc);
@@ -140,24 +126,24 @@
             this.areaPanel.Controls.Add(this.checkInternships);
             this.areaPanel.Controls.Add(this.checkJobs);
             this.areaPanel.Controls.Add(this.Support);
-            this.areaPanel.Controls.Add(this.Media);
-            this.areaPanel.Controls.Add(this.FYI);
-            this.areaPanel.Controls.Add(this.All);
+            this.areaPanel.Controls.Add(this.checkBox3);
+            this.areaPanel.Controls.Add(this.checkBox2);
+            this.areaPanel.Controls.Add(this.checkBox1);
             this.areaPanel.Controls.Add(this.labelPubs);
             this.areaPanel.Controls.Add(this.labelEvents);
             this.areaPanel.Controls.Add(this.labelDiscussion);
             this.areaPanel.Controls.Add(this.labelCareers);
-            this.areaPanel.Controls.Add(this.labelAnnouncements);
+            this.areaPanel.Controls.Add(this.label1);
             this.areaPanel.Location = new System.Drawing.Point(12, 12);
             this.areaPanel.Name = "areaPanel";
-            this.areaPanel.Size = new System.Drawing.Size(227, 562);
+            this.areaPanel.Size = new System.Drawing.Size(227, 593);
             this.areaPanel.TabIndex = 15;
             // 
             // Software
             // 
             this.Software.AutoSize = true;
             this.Software.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Software.Location = new System.Drawing.Point(14, 450);
+            this.Software.Location = new System.Drawing.Point(12, 487);
             this.Software.Name = "Software";
             this.Software.Size = new System.Drawing.Size(74, 19);
             this.Software.TabIndex = 28;
@@ -169,7 +155,7 @@
             // 
             this.Diss.AutoSize = true;
             this.Diss.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Diss.Location = new System.Drawing.Point(97, 450);
+            this.Diss.Location = new System.Drawing.Point(95, 487);
             this.Diss.Name = "Diss";
             this.Diss.Size = new System.Drawing.Size(100, 19);
             this.Diss.TabIndex = 26;
@@ -181,7 +167,7 @@
             // 
             this.TOC.AutoSize = true;
             this.TOC.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TOC.Location = new System.Drawing.Point(97, 425);
+            this.TOC.Location = new System.Drawing.Point(95, 462);
             this.TOC.Name = "TOC";
             this.TOC.Size = new System.Drawing.Size(58, 19);
             this.TOC.TabIndex = 25;
@@ -193,7 +179,7 @@
             // 
             this.Calls.AutoSize = true;
             this.Calls.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Calls.Location = new System.Drawing.Point(14, 475);
+            this.Calls.Location = new System.Drawing.Point(12, 512);
             this.Calls.Name = "Calls";
             this.Calls.Size = new System.Drawing.Size(115, 19);
             this.Calls.TabIndex = 24;
@@ -205,7 +191,7 @@
             // 
             this.Journal.AutoSize = true;
             this.Journal.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Journal.Location = new System.Drawing.Point(97, 400);
+            this.Journal.Location = new System.Drawing.Point(95, 437);
             this.Journal.Name = "Journal";
             this.Journal.Size = new System.Drawing.Size(74, 19);
             this.Journal.TabIndex = 23;
@@ -217,7 +203,7 @@
             // 
             this.checkBooks.AutoSize = true;
             this.checkBooks.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBooks.Location = new System.Drawing.Point(14, 400);
+            this.checkBooks.Location = new System.Drawing.Point(12, 437);
             this.checkBooks.Name = "checkBooks";
             this.checkBooks.Size = new System.Drawing.Size(61, 19);
             this.checkBooks.TabIndex = 21;
@@ -229,7 +215,7 @@
             // 
             this.checkReviews.AutoSize = true;
             this.checkReviews.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkReviews.Location = new System.Drawing.Point(15, 425);
+            this.checkReviews.Location = new System.Drawing.Point(13, 462);
             this.checkReviews.Name = "checkReviews";
             this.checkReviews.Size = new System.Drawing.Size(73, 19);
             this.checkReviews.TabIndex = 20;
@@ -241,7 +227,7 @@
             // 
             this.summerSchools.AutoSize = true;
             this.summerSchools.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.summerSchools.Location = new System.Drawing.Point(14, 334);
+            this.summerSchools.Location = new System.Drawing.Point(12, 362);
             this.summerSchools.Name = "summerSchools";
             this.summerSchools.Size = new System.Drawing.Size(122, 19);
             this.summerSchools.TabIndex = 19;
@@ -249,22 +235,22 @@
             this.summerSchools.UseVisualStyleBackColor = true;
             this.summerSchools.CheckedChanged += new System.EventHandler(this.anyBox_Checked);
             // 
-            // noticeBoard
+            // checkBox4
             // 
-            this.noticeBoard.AutoSize = true;
-            this.noticeBoard.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.noticeBoard.Location = new System.Drawing.Point(91, 63);
-            this.noticeBoard.Name = "noticeBoard";
-            this.noticeBoard.Size = new System.Drawing.Size(97, 19);
-            this.noticeBoard.TabIndex = 18;
-            this.noticeBoard.Text = "Notice Board";
-            this.noticeBoard.UseVisualStyleBackColor = true;
+            this.checkBox4.AutoSize = true;
+            this.checkBox4.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBox4.Location = new System.Drawing.Point(89, 70);
+            this.checkBox4.Name = "checkBox4";
+            this.checkBox4.Size = new System.Drawing.Size(97, 19);
+            this.checkBox4.TabIndex = 18;
+            this.checkBox4.Text = "Notice Board";
+            this.checkBox4.UseVisualStyleBackColor = true;
             // 
             // Confs
             // 
             this.Confs.AutoSize = true;
             this.Confs.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Confs.Location = new System.Drawing.Point(14, 309);
+            this.Confs.Location = new System.Drawing.Point(12, 337);
             this.Confs.Name = "Confs";
             this.Confs.Size = new System.Drawing.Size(97, 19);
             this.Confs.TabIndex = 17;
@@ -276,7 +262,7 @@
             // 
             this.Qs.AutoSize = true;
             this.Qs.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Qs.Location = new System.Drawing.Point(15, 222);
+            this.Qs.Location = new System.Drawing.Point(13, 241);
             this.Qs.Name = "Qs";
             this.Qs.Size = new System.Drawing.Size(70, 19);
             this.Qs.TabIndex = 14;
@@ -288,7 +274,7 @@
             // 
             this.Disc.AutoSize = true;
             this.Disc.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Disc.Location = new System.Drawing.Point(15, 247);
+            this.Disc.Location = new System.Drawing.Point(13, 266);
             this.Disc.Name = "Disc";
             this.Disc.Size = new System.Drawing.Size(89, 19);
             this.Disc.TabIndex = 13;
@@ -300,7 +286,7 @@
             // 
             this.Sum.AutoSize = true;
             this.Sum.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Sum.Location = new System.Drawing.Point(97, 222);
+            this.Sum.Location = new System.Drawing.Point(95, 241);
             this.Sum.Name = "Sum";
             this.Sum.Size = new System.Drawing.Size(91, 19);
             this.Sum.TabIndex = 12;
@@ -312,7 +298,7 @@
             // 
             this.checkInternships.AutoSize = true;
             this.checkInternships.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkInternships.Location = new System.Drawing.Point(15, 153);
+            this.checkInternships.Location = new System.Drawing.Point(13, 167);
             this.checkInternships.Name = "checkInternships";
             this.checkInternships.Size = new System.Drawing.Size(88, 19);
             this.checkInternships.TabIndex = 11;
@@ -324,7 +310,7 @@
             // 
             this.checkJobs.AutoSize = true;
             this.checkJobs.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkJobs.Location = new System.Drawing.Point(15, 128);
+            this.checkJobs.Location = new System.Drawing.Point(13, 142);
             this.checkJobs.Name = "checkJobs";
             this.checkJobs.Size = new System.Drawing.Size(53, 19);
             this.checkJobs.TabIndex = 10;
@@ -336,7 +322,7 @@
             // 
             this.Support.AutoSize = true;
             this.Support.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Support.Location = new System.Drawing.Point(97, 128);
+            this.Support.Location = new System.Drawing.Point(95, 142);
             this.Support.Name = "Support";
             this.Support.Size = new System.Drawing.Size(76, 19);
             this.Support.TabIndex = 9;
@@ -344,46 +330,46 @@
             this.Support.UseVisualStyleBackColor = true;
             this.Support.CheckedChanged += new System.EventHandler(this.anyBox_Checked);
             // 
-            // Media
+            // checkBox3
             // 
-            this.Media.AutoSize = true;
-            this.Media.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Media.Location = new System.Drawing.Point(91, 38);
-            this.Media.Name = "Media";
-            this.Media.Size = new System.Drawing.Size(59, 19);
-            this.Media.TabIndex = 8;
-            this.Media.Text = "Media";
-            this.Media.UseVisualStyleBackColor = true;
-            this.Media.CheckedChanged += new System.EventHandler(this.anyBox_Checked);
+            this.checkBox3.AutoSize = true;
+            this.checkBox3.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBox3.Location = new System.Drawing.Point(89, 45);
+            this.checkBox3.Name = "checkBox3";
+            this.checkBox3.Size = new System.Drawing.Size(59, 19);
+            this.checkBox3.TabIndex = 8;
+            this.checkBox3.Text = "Media";
+            this.checkBox3.UseVisualStyleBackColor = true;
+            this.checkBox3.CheckedChanged += new System.EventHandler(this.anyBox_Checked);
             // 
-            // FYI
+            // checkBox2
             // 
-            this.FYI.AutoSize = true;
-            this.FYI.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FYI.Location = new System.Drawing.Point(15, 63);
-            this.FYI.Name = "FYI";
-            this.FYI.Size = new System.Drawing.Size(43, 19);
-            this.FYI.TabIndex = 7;
-            this.FYI.Text = "FYI";
-            this.FYI.UseVisualStyleBackColor = true;
+            this.checkBox2.AutoSize = true;
+            this.checkBox2.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBox2.Location = new System.Drawing.Point(13, 70);
+            this.checkBox2.Name = "checkBox2";
+            this.checkBox2.Size = new System.Drawing.Size(43, 19);
+            this.checkBox2.TabIndex = 7;
+            this.checkBox2.Text = "FYI";
+            this.checkBox2.UseVisualStyleBackColor = true;
             // 
-            // All
+            // checkBox1
             // 
-            this.All.AutoSize = true;
-            this.All.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.All.Location = new System.Drawing.Point(15, 38);
-            this.All.Name = "All";
-            this.All.Size = new System.Drawing.Size(39, 19);
-            this.All.TabIndex = 5;
-            this.All.Text = "All";
-            this.All.UseVisualStyleBackColor = true;
-            this.All.CheckedChanged += new System.EventHandler(this.anyBox_Checked);
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBox1.Location = new System.Drawing.Point(13, 45);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(39, 19);
+            this.checkBox1.TabIndex = 5;
+            this.checkBox1.Text = "All";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            this.checkBox1.CheckedChanged += new System.EventHandler(this.anyBox_Checked);
             // 
             // labelPubs
             // 
             this.labelPubs.AutoSize = true;
             this.labelPubs.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelPubs.Location = new System.Drawing.Point(12, 372);
+            this.labelPubs.Location = new System.Drawing.Point(10, 409);
             this.labelPubs.Name = "labelPubs";
             this.labelPubs.Size = new System.Drawing.Size(86, 16);
             this.labelPubs.TabIndex = 4;
@@ -393,7 +379,7 @@
             // 
             this.labelEvents.AutoSize = true;
             this.labelEvents.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelEvents.Location = new System.Drawing.Point(12, 278);
+            this.labelEvents.Location = new System.Drawing.Point(10, 306);
             this.labelEvents.Name = "labelEvents";
             this.labelEvents.Size = new System.Drawing.Size(49, 16);
             this.labelEvents.TabIndex = 3;
@@ -403,7 +389,7 @@
             // 
             this.labelDiscussion.AutoSize = true;
             this.labelDiscussion.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelDiscussion.Location = new System.Drawing.Point(12, 189);
+            this.labelDiscussion.Location = new System.Drawing.Point(10, 208);
             this.labelDiscussion.Name = "labelDiscussion";
             this.labelDiscussion.Size = new System.Drawing.Size(74, 16);
             this.labelDiscussion.TabIndex = 2;
@@ -413,21 +399,45 @@
             // 
             this.labelCareers.AutoSize = true;
             this.labelCareers.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelCareers.Location = new System.Drawing.Point(12, 97);
+            this.labelCareers.Location = new System.Drawing.Point(10, 111);
             this.labelCareers.Name = "labelCareers";
             this.labelCareers.Size = new System.Drawing.Size(57, 16);
             this.labelCareers.TabIndex = 1;
             this.labelCareers.Text = "Careers";
             // 
-            // labelAnnouncements
+            // label1
             // 
-            this.labelAnnouncements.AutoSize = true;
-            this.labelAnnouncements.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelAnnouncements.Location = new System.Drawing.Point(12, 10);
-            this.labelAnnouncements.Name = "labelAnnouncements";
-            this.labelAnnouncements.Size = new System.Drawing.Size(110, 16);
-            this.labelAnnouncements.TabIndex = 0;
-            this.labelAnnouncements.Text = "Announcements";
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(10, 17);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(110, 16);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Announcements";
+            // 
+            // btnStar
+            // 
+            this.btnStar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnStar.BackColor = System.Drawing.SystemColors.Window;
+            this.btnStar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnStar.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnStar.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.btnStar.Location = new System.Drawing.Point(842, 626);
+            this.btnStar.Name = "btnStar";
+            this.btnStar.Size = new System.Drawing.Size(178, 50);
+            this.btnStar.TabIndex = 16;
+            this.btnStar.Text = "Bookmark";
+            this.btnStar.UseVisualStyleBackColor = false;
+            this.btnStar.Click += new System.EventHandler(this.btnStar_Click);
+            // 
+            // notesBox
+            // 
+            this.notesBox.Location = new System.Drawing.Point(504, 626);
+            this.notesBox.Name = "notesBox";
+            this.notesBox.Size = new System.Drawing.Size(323, 50);
+            this.notesBox.TabIndex = 17;
+            this.notesBox.Text = "";
+            this.notesBox.TextChanged += new System.EventHandler(this.notesBox_TextChanged);
             // 
             // panelPreview
             // 
@@ -435,9 +445,9 @@
             | System.Windows.Forms.AnchorStyles.Left)));
             this.panelPreview.AutoScroll = true;
             this.panelPreview.BackColor = System.Drawing.SystemColors.Window;
-            this.panelPreview.Location = new System.Drawing.Point(245, 12);
+            this.panelPreview.Location = new System.Drawing.Point(250, 12);
             this.panelPreview.Name = "panelPreview";
-            this.panelPreview.Size = new System.Drawing.Size(243, 562);
+            this.panelPreview.Size = new System.Drawing.Size(243, 593);
             this.panelPreview.TabIndex = 14;
             this.panelPreview.Paint += new System.Windows.Forms.PaintEventHandler(this.panelPreview_Paint);
             // 
@@ -446,12 +456,13 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
-            this.ClientSize = new System.Drawing.Size(1226, 623);
+            this.ClientSize = new System.Drawing.Size(1226, 688);
+            this.Controls.Add(this.btnSelectAll);
+            this.Controls.Add(this.notesBox);
+            this.Controls.Add(this.btnStar);
             this.Controls.Add(this.areaPanel);
             this.Controls.Add(this.panelPreview);
             this.Controls.Add(this.btnCloseWindow);
-            this.Controls.Add(this.btnSelectAll);
-            this.Controls.Add(this.btnSave);
             this.Controls.Add(this.browseWindow);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmBrowse";
@@ -464,7 +475,6 @@
 
         #endregion
         private System.Windows.Forms.WebBrowser browseWindow;
-        private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.Button btnSelectAll;
         private System.Windows.Forms.Button btnCloseWindow;
         private System.Windows.Forms.Panel areaPanel;
@@ -475,15 +485,10 @@
         private System.Windows.Forms.CheckBox checkInternships;
         private System.Windows.Forms.CheckBox checkJobs;
         private System.Windows.Forms.CheckBox Support;
-        private System.Windows.Forms.CheckBox Media;
-        private System.Windows.Forms.CheckBox FYI;
-        private System.Windows.Forms.CheckBox All;
         private System.Windows.Forms.Label labelPubs;
         private System.Windows.Forms.Label labelEvents;
         private System.Windows.Forms.Label labelDiscussion;
         private System.Windows.Forms.Label labelCareers;
-        private System.Windows.Forms.Label labelAnnouncements;
-        private System.Windows.Forms.CheckBox noticeBoard;
         private System.Windows.Forms.CheckBox summerSchools;
         private System.Windows.Forms.CheckBox Software;
         private System.Windows.Forms.CheckBox Diss;
@@ -493,5 +498,12 @@
         private System.Windows.Forms.CheckBox checkBooks;
         private System.Windows.Forms.CheckBox checkReviews;
         private DBFlowLayoutPanel panelPreview;
+        private System.Windows.Forms.Button btnStar;
+        private System.Windows.Forms.CheckBox checkBox4;
+        private System.Windows.Forms.CheckBox checkBox3;
+        private System.Windows.Forms.CheckBox checkBox2;
+        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.RichTextBox notesBox;
     }
 }

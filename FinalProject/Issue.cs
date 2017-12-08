@@ -12,6 +12,7 @@ namespace FinalProject
     {
 
         private string path;
+        private string name;
         private System.Uri uri;
         private string text; 
         private string title;
@@ -21,12 +22,14 @@ namespace FinalProject
 
         public Issue(FileInfo p)
         {
+            name = p.Name;
             path = p.FullName;
             text = File.ReadAllText(path);
             setTitle(text);
             uri = new System.Uri(path);
             starred = false;
             this.setArea();
+            this.setComment("Type your notes for this issue here.");
         }
 
         public void setTitle(string text)

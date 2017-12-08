@@ -63,6 +63,7 @@
     </Compile>
     <Compile Include="DrawingControl.cs" />
     <Compile Include="Issue.cs" />
+    <Compile Include="IssueScanner.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>

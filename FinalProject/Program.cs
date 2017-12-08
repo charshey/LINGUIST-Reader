@@ -24,6 +24,8 @@ namespace FinalProject
         {
             string path = Path.GetFullPath(Path.Combine(System.IO.Directory.GetCurrentDirectory(), @"..\..\..\")) + @"\Issues";
             Database issuesDB = new Database(path);
+            IssueScanner scanner = new IssueScanner(path);
+            scanner.readInfo(issuesDB);
 
             //string savedpath = Path.GetFullPath(Path.Combine(System.IO.Directory.GetCurrentDirectory(), @"..\..\..\")) + @"\SavedIssues";
             //Database savedIssuesDB = new Database(path);

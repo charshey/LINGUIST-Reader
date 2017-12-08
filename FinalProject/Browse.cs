@@ -17,7 +17,6 @@ namespace FinalProject
         {
             InitializeComponent();
             selectedAll = false;
-            All.Focus();
             checkBoxes = new List<CheckBox>();
             foreach(Control control in areaPanel.Controls)
             {
@@ -26,7 +25,7 @@ namespace FinalProject
 
             checkedBoxes = new List<CheckBox>();
             browseWindow.ScriptErrorsSuppressed = true;
-            btnSave.Enabled = false;
+            btnStar.Enabled = false;
             issuesDB = db;
 
         }
@@ -141,8 +140,10 @@ namespace FinalProject
 
             b.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             focus = (Issue)b.Tag;
+            notesBox.Text = focus.getComment();
+            if (focus.getStarred()) { btnStar.Text = "Remove Bookmark"; }
             this.loadIssue(focus);
-            btnSave.Enabled = true;
+            btnStar.Enabled = true;
         }
 
         private void loadIssue(Issue issue)
@@ -173,5 +174,23 @@ namespace FinalProject
 
         }
 
+        private void btnStar_Click(object sender, EventArgs e)
+        {
+            if (focus.getStarred())
+            {
+                focus.setStarred(false);
+                btnStar.Text = "Remove Bookmark";
+            }
+            else
+            {
+                focus.setStarred(true);
+                btnStar.Text = "Bookmark";
+            }
+        }
+
+        private void notesBox_TextChanged(object sender, EventArgs e)
+        {
+            focus.setComment(notesBox.Text);
+        }
     }
 }
