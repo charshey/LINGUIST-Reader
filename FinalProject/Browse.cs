@@ -77,6 +77,7 @@ namespace FinalProject
             this.getCheckedBoxes();
             // we're not looking at bookmarks anymore
             showingBookmarks = false;
+            btnShowBookmarked.Enabled = true;
             // suspend drawing for the moment while updating panel controls (avoids undefined behavior)
             DrawingControl.SuspendDrawing(panelPreview);
             // update panel controls, specifying that we are not looking at bookmarked issues
@@ -95,6 +96,8 @@ namespace FinalProject
         /// <param name="e">The <see cref="EventArgs"/> instance containing the event data.</param>
         private void btnSelectAll_Click(object sender, EventArgs e)
         {
+            showingBookmarks = false;
+            btnShowBookmarked.Enabled = true;
             // Suspend drawing to allow the panel to update controls (avoids undefined behavior)
             DrawingControl.SuspendDrawing(panelPreview);
 
