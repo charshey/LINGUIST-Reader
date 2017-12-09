@@ -42,7 +42,6 @@
             this.Calls = new System.Windows.Forms.CheckBox();
             this.checkBooks = new System.Windows.Forms.CheckBox();
             this.Review = new System.Windows.Forms.CheckBox();
-            this.summerSchools = new System.Windows.Forms.CheckBox();
             this.Confs = new System.Windows.Forms.CheckBox();
             this.Qs = new System.Windows.Forms.CheckBox();
             this.Disc = new System.Windows.Forms.CheckBox();
@@ -119,7 +118,6 @@
             this.areaPanel.Controls.Add(this.Calls);
             this.areaPanel.Controls.Add(this.checkBooks);
             this.areaPanel.Controls.Add(this.Review);
-            this.areaPanel.Controls.Add(this.summerSchools);
             this.areaPanel.Controls.Add(this.Confs);
             this.areaPanel.Controls.Add(this.Qs);
             this.areaPanel.Controls.Add(this.Disc);
@@ -211,23 +209,11 @@
             this.Review.UseVisualStyleBackColor = true;
             this.Review.CheckedChanged += new System.EventHandler(this.anyBox_Checked);
             // 
-            // summerSchools
-            // 
-            this.summerSchools.AutoSize = true;
-            this.summerSchools.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.summerSchools.Location = new System.Drawing.Point(12, 362);
-            this.summerSchools.Name = "summerSchools";
-            this.summerSchools.Size = new System.Drawing.Size(122, 19);
-            this.summerSchools.TabIndex = 19;
-            this.summerSchools.Text = "Summer Schools";
-            this.summerSchools.UseVisualStyleBackColor = true;
-            this.summerSchools.CheckedChanged += new System.EventHandler(this.anyBox_Checked);
-            // 
             // Confs
             // 
             this.Confs.AutoSize = true;
             this.Confs.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Confs.Location = new System.Drawing.Point(12, 337);
+            this.Confs.Location = new System.Drawing.Point(12, 353);
             this.Confs.Name = "Confs";
             this.Confs.Size = new System.Drawing.Size(97, 19);
             this.Confs.TabIndex = 17;
@@ -239,7 +225,7 @@
             // 
             this.Qs.AutoSize = true;
             this.Qs.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Qs.Location = new System.Drawing.Point(13, 241);
+            this.Qs.Location = new System.Drawing.Point(13, 248);
             this.Qs.Name = "Qs";
             this.Qs.Size = new System.Drawing.Size(70, 19);
             this.Qs.TabIndex = 14;
@@ -251,7 +237,7 @@
             // 
             this.Disc.AutoSize = true;
             this.Disc.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Disc.Location = new System.Drawing.Point(13, 266);
+            this.Disc.Location = new System.Drawing.Point(13, 273);
             this.Disc.Name = "Disc";
             this.Disc.Size = new System.Drawing.Size(89, 19);
             this.Disc.TabIndex = 13;
@@ -263,7 +249,7 @@
             // 
             this.Sum.AutoSize = true;
             this.Sum.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Sum.Location = new System.Drawing.Point(95, 241);
+            this.Sum.Location = new System.Drawing.Point(95, 248);
             this.Sum.Name = "Sum";
             this.Sum.Size = new System.Drawing.Size(91, 19);
             this.Sum.TabIndex = 12;
@@ -311,7 +297,7 @@
             // 
             this.checkBox3.AutoSize = true;
             this.checkBox3.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox3.Location = new System.Drawing.Point(89, 61);
+            this.checkBox3.Location = new System.Drawing.Point(88, 67);
             this.checkBox3.Name = "checkBox3";
             this.checkBox3.Size = new System.Drawing.Size(59, 19);
             this.checkBox3.TabIndex = 8;
@@ -323,7 +309,7 @@
             // 
             this.checkBox1.AutoSize = true;
             this.checkBox1.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox1.Location = new System.Drawing.Point(13, 61);
+            this.checkBox1.Location = new System.Drawing.Point(12, 67);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(39, 19);
             this.checkBox1.TabIndex = 5;
@@ -345,7 +331,7 @@
             // 
             this.labelEvents.AutoSize = true;
             this.labelEvents.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelEvents.Location = new System.Drawing.Point(10, 306);
+            this.labelEvents.Location = new System.Drawing.Point(10, 322);
             this.labelEvents.Name = "labelEvents";
             this.labelEvents.Size = new System.Drawing.Size(49, 16);
             this.labelEvents.TabIndex = 3;
@@ -355,7 +341,7 @@
             // 
             this.labelDiscussion.AutoSize = true;
             this.labelDiscussion.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelDiscussion.Location = new System.Drawing.Point(10, 208);
+            this.labelDiscussion.Location = new System.Drawing.Point(10, 215);
             this.labelDiscussion.Name = "labelDiscussion";
             this.labelDiscussion.Size = new System.Drawing.Size(74, 16);
             this.labelDiscussion.TabIndex = 2;
@@ -375,7 +361,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(10, 33);
+            this.label1.Location = new System.Drawing.Point(9, 39);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(110, 16);
             this.label1.TabIndex = 0;
@@ -502,7 +488,6 @@
         private System.Windows.Forms.Label labelEvents;
         private System.Windows.Forms.Label labelDiscussion;
         private System.Windows.Forms.Label labelCareers;
-        private System.Windows.Forms.CheckBox summerSchools;
         private System.Windows.Forms.CheckBox Software;
         private System.Windows.Forms.CheckBox Diss;
         private System.Windows.Forms.CheckBox TOC;

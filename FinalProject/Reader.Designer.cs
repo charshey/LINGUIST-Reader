@@ -52,7 +52,7 @@
             // 
             // btnBrowse
             // 
-            this.btnBrowse.BackColor = System.Drawing.SystemColors.Window;
+            this.btnBrowse.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
             this.btnBrowse.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBrowse.Location = new System.Drawing.Point(31, 188);
             this.btnBrowse.Name = "btnBrowse";
@@ -111,6 +111,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
+            this.MaximizeBox = false;
             this.Name = "Reader";
             this.Text = "LINGUIST List Reader";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

@@ -403,5 +403,6 @@ namespace FinalProject
             // refresh the preview panel to show updates
             panelPreview.Refresh();
         }
+
     }
 }
