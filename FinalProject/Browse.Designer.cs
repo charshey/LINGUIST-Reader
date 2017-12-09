@@ -1,5 +1,8 @@
 ﻿namespace FinalProject
 {
+    // This is the designer file: I have not commented this personally
+    // because it's automatically generated, self-explanatory background information
+
     partial class frmBrowse
     {
         /// <summary>
@@ -469,7 +472,6 @@
             this.panelPreview.Name = "panelPreview";
             this.panelPreview.Size = new System.Drawing.Size(243, 593);
             this.panelPreview.TabIndex = 14;
-            this.panelPreview.Paint += new System.Windows.Forms.PaintEventHandler(this.panelPreview_Paint);
             // 
             // frmBrowse
             // 

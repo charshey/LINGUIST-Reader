@@ -16,16 +16,29 @@ namespace FinalProject
     /// </summary>
     public partial class frmAbout : Form
     {
+        /// <summary>
+        /// Initializes a new instance of the <see cref="frmAbout"/> class.
+        /// </summary>
         public frmAbout()
         {
             InitializeComponent();
         }
 
+        /// <summary>
+        /// Handles the Click event of the btnClose control.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="EventArgs"/> instance containing the event data.</param>
         private void btnClose_Click(object sender, EventArgs e)
         {
             Close();
         }
 
+        /// <summary>
+        /// Handles the LinkClicked event of the linkEmail control.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="LinkLabelLinkClickedEventArgs"/> instance containing the event data.</param>
         private void linkEmail_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             string command = "mailto:clare[at]linguistlist.org?subject=LINGUIST List Reader";

@@ -1,5 +1,8 @@
 ﻿namespace FinalProject
 {
+    // This is the designer file: I have not commented this personally
+    // because it's automatically generated, self-explanatory background information
+
     partial class frmAbout
     {
         /// <summary>
@@ -47,7 +50,6 @@
             this.lblAbout.Text = "This program was created \r\nby Clare Harshey as a final \r\nproject for CSCI-A590 at" +
     " \r\nIndiana University.\r\n\r\nQuestions or comments? \r\nEmail                        " +
     "            .";
-            this.lblAbout.Click += new System.EventHandler(this.lblAbout_Click);
             // 
             // btnClose
             // 
