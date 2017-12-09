@@ -75,6 +75,8 @@ namespace FinalProject
         {
             // update list of all checked boxes
             this.getCheckedBoxes();
+            // we're not looking at bookmarks anymore
+            showingBookmarks = false;
             // suspend drawing for the moment while updating panel controls (avoids undefined behavior)
             DrawingControl.SuspendDrawing(panelPreview);
             // update panel controls, specifying that we are not looking at bookmarked issues
