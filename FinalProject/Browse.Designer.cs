@@ -37,11 +37,9 @@
             this.Diss = new System.Windows.Forms.CheckBox();
             this.TOC = new System.Windows.Forms.CheckBox();
             this.Calls = new System.Windows.Forms.CheckBox();
-            this.Journal = new System.Windows.Forms.CheckBox();
             this.checkBooks = new System.Windows.Forms.CheckBox();
-            this.checkReviews = new System.Windows.Forms.CheckBox();
+            this.Review = new System.Windows.Forms.CheckBox();
             this.summerSchools = new System.Windows.Forms.CheckBox();
-            this.checkBox4 = new System.Windows.Forms.CheckBox();
             this.Confs = new System.Windows.Forms.CheckBox();
             this.Qs = new System.Windows.Forms.CheckBox();
             this.Disc = new System.Windows.Forms.CheckBox();
@@ -50,7 +48,7 @@
             this.checkJobs = new System.Windows.Forms.CheckBox();
             this.Support = new System.Windows.Forms.CheckBox();
             this.checkBox3 = new System.Windows.Forms.CheckBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
+            this.FYIs = new System.Windows.Forms.CheckBox();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.labelPubs = new System.Windows.Forms.Label();
             this.labelEvents = new System.Windows.Forms.Label();
@@ -59,6 +57,9 @@
             this.label1 = new System.Windows.Forms.Label();
             this.btnStar = new System.Windows.Forms.Button();
             this.notesBox = new System.Windows.Forms.RichTextBox();
+            this.btnSaveNotes = new System.Windows.Forms.Button();
+            this.lblNotesSaved = new System.Windows.Forms.Label();
+            this.btnShowBookmarked = new System.Windows.Forms.Button();
             this.panelPreview = new FinalProject.DBFlowLayoutPanel();
             this.areaPanel.SuspendLayout();
             this.SuspendLayout();
@@ -82,11 +83,11 @@
             this.btnSelectAll.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSelectAll.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSelectAll.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.btnSelectAll.Location = new System.Drawing.Point(12, 626);
+            this.btnSelectAll.Location = new System.Drawing.Point(12, 611);
             this.btnSelectAll.Name = "btnSelectAll";
-            this.btnSelectAll.Size = new System.Drawing.Size(227, 48);
+            this.btnSelectAll.Size = new System.Drawing.Size(227, 29);
             this.btnSelectAll.TabIndex = 5;
-            this.btnSelectAll.Text = "Select All";
+            this.btnSelectAll.Text = "Select All Areas";
             this.btnSelectAll.UseVisualStyleBackColor = false;
             this.btnSelectAll.Click += new System.EventHandler(this.btnSelectAll_Click);
             // 
@@ -97,9 +98,9 @@
             this.btnCloseWindow.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCloseWindow.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCloseWindow.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.btnCloseWindow.Location = new System.Drawing.Point(1036, 626);
+            this.btnCloseWindow.Location = new System.Drawing.Point(1036, 646);
             this.btnCloseWindow.Name = "btnCloseWindow";
-            this.btnCloseWindow.Size = new System.Drawing.Size(178, 50);
+            this.btnCloseWindow.Size = new System.Drawing.Size(178, 30);
             this.btnCloseWindow.TabIndex = 13;
             this.btnCloseWindow.Text = "Close Window";
             this.btnCloseWindow.UseVisualStyleBackColor = false;
@@ -114,11 +115,9 @@
             this.areaPanel.Controls.Add(this.Diss);
             this.areaPanel.Controls.Add(this.TOC);
             this.areaPanel.Controls.Add(this.Calls);
-            this.areaPanel.Controls.Add(this.Journal);
             this.areaPanel.Controls.Add(this.checkBooks);
-            this.areaPanel.Controls.Add(this.checkReviews);
+            this.areaPanel.Controls.Add(this.Review);
             this.areaPanel.Controls.Add(this.summerSchools);
-            this.areaPanel.Controls.Add(this.checkBox4);
             this.areaPanel.Controls.Add(this.Confs);
             this.areaPanel.Controls.Add(this.Qs);
             this.areaPanel.Controls.Add(this.Disc);
@@ -127,7 +126,7 @@
             this.areaPanel.Controls.Add(this.checkJobs);
             this.areaPanel.Controls.Add(this.Support);
             this.areaPanel.Controls.Add(this.checkBox3);
-            this.areaPanel.Controls.Add(this.checkBox2);
+            this.areaPanel.Controls.Add(this.FYIs);
             this.areaPanel.Controls.Add(this.checkBox1);
             this.areaPanel.Controls.Add(this.labelPubs);
             this.areaPanel.Controls.Add(this.labelEvents);
@@ -167,7 +166,7 @@
             // 
             this.TOC.AutoSize = true;
             this.TOC.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TOC.Location = new System.Drawing.Point(95, 462);
+            this.TOC.Location = new System.Drawing.Point(12, 462);
             this.TOC.Name = "TOC";
             this.TOC.Size = new System.Drawing.Size(58, 19);
             this.TOC.TabIndex = 25;
@@ -179,25 +178,13 @@
             // 
             this.Calls.AutoSize = true;
             this.Calls.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Calls.Location = new System.Drawing.Point(12, 512);
+            this.Calls.Location = new System.Drawing.Point(95, 462);
             this.Calls.Name = "Calls";
             this.Calls.Size = new System.Drawing.Size(115, 19);
             this.Calls.TabIndex = 24;
             this.Calls.Text = "Calls for Papers";
             this.Calls.UseVisualStyleBackColor = true;
             this.Calls.CheckedChanged += new System.EventHandler(this.anyBox_Checked);
-            // 
-            // Journal
-            // 
-            this.Journal.AutoSize = true;
-            this.Journal.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Journal.Location = new System.Drawing.Point(95, 437);
-            this.Journal.Name = "Journal";
-            this.Journal.Size = new System.Drawing.Size(74, 19);
-            this.Journal.TabIndex = 23;
-            this.Journal.Text = "Journals";
-            this.Journal.UseVisualStyleBackColor = true;
-            this.Journal.CheckedChanged += new System.EventHandler(this.anyBox_Checked);
             // 
             // checkBooks
             // 
@@ -211,17 +198,17 @@
             this.checkBooks.UseVisualStyleBackColor = true;
             this.checkBooks.CheckedChanged += new System.EventHandler(this.anyBox_Checked);
             // 
-            // checkReviews
+            // Review
             // 
-            this.checkReviews.AutoSize = true;
-            this.checkReviews.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkReviews.Location = new System.Drawing.Point(13, 462);
-            this.checkReviews.Name = "checkReviews";
-            this.checkReviews.Size = new System.Drawing.Size(73, 19);
-            this.checkReviews.TabIndex = 20;
-            this.checkReviews.Text = "Reviews";
-            this.checkReviews.UseVisualStyleBackColor = true;
-            this.checkReviews.CheckedChanged += new System.EventHandler(this.anyBox_Checked);
+            this.Review.AutoSize = true;
+            this.Review.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Review.Location = new System.Drawing.Point(95, 437);
+            this.Review.Name = "Review";
+            this.Review.Size = new System.Drawing.Size(73, 19);
+            this.Review.TabIndex = 20;
+            this.Review.Text = "Reviews";
+            this.Review.UseVisualStyleBackColor = true;
+            this.Review.CheckedChanged += new System.EventHandler(this.anyBox_Checked);
             // 
             // summerSchools
             // 
@@ -234,17 +221,6 @@
             this.summerSchools.Text = "Summer Schools";
             this.summerSchools.UseVisualStyleBackColor = true;
             this.summerSchools.CheckedChanged += new System.EventHandler(this.anyBox_Checked);
-            // 
-            // checkBox4
-            // 
-            this.checkBox4.AutoSize = true;
-            this.checkBox4.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox4.Location = new System.Drawing.Point(89, 70);
-            this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(97, 19);
-            this.checkBox4.TabIndex = 18;
-            this.checkBox4.Text = "Notice Board";
-            this.checkBox4.UseVisualStyleBackColor = true;
             // 
             // Confs
             // 
@@ -342,16 +318,16 @@
             this.checkBox3.UseVisualStyleBackColor = true;
             this.checkBox3.CheckedChanged += new System.EventHandler(this.anyBox_Checked);
             // 
-            // checkBox2
+            // FYIs
             // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox2.Location = new System.Drawing.Point(13, 70);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(43, 19);
-            this.checkBox2.TabIndex = 7;
-            this.checkBox2.Text = "FYI";
-            this.checkBox2.UseVisualStyleBackColor = true;
+            this.FYIs.AutoSize = true;
+            this.FYIs.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FYIs.Location = new System.Drawing.Point(13, 70);
+            this.FYIs.Name = "FYIs";
+            this.FYIs.Size = new System.Drawing.Size(43, 19);
+            this.FYIs.TabIndex = 7;
+            this.FYIs.Text = "FYI";
+            this.FYIs.UseVisualStyleBackColor = true;
             // 
             // checkBox1
             // 
@@ -422,22 +398,66 @@
             this.btnStar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnStar.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnStar.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.btnStar.Location = new System.Drawing.Point(842, 626);
+            this.btnStar.Location = new System.Drawing.Point(250, 611);
             this.btnStar.Name = "btnStar";
-            this.btnStar.Size = new System.Drawing.Size(178, 50);
+            this.btnStar.Size = new System.Drawing.Size(243, 29);
             this.btnStar.TabIndex = 16;
-            this.btnStar.Text = "Bookmark";
+            this.btnStar.Text = "Bookmark this Issue";
             this.btnStar.UseVisualStyleBackColor = false;
             this.btnStar.Click += new System.EventHandler(this.btnStar_Click);
             // 
             // notesBox
             // 
-            this.notesBox.Location = new System.Drawing.Point(504, 626);
+            this.notesBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.notesBox.Location = new System.Drawing.Point(504, 611);
             this.notesBox.Name = "notesBox";
-            this.notesBox.Size = new System.Drawing.Size(323, 50);
+            this.notesBox.Size = new System.Drawing.Size(270, 64);
             this.notesBox.TabIndex = 17;
             this.notesBox.Text = "";
-            this.notesBox.TextChanged += new System.EventHandler(this.notesBox_TextChanged);
+            this.notesBox.Enter += new System.EventHandler(this.notesBox_Enter);
+            // 
+            // btnSaveNotes
+            // 
+            this.btnSaveNotes.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnSaveNotes.BackColor = System.Drawing.SystemColors.Window;
+            this.btnSaveNotes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSaveNotes.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSaveNotes.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.btnSaveNotes.Location = new System.Drawing.Point(250, 646);
+            this.btnSaveNotes.Name = "btnSaveNotes";
+            this.btnSaveNotes.Size = new System.Drawing.Size(243, 29);
+            this.btnSaveNotes.TabIndex = 18;
+            this.btnSaveNotes.Text = "Save Notes";
+            this.btnSaveNotes.UseVisualStyleBackColor = false;
+            this.btnSaveNotes.Click += new System.EventHandler(this.btnSaveNotes_Click);
+            // 
+            // lblNotesSaved
+            // 
+            this.lblNotesSaved.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblNotesSaved.AutoSize = true;
+            this.lblNotesSaved.BackColor = System.Drawing.SystemColors.Window;
+            this.lblNotesSaved.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.lblNotesSaved.Location = new System.Drawing.Point(695, 655);
+            this.lblNotesSaved.Name = "lblNotesSaved";
+            this.lblNotesSaved.Size = new System.Drawing.Size(70, 13);
+            this.lblNotesSaved.TabIndex = 19;
+            this.lblNotesSaved.Text = "Notes saved!";
+            this.lblNotesSaved.Visible = false;
+            // 
+            // btnShowBookmarked
+            // 
+            this.btnShowBookmarked.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.btnShowBookmarked.BackColor = System.Drawing.SystemColors.Window;
+            this.btnShowBookmarked.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnShowBookmarked.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnShowBookmarked.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.btnShowBookmarked.Location = new System.Drawing.Point(12, 646);
+            this.btnShowBookmarked.Name = "btnShowBookmarked";
+            this.btnShowBookmarked.Size = new System.Drawing.Size(227, 29);
+            this.btnShowBookmarked.TabIndex = 20;
+            this.btnShowBookmarked.Text = "Show Bookmarked Issues";
+            this.btnShowBookmarked.UseVisualStyleBackColor = false;
+            this.btnShowBookmarked.Click += new System.EventHandler(this.btnShowBookmarked_Click);
             // 
             // panelPreview
             // 
@@ -457,6 +477,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
             this.ClientSize = new System.Drawing.Size(1226, 688);
+            this.Controls.Add(this.btnShowBookmarked);
+            this.Controls.Add(this.lblNotesSaved);
+            this.Controls.Add(this.btnSaveNotes);
             this.Controls.Add(this.btnSelectAll);
             this.Controls.Add(this.notesBox);
             this.Controls.Add(this.btnStar);
@@ -470,6 +493,7 @@
             this.areaPanel.ResumeLayout(false);
             this.areaPanel.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -494,16 +518,17 @@
         private System.Windows.Forms.CheckBox Diss;
         private System.Windows.Forms.CheckBox TOC;
         private System.Windows.Forms.CheckBox Calls;
-        private System.Windows.Forms.CheckBox Journal;
         private System.Windows.Forms.CheckBox checkBooks;
-        private System.Windows.Forms.CheckBox checkReviews;
+        private System.Windows.Forms.CheckBox Review;
         private DBFlowLayoutPanel panelPreview;
         private System.Windows.Forms.Button btnStar;
-        private System.Windows.Forms.CheckBox checkBox4;
         private System.Windows.Forms.CheckBox checkBox3;
-        private System.Windows.Forms.CheckBox checkBox2;
+        private System.Windows.Forms.CheckBox FYIs;
         private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.RichTextBox notesBox;
+        private System.Windows.Forms.Button btnSaveNotes;
+        private System.Windows.Forms.Label lblNotesSaved;
+        private System.Windows.Forms.Button btnShowBookmarked;
     }
 }

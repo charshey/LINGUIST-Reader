@@ -69,6 +69,11 @@ namespace FinalProject
             return title;
         }
 
+        public string getName()
+        {
+            return name;
+        }
+
         public string getComment()
         {
             return comment;

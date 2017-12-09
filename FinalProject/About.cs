@@ -11,6 +11,9 @@ using System.Windows.Forms;
 
 namespace FinalProject
 {
+    /// <summary>
+    /// This box displays some information about this program and has a mailto link to the creator.
+    /// </summary>
     public partial class frmAbout : Form
     {
         public frmAbout()

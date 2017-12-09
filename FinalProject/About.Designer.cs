@@ -47,6 +47,7 @@
             this.lblAbout.Text = "This program was created \r\nby Clare Harshey as a final \r\nproject for CSCI-A590 at" +
     " \r\nIndiana University.\r\n\r\nQuestions or comments? \r\nEmail                        " +
     "            .";
+            this.lblAbout.Click += new System.EventHandler(this.lblAbout_Click);
             // 
             // btnClose
             // 

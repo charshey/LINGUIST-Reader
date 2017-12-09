@@ -30,7 +30,13 @@ namespace FinalProject
             
         }
 
-        public List<Issue> getIssues(string name, string text)
+        public Issue[] getIssues()
+        {
+            return issueArray;
+        }
+
+
+        public List<Issue> getMatchingIssues(string name, string text)
         {
             List<Issue> matchingIssues = new List<Issue>();
 

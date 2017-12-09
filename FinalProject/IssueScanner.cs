@@ -4,26 +4,66 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Microsoft.VisualBasic.FileIO;
 
 namespace FinalProject
 {
     class IssueScanner
     {
-        private DirectoryInfo location;
-        private FileInfo file;
+        private string path;
 
         public IssueScanner(string p)
         {
-            location = new DirectoryInfo(p);
-            file = location.GetFiles("saved.txt")[0];
-
+            path = p;
         }
 
         public void readInfo(Database db)
         {
-            string text = File.ReadAllText(file.FullName);
-            System.Diagnostics.Debug.Write(text);
+            try
+            {
+                TextFieldParser csvParser = new TextFieldParser(path + "\\saved.txt");
+                csvParser.TextFieldType = FieldType.Delimited;
+                csvParser.SetDelimiters(",");
+                while (!csvParser.EndOfData)
+                {
+                    string[] parts = csvParser.ReadFields();
+                    if (parts == null) { break; }
 
+                    Issue thisIssue = db.getIssues().Where(issue => issue.getName() == parts[0]).FirstOrDefault();
+                    thisIssue.setComment(parts[1]);
+                    if (Boolean.TryParse(parts[2], out bool flag))
+                    {
+                        thisIssue.setStarred(flag);
+                    }
+                }
+            }
+            catch(FileNotFoundException)
+            {
+                return;
+            }
+
+        }
+
+        public void writeInfo(Database db)
+        {
+            try
+            {
+                File.WriteAllText(path + "\\saved.txt", String.Empty);
+            }
+            catch(FileNotFoundException)
+            {
+                File.Create(path + "\\saved.txt").Close();
+            }
+            Issue[] issueArray = db.getIssues();
+            StreamWriter sw = new StreamWriter(path + "\\saved.txt");
+            foreach (Issue issue in issueArray)
+            {
+                if (issue.getComment() != "Type your notes for this issue here." || issue.getStarred())
+                {
+                    sw.WriteLine(issue.getName() + "," + issue.getComment() + "," + issue.getStarred().ToString());
+                    sw.Flush();
+                }
+            }
         }
     }
 }
