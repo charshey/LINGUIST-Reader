@@ -1,0 +1,382 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HelpKI>
+  <HelpKINode Title="anyBox_Checked method" Url="html/M-FinalProject.frmBrowse.anyBox_Checked.htm" />
+  <HelpKINode Title="area field" Url="html/F-FinalProject.Issue.area.htm" />
+  <HelpKINode Title="areaPanel field" Url="html/F-FinalProject.frmBrowse.areaPanel.htm" />
+  <HelpKINode Title="bookmarked field" Url="html/F-FinalProject.Issue.bookmarked.htm" />
+  <HelpKINode Title="browseWindow field" Url="html/F-FinalProject.frmBrowse.browseWindow.htm" />
+  <HelpKINode Title="btnAbout field" Url="html/F-FinalProject.Reader.btnAbout.htm" />
+  <HelpKINode Title="btnAbout_Click method" Url="html/M-FinalProject.Reader.btnAbout_Click.htm" />
+  <HelpKINode Title="btnBrowse field" Url="html/F-FinalProject.Reader.btnBrowse.htm" />
+  <HelpKINode Title="btnBrowse_Click method" Url="html/M-FinalProject.Reader.btnBrowse_Click.htm" />
+  <HelpKINode Title="btnClose field" Url="html/F-FinalProject.frmAbout.btnClose.htm" />
+  <HelpKINode Title="btnCloseWindow field" Url="html/F-FinalProject.frmBrowse.btnCloseWindow.htm" />
+  <HelpKINode Title="btnCloseWindow_Click method" Url="html/M-FinalProject.frmBrowse.btnCloseWindow_Click.htm" />
+  <HelpKINode Title="btnClose_Click method" Url="html/M-FinalProject.frmAbout.btnClose_Click.htm" />
+  <HelpKINode Title="btnQuit field" Url="html/F-FinalProject.Reader.btnQuit.htm" />
+  <HelpKINode Title="btnQuit_Click method" Url="html/M-FinalProject.Reader.btnQuit_Click.htm" />
+  <HelpKINode Title="btnSaveNotes field" Url="html/F-FinalProject.frmBrowse.btnSaveNotes.htm" />
+  <HelpKINode Title="btnSaveNotes_Click method" Url="html/M-FinalProject.frmBrowse.btnSaveNotes_Click.htm" />
+  <HelpKINode Title="btnSelectAll field" Url="html/F-FinalProject.frmBrowse.btnSelectAll.htm" />
+  <HelpKINode Title="btnSelectAll_Click method" Url="html/M-FinalProject.frmBrowse.btnSelectAll_Click.htm" />
+  <HelpKINode Title="btnShowBookmarked field" Url="html/F-FinalProject.frmBrowse.btnShowBookmarked.htm" />
+  <HelpKINode Title="btnShowBookmarked_Click method" Url="html/M-FinalProject.frmBrowse.btnShowBookmarked_Click.htm" />
+  <HelpKINode Title="btnStar field" Url="html/F-FinalProject.frmBrowse.btnStar.htm" />
+  <HelpKINode Title="btnStar_Click method" Url="html/M-FinalProject.frmBrowse.btnStar_Click.htm" />
+  <HelpKINode Title="B_Click method" Url="html/M-FinalProject.frmBrowse.B_Click.htm" />
+  <HelpKINode Title="Calls field" Url="html/F-FinalProject.frmBrowse.Calls.htm" />
+  <HelpKINode Title="checkBooks field" Url="html/F-FinalProject.frmBrowse.checkBooks.htm" />
+  <HelpKINode Title="checkBox1 field" Url="html/F-FinalProject.frmBrowse.checkBox1.htm" />
+  <HelpKINode Title="checkBox3 field" Url="html/F-FinalProject.frmBrowse.checkBox3.htm" />
+  <HelpKINode Title="checkBoxes field" Url="html/F-FinalProject.frmBrowse.checkBoxes.htm" />
+  <HelpKINode Title="checkedBoxes field" Url="html/F-FinalProject.frmBrowse.checkedBoxes.htm" />
+  <HelpKINode Title="checkInternships field" Url="html/F-FinalProject.frmBrowse.checkInternships.htm" />
+  <HelpKINode Title="checkJobs field" Url="html/F-FinalProject.frmBrowse.checkJobs.htm" />
+  <HelpKINode Title="comment field" Url="html/F-FinalProject.Issue.comment.htm" />
+  <HelpKINode Title="components field">
+    <HelpKINode Title="components Field" Url="html/F-FinalProject.Reader.components.htm" />
+    <HelpKINode Title="components Field" Url="html/F-FinalProject.frmAbout.components.htm" />
+    <HelpKINode Title="components Field" Url="html/F-FinalProject.frmBrowse.components.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Confs field" Url="html/F-FinalProject.frmBrowse.Confs.htm" />
+  <HelpKINode Title="Culture property" Url="html/P-FinalProject.Properties.Resources.Culture.htm" />
+  <HelpKINode Title="Database class">
+    <HelpKINode Title="Database Class" Url="html/T-FinalProject.Database.htm" />
+    <HelpKINode Title="Database Members" Url="html/AllMembers.T-FinalProject.Database.htm" />
+    <HelpKINode Title="about Database class" Url="html/T-FinalProject.Database.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-FinalProject.Database.htm" />
+    <HelpKINode Title="constructor" Url="html/M-FinalProject.Database.-ctor.htm" />
+    <HelpKINode Title="fields" Url="html/Fields.T-FinalProject.Database.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-FinalProject.Database.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Database.Database constructor" Url="html/M-FinalProject.Database.-ctor.htm" />
+  <HelpKINode Title="Database.getIssues method" Url="html/M-FinalProject.Database.getIssues.htm" />
+  <HelpKINode Title="Database.getMatchingIssues method" Url="html/M-FinalProject.Database.getMatchingIssues.htm" />
+  <HelpKINode Title="Database.issueArray field" Url="html/F-FinalProject.Database.issueArray.htm" />
+  <HelpKINode Title="Database.location field" Url="html/F-FinalProject.Database.location.htm" />
+  <HelpKINode Title="DBFlowLayoutPanel class">
+    <HelpKINode Title="DBFlowLayoutPanel Class" Url="html/T-FinalProject.DBFlowLayoutPanel.htm" />
+    <HelpKINode Title="DBFlowLayoutPanel Members" Url="html/AllMembers.T-FinalProject.DBFlowLayoutPanel.htm" />
+    <HelpKINode Title="about DBFlowLayoutPanel class" Url="html/T-FinalProject.DBFlowLayoutPanel.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-FinalProject.DBFlowLayoutPanel.htm" />
+    <HelpKINode Title="constructor" Url="html/M-FinalProject.DBFlowLayoutPanel.-ctor.htm" />
+    <HelpKINode Title="events" Url="html/Events.T-FinalProject.DBFlowLayoutPanel.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-FinalProject.DBFlowLayoutPanel.htm" />
+    <HelpKINode Title="properties" Url="html/Properties.T-FinalProject.DBFlowLayoutPanel.htm" />
+  </HelpKINode>
+  <HelpKINode Title="DBFlowLayoutPanel.DBFlowLayoutPanel constructor" Url="html/M-FinalProject.DBFlowLayoutPanel.-ctor.htm" />
+  <HelpKINode Title="Disc field" Url="html/F-FinalProject.frmBrowse.Disc.htm" />
+  <HelpKINode Title="Dispose method">
+    <HelpKINode Title="Dispose Method " Url="html/M-FinalProject.Reader.Dispose.htm" />
+    <HelpKINode Title="Dispose Method " Url="html/Overload-FinalProject.frmBrowse.Dispose.htm" />
+    <HelpKINode Title="Dispose Method " Url="html/M-FinalProject.frmBrowse.Dispose.htm" />
+    <HelpKINode Title="Dispose Method " Url="html/Overload-FinalProject.Reader.Dispose.htm" />
+    <HelpKINode Title="Dispose Method " Url="html/M-FinalProject.frmAbout.Dispose.htm" />
+    <HelpKINode Title="Dispose Method " Url="html/Overload-FinalProject.frmAbout.Dispose.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Diss field" Url="html/F-FinalProject.frmBrowse.Diss.htm" />
+  <HelpKINode Title="DrawingControl class">
+    <HelpKINode Title="DrawingControl Class" Url="html/T-FinalProject.DrawingControl.htm" />
+    <HelpKINode Title="DrawingControl Members" Url="html/AllMembers.T-FinalProject.DrawingControl.htm" />
+    <HelpKINode Title="about DrawingControl class" Url="html/T-FinalProject.DrawingControl.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-FinalProject.DrawingControl.htm" />
+    <HelpKINode Title="fields" Url="html/Fields.T-FinalProject.DrawingControl.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-FinalProject.DrawingControl.htm" />
+  </HelpKINode>
+  <HelpKINode Title="DrawingControl.ResumeDrawing method" Url="html/M-FinalProject.DrawingControl.ResumeDrawing.htm" />
+  <HelpKINode Title="DrawingControl.SendMessage method" Url="html/M-FinalProject.DrawingControl.SendMessage.htm" />
+  <HelpKINode Title="DrawingControl.SuspendDrawing method" Url="html/M-FinalProject.DrawingControl.SuspendDrawing.htm" />
+  <HelpKINode Title="DrawingControl.WM_SETREDRAW field" Url="html/F-FinalProject.DrawingControl.WM_SETREDRAW.htm" />
+  <HelpKINode Title="FinalProject namespace" Url="html/N-FinalProject.htm" />
+  <HelpKINode Title="FinalProject.Database class">
+    <HelpKINode Title="Database Class" Url="html/T-FinalProject.Database.htm" />
+    <HelpKINode Title="Database Members" Url="html/AllMembers.T-FinalProject.Database.htm" />
+  </HelpKINode>
+  <HelpKINode Title="FinalProject.DBFlowLayoutPanel class">
+    <HelpKINode Title="DBFlowLayoutPanel Class" Url="html/T-FinalProject.DBFlowLayoutPanel.htm" />
+    <HelpKINode Title="DBFlowLayoutPanel Members" Url="html/AllMembers.T-FinalProject.DBFlowLayoutPanel.htm" />
+  </HelpKINode>
+  <HelpKINode Title="FinalProject.DrawingControl class">
+    <HelpKINode Title="DrawingControl Class" Url="html/T-FinalProject.DrawingControl.htm" />
+    <HelpKINode Title="DrawingControl Members" Url="html/AllMembers.T-FinalProject.DrawingControl.htm" />
+  </HelpKINode>
+  <HelpKINode Title="FinalProject.frmAbout class">
+    <HelpKINode Title="frmAbout Class" Url="html/T-FinalProject.frmAbout.htm" />
+    <HelpKINode Title="frmAbout Members" Url="html/AllMembers.T-FinalProject.frmAbout.htm" />
+  </HelpKINode>
+  <HelpKINode Title="FinalProject.frmBrowse class">
+    <HelpKINode Title="frmBrowse Class" Url="html/T-FinalProject.frmBrowse.htm" />
+    <HelpKINode Title="frmBrowse Members" Url="html/AllMembers.T-FinalProject.frmBrowse.htm" />
+  </HelpKINode>
+  <HelpKINode Title="FinalProject.Issue class">
+    <HelpKINode Title="Issue Class" Url="html/T-FinalProject.Issue.htm" />
+    <HelpKINode Title="Issue Members" Url="html/AllMembers.T-FinalProject.Issue.htm" />
+  </HelpKINode>
+  <HelpKINode Title="FinalProject.IssueScanner class">
+    <HelpKINode Title="IssueScanner Class" Url="html/T-FinalProject.IssueScanner.htm" />
+    <HelpKINode Title="IssueScanner Members" Url="html/AllMembers.T-FinalProject.IssueScanner.htm" />
+  </HelpKINode>
+  <HelpKINode Title="FinalProject.Program class">
+    <HelpKINode Title="Program Class" Url="html/T-FinalProject.Program.htm" />
+    <HelpKINode Title="Program Members" Url="html/AllMembers.T-FinalProject.Program.htm" />
+  </HelpKINode>
+  <HelpKINode Title="FinalProject.Properties namespace" Url="html/N-FinalProject.Properties.htm" />
+  <HelpKINode Title="FinalProject.Properties.Resources class">
+    <HelpKINode Title="Resources Class" Url="html/T-FinalProject.Properties.Resources.htm" />
+    <HelpKINode Title="Resources Members" Url="html/AllMembers.T-FinalProject.Properties.Resources.htm" />
+  </HelpKINode>
+  <HelpKINode Title="FinalProject.Reader class">
+    <HelpKINode Title="Reader Class" Url="html/T-FinalProject.Reader.htm" />
+    <HelpKINode Title="Reader Members" Url="html/AllMembers.T-FinalProject.Reader.htm" />
+  </HelpKINode>
+  <HelpKINode Title="focus field" Url="html/F-FinalProject.frmBrowse.focus.htm" />
+  <HelpKINode Title="frmAbout class">
+    <HelpKINode Title="frmAbout Class" Url="html/T-FinalProject.frmAbout.htm" />
+    <HelpKINode Title="frmAbout Members" Url="html/AllMembers.T-FinalProject.frmAbout.htm" />
+    <HelpKINode Title="about frmAbout class" Url="html/T-FinalProject.frmAbout.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-FinalProject.frmAbout.htm" />
+    <HelpKINode Title="constructor" Url="html/M-FinalProject.frmAbout.-ctor.htm" />
+    <HelpKINode Title="events" Url="html/Events.T-FinalProject.frmAbout.htm" />
+    <HelpKINode Title="fields" Url="html/Fields.T-FinalProject.frmAbout.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-FinalProject.frmAbout.htm" />
+    <HelpKINode Title="properties" Url="html/Properties.T-FinalProject.frmAbout.htm" />
+  </HelpKINode>
+  <HelpKINode Title="frmAbout.btnClose field" Url="html/F-FinalProject.frmAbout.btnClose.htm" />
+  <HelpKINode Title="frmAbout.btnClose_Click method" Url="html/M-FinalProject.frmAbout.btnClose_Click.htm" />
+  <HelpKINode Title="frmAbout.components field" Url="html/F-FinalProject.frmAbout.components.htm" />
+  <HelpKINode Title="frmAbout.Dispose method">
+    <HelpKINode Title="Dispose Method " Url="html/Overload-FinalProject.frmAbout.Dispose.htm" />
+    <HelpKINode Title="Dispose Method " Url="html/M-FinalProject.frmAbout.Dispose.htm" />
+  </HelpKINode>
+  <HelpKINode Title="frmAbout.frmAbout constructor" Url="html/M-FinalProject.frmAbout.-ctor.htm" />
+  <HelpKINode Title="frmAbout.InitializeComponent method" Url="html/M-FinalProject.frmAbout.InitializeComponent.htm" />
+  <HelpKINode Title="frmAbout.lblAbout field" Url="html/F-FinalProject.frmAbout.lblAbout.htm" />
+  <HelpKINode Title="frmAbout.linkEmail field" Url="html/F-FinalProject.frmAbout.linkEmail.htm" />
+  <HelpKINode Title="frmAbout.linkEmail_LinkClicked method" Url="html/M-FinalProject.frmAbout.linkEmail_LinkClicked.htm" />
+  <HelpKINode Title="frmBrowse class">
+    <HelpKINode Title="frmBrowse Class" Url="html/T-FinalProject.frmBrowse.htm" />
+    <HelpKINode Title="frmBrowse Members" Url="html/AllMembers.T-FinalProject.frmBrowse.htm" />
+    <HelpKINode Title="about frmBrowse class" Url="html/T-FinalProject.frmBrowse.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-FinalProject.frmBrowse.htm" />
+    <HelpKINode Title="constructor" Url="html/M-FinalProject.frmBrowse.-ctor.htm" />
+    <HelpKINode Title="events" Url="html/Events.T-FinalProject.frmBrowse.htm" />
+    <HelpKINode Title="fields" Url="html/Fields.T-FinalProject.frmBrowse.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-FinalProject.frmBrowse.htm" />
+    <HelpKINode Title="properties" Url="html/Properties.T-FinalProject.frmBrowse.htm" />
+  </HelpKINode>
+  <HelpKINode Title="frmBrowse.anyBox_Checked method" Url="html/M-FinalProject.frmBrowse.anyBox_Checked.htm" />
+  <HelpKINode Title="frmBrowse.areaPanel field" Url="html/F-FinalProject.frmBrowse.areaPanel.htm" />
+  <HelpKINode Title="frmBrowse.browseWindow field" Url="html/F-FinalProject.frmBrowse.browseWindow.htm" />
+  <HelpKINode Title="frmBrowse.btnCloseWindow field" Url="html/F-FinalProject.frmBrowse.btnCloseWindow.htm" />
+  <HelpKINode Title="frmBrowse.btnCloseWindow_Click method" Url="html/M-FinalProject.frmBrowse.btnCloseWindow_Click.htm" />
+  <HelpKINode Title="frmBrowse.btnSaveNotes field" Url="html/F-FinalProject.frmBrowse.btnSaveNotes.htm" />
+  <HelpKINode Title="frmBrowse.btnSaveNotes_Click method" Url="html/M-FinalProject.frmBrowse.btnSaveNotes_Click.htm" />
+  <HelpKINode Title="frmBrowse.btnSelectAll field" Url="html/F-FinalProject.frmBrowse.btnSelectAll.htm" />
+  <HelpKINode Title="frmBrowse.btnSelectAll_Click method" Url="html/M-FinalProject.frmBrowse.btnSelectAll_Click.htm" />
+  <HelpKINode Title="frmBrowse.btnShowBookmarked field" Url="html/F-FinalProject.frmBrowse.btnShowBookmarked.htm" />
+  <HelpKINode Title="frmBrowse.btnShowBookmarked_Click method" Url="html/M-FinalProject.frmBrowse.btnShowBookmarked_Click.htm" />
+  <HelpKINode Title="frmBrowse.btnStar field" Url="html/F-FinalProject.frmBrowse.btnStar.htm" />
+  <HelpKINode Title="frmBrowse.btnStar_Click method" Url="html/M-FinalProject.frmBrowse.btnStar_Click.htm" />
+  <HelpKINode Title="frmBrowse.B_Click method" Url="html/M-FinalProject.frmBrowse.B_Click.htm" />
+  <HelpKINode Title="frmBrowse.Calls field" Url="html/F-FinalProject.frmBrowse.Calls.htm" />
+  <HelpKINode Title="frmBrowse.checkBooks field" Url="html/F-FinalProject.frmBrowse.checkBooks.htm" />
+  <HelpKINode Title="frmBrowse.checkBox1 field" Url="html/F-FinalProject.frmBrowse.checkBox1.htm" />
+  <HelpKINode Title="frmBrowse.checkBox3 field" Url="html/F-FinalProject.frmBrowse.checkBox3.htm" />
+  <HelpKINode Title="frmBrowse.checkBoxes field" Url="html/F-FinalProject.frmBrowse.checkBoxes.htm" />
+  <HelpKINode Title="frmBrowse.checkedBoxes field" Url="html/F-FinalProject.frmBrowse.checkedBoxes.htm" />
+  <HelpKINode Title="frmBrowse.checkInternships field" Url="html/F-FinalProject.frmBrowse.checkInternships.htm" />
+  <HelpKINode Title="frmBrowse.checkJobs field" Url="html/F-FinalProject.frmBrowse.checkJobs.htm" />
+  <HelpKINode Title="frmBrowse.components field" Url="html/F-FinalProject.frmBrowse.components.htm" />
+  <HelpKINode Title="frmBrowse.Confs field" Url="html/F-FinalProject.frmBrowse.Confs.htm" />
+  <HelpKINode Title="frmBrowse.Disc field" Url="html/F-FinalProject.frmBrowse.Disc.htm" />
+  <HelpKINode Title="frmBrowse.Dispose method">
+    <HelpKINode Title="Dispose Method " Url="html/Overload-FinalProject.frmBrowse.Dispose.htm" />
+    <HelpKINode Title="Dispose Method " Url="html/M-FinalProject.frmBrowse.Dispose.htm" />
+  </HelpKINode>
+  <HelpKINode Title="frmBrowse.Diss field" Url="html/F-FinalProject.frmBrowse.Diss.htm" />
+  <HelpKINode Title="frmBrowse.focus field" Url="html/F-FinalProject.frmBrowse.focus.htm" />
+  <HelpKINode Title="frmBrowse.frmBrowse constructor" Url="html/M-FinalProject.frmBrowse.-ctor.htm" />
+  <HelpKINode Title="frmBrowse.FYIs field" Url="html/F-FinalProject.frmBrowse.FYIs.htm" />
+  <HelpKINode Title="frmBrowse.getCheckedBoxes method" Url="html/M-FinalProject.frmBrowse.getCheckedBoxes.htm" />
+  <HelpKINode Title="frmBrowse.InitializeComponent method" Url="html/M-FinalProject.frmBrowse.InitializeComponent.htm" />
+  <HelpKINode Title="frmBrowse.issuesDB field" Url="html/F-FinalProject.frmBrowse.issuesDB.htm" />
+  <HelpKINode Title="frmBrowse.label1 field" Url="html/F-FinalProject.frmBrowse.label1.htm" />
+  <HelpKINode Title="frmBrowse.labelCareers field" Url="html/F-FinalProject.frmBrowse.labelCareers.htm" />
+  <HelpKINode Title="frmBrowse.labelDiscussion field" Url="html/F-FinalProject.frmBrowse.labelDiscussion.htm" />
+  <HelpKINode Title="frmBrowse.labelEvents field" Url="html/F-FinalProject.frmBrowse.labelEvents.htm" />
+  <HelpKINode Title="frmBrowse.labelPubs field" Url="html/F-FinalProject.frmBrowse.labelPubs.htm" />
+  <HelpKINode Title="frmBrowse.lblNotesSaved field" Url="html/F-FinalProject.frmBrowse.lblNotesSaved.htm" />
+  <HelpKINode Title="frmBrowse.loadIssue method" Url="html/M-FinalProject.frmBrowse.loadIssue.htm" />
+  <HelpKINode Title="frmBrowse.notesBox field" Url="html/F-FinalProject.frmBrowse.notesBox.htm" />
+  <HelpKINode Title="frmBrowse.notesBox_Enter method" Url="html/M-FinalProject.frmBrowse.notesBox_Enter.htm" />
+  <HelpKINode Title="frmBrowse.panelPreview field" Url="html/F-FinalProject.frmBrowse.panelPreview.htm" />
+  <HelpKINode Title="frmBrowse.panelPreview_Update method" Url="html/M-FinalProject.frmBrowse.panelPreview_Update.htm" />
+  <HelpKINode Title="frmBrowse.Qs field" Url="html/F-FinalProject.frmBrowse.Qs.htm" />
+  <HelpKINode Title="frmBrowse.Review field" Url="html/F-FinalProject.frmBrowse.Review.htm" />
+  <HelpKINode Title="frmBrowse.selectedAll field" Url="html/F-FinalProject.frmBrowse.selectedAll.htm" />
+  <HelpKINode Title="frmBrowse.showingBookmarks field" Url="html/F-FinalProject.frmBrowse.showingBookmarks.htm" />
+  <HelpKINode Title="frmBrowse.Software field" Url="html/F-FinalProject.frmBrowse.Software.htm" />
+  <HelpKINode Title="frmBrowse.Sum field" Url="html/F-FinalProject.frmBrowse.Sum.htm" />
+  <HelpKINode Title="frmBrowse.summerSchools field" Url="html/F-FinalProject.frmBrowse.summerSchools.htm" />
+  <HelpKINode Title="frmBrowse.Support field" Url="html/F-FinalProject.frmBrowse.Support.htm" />
+  <HelpKINode Title="frmBrowse.TOC field" Url="html/F-FinalProject.frmBrowse.TOC.htm" />
+  <HelpKINode Title="FYIs field" Url="html/F-FinalProject.frmBrowse.FYIs.htm" />
+  <HelpKINode Title="getArea method" Url="html/M-FinalProject.Issue.getArea.htm" />
+  <HelpKINode Title="getBookmarked method" Url="html/M-FinalProject.Issue.getBookmarked.htm" />
+  <HelpKINode Title="getCheckedBoxes method" Url="html/M-FinalProject.frmBrowse.getCheckedBoxes.htm" />
+  <HelpKINode Title="getComment method" Url="html/M-FinalProject.Issue.getComment.htm" />
+  <HelpKINode Title="getIssues method" Url="html/M-FinalProject.Database.getIssues.htm" />
+  <HelpKINode Title="getMatchingIssues method" Url="html/M-FinalProject.Database.getMatchingIssues.htm" />
+  <HelpKINode Title="getName method" Url="html/M-FinalProject.Issue.getName.htm" />
+  <HelpKINode Title="getTitle method" Url="html/M-FinalProject.Issue.getTitle.htm" />
+  <HelpKINode Title="getURI method" Url="html/M-FinalProject.Issue.getURI.htm" />
+  <HelpKINode Title="InitializeComponent method">
+    <HelpKINode Title="InitializeComponent Method " Url="html/M-FinalProject.Reader.InitializeComponent.htm" />
+    <HelpKINode Title="InitializeComponent Method " Url="html/M-FinalProject.frmBrowse.InitializeComponent.htm" />
+    <HelpKINode Title="InitializeComponent Method " Url="html/M-FinalProject.frmAbout.InitializeComponent.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Issue class">
+    <HelpKINode Title="Issue Class" Url="html/T-FinalProject.Issue.htm" />
+    <HelpKINode Title="Issue Members" Url="html/AllMembers.T-FinalProject.Issue.htm" />
+    <HelpKINode Title="about Issue class" Url="html/T-FinalProject.Issue.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-FinalProject.Issue.htm" />
+    <HelpKINode Title="constructor" Url="html/M-FinalProject.Issue.-ctor.htm" />
+    <HelpKINode Title="fields" Url="html/Fields.T-FinalProject.Issue.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-FinalProject.Issue.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Issue.area field" Url="html/F-FinalProject.Issue.area.htm" />
+  <HelpKINode Title="Issue.bookmarked field" Url="html/F-FinalProject.Issue.bookmarked.htm" />
+  <HelpKINode Title="Issue.comment field" Url="html/F-FinalProject.Issue.comment.htm" />
+  <HelpKINode Title="Issue.getArea method" Url="html/M-FinalProject.Issue.getArea.htm" />
+  <HelpKINode Title="Issue.getBookmarked method" Url="html/M-FinalProject.Issue.getBookmarked.htm" />
+  <HelpKINode Title="Issue.getComment method" Url="html/M-FinalProject.Issue.getComment.htm" />
+  <HelpKINode Title="Issue.getName method" Url="html/M-FinalProject.Issue.getName.htm" />
+  <HelpKINode Title="Issue.getTitle method" Url="html/M-FinalProject.Issue.getTitle.htm" />
+  <HelpKINode Title="Issue.getURI method" Url="html/M-FinalProject.Issue.getURI.htm" />
+  <HelpKINode Title="Issue.Issue constructor" Url="html/M-FinalProject.Issue.-ctor.htm" />
+  <HelpKINode Title="Issue.name field" Url="html/F-FinalProject.Issue.name.htm" />
+  <HelpKINode Title="Issue.path field" Url="html/F-FinalProject.Issue.path.htm" />
+  <HelpKINode Title="Issue.setArea method" Url="html/M-FinalProject.Issue.setArea.htm" />
+  <HelpKINode Title="Issue.setBookmarked method" Url="html/M-FinalProject.Issue.setBookmarked.htm" />
+  <HelpKINode Title="Issue.setComment method" Url="html/M-FinalProject.Issue.setComment.htm" />
+  <HelpKINode Title="Issue.setTitle method" Url="html/M-FinalProject.Issue.setTitle.htm" />
+  <HelpKINode Title="Issue.text field" Url="html/F-FinalProject.Issue.text.htm" />
+  <HelpKINode Title="Issue.title field" Url="html/F-FinalProject.Issue.title.htm" />
+  <HelpKINode Title="Issue.uri field" Url="html/F-FinalProject.Issue.uri.htm" />
+  <HelpKINode Title="issueArray field" Url="html/F-FinalProject.Database.issueArray.htm" />
+  <HelpKINode Title="IssueScanner class">
+    <HelpKINode Title="IssueScanner Class" Url="html/T-FinalProject.IssueScanner.htm" />
+    <HelpKINode Title="IssueScanner Members" Url="html/AllMembers.T-FinalProject.IssueScanner.htm" />
+    <HelpKINode Title="about IssueScanner class" Url="html/T-FinalProject.IssueScanner.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-FinalProject.IssueScanner.htm" />
+    <HelpKINode Title="constructor" Url="html/M-FinalProject.IssueScanner.-ctor.htm" />
+    <HelpKINode Title="fields" Url="html/Fields.T-FinalProject.IssueScanner.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-FinalProject.IssueScanner.htm" />
+  </HelpKINode>
+  <HelpKINode Title="IssueScanner.IssueScanner constructor" Url="html/M-FinalProject.IssueScanner.-ctor.htm" />
+  <HelpKINode Title="IssueScanner.path field" Url="html/F-FinalProject.IssueScanner.path.htm" />
+  <HelpKINode Title="IssueScanner.readInfo method" Url="html/M-FinalProject.IssueScanner.readInfo.htm" />
+  <HelpKINode Title="IssueScanner.writeInfo method" Url="html/M-FinalProject.IssueScanner.writeInfo.htm" />
+  <HelpKINode Title="issuesDB field">
+    <HelpKINode Title="issuesDB Field" Url="html/F-FinalProject.frmBrowse.issuesDB.htm" />
+    <HelpKINode Title="issuesDB Field" Url="html/F-FinalProject.Reader.issuesDB.htm" />
+  </HelpKINode>
+  <HelpKINode Title="label1 field" Url="html/F-FinalProject.frmBrowse.label1.htm" />
+  <HelpKINode Title="labelCareers field" Url="html/F-FinalProject.frmBrowse.labelCareers.htm" />
+  <HelpKINode Title="labelDiscussion field" Url="html/F-FinalProject.frmBrowse.labelDiscussion.htm" />
+  <HelpKINode Title="labelEvents field" Url="html/F-FinalProject.frmBrowse.labelEvents.htm" />
+  <HelpKINode Title="labelPubs field" Url="html/F-FinalProject.frmBrowse.labelPubs.htm" />
+  <HelpKINode Title="lblAbout field" Url="html/F-FinalProject.frmAbout.lblAbout.htm" />
+  <HelpKINode Title="lblNotesSaved field" Url="html/F-FinalProject.frmBrowse.lblNotesSaved.htm" />
+  <HelpKINode Title="linkEmail field" Url="html/F-FinalProject.frmAbout.linkEmail.htm" />
+  <HelpKINode Title="linkEmail_LinkClicked method" Url="html/M-FinalProject.frmAbout.linkEmail_LinkClicked.htm" />
+  <HelpKINode Title="loadIssue method" Url="html/M-FinalProject.frmBrowse.loadIssue.htm" />
+  <HelpKINode Title="location field" Url="html/F-FinalProject.Database.location.htm" />
+  <HelpKINode Title="Main method" Url="html/M-FinalProject.Program.Main.htm" />
+  <HelpKINode Title="name field" Url="html/F-FinalProject.Issue.name.htm" />
+  <HelpKINode Title="notesBox field" Url="html/F-FinalProject.frmBrowse.notesBox.htm" />
+  <HelpKINode Title="notesBox_Enter method" Url="html/M-FinalProject.frmBrowse.notesBox_Enter.htm" />
+  <HelpKINode Title="panelPreview field" Url="html/F-FinalProject.frmBrowse.panelPreview.htm" />
+  <HelpKINode Title="panelPreview_Update method" Url="html/M-FinalProject.frmBrowse.panelPreview_Update.htm" />
+  <HelpKINode Title="path field">
+    <HelpKINode Title="path Field" Url="html/F-FinalProject.Issue.path.htm" />
+    <HelpKINode Title="path Field" Url="html/F-FinalProject.IssueScanner.path.htm" />
+  </HelpKINode>
+  <HelpKINode Title="pictureBox1 field" Url="html/F-FinalProject.Reader.pictureBox1.htm" />
+  <HelpKINode Title="Program class">
+    <HelpKINode Title="Program Class" Url="html/T-FinalProject.Program.htm" />
+    <HelpKINode Title="Program Members" Url="html/AllMembers.T-FinalProject.Program.htm" />
+    <HelpKINode Title="about Program class" Url="html/T-FinalProject.Program.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-FinalProject.Program.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-FinalProject.Program.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Program.Main method" Url="html/M-FinalProject.Program.Main.htm" />
+  <HelpKINode Title="Qs field" Url="html/F-FinalProject.frmBrowse.Qs.htm" />
+  <HelpKINode Title="Reader class">
+    <HelpKINode Title="Reader Class" Url="html/T-FinalProject.Reader.htm" />
+    <HelpKINode Title="Reader Members" Url="html/AllMembers.T-FinalProject.Reader.htm" />
+    <HelpKINode Title="about Reader class" Url="html/T-FinalProject.Reader.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-FinalProject.Reader.htm" />
+    <HelpKINode Title="constructor" Url="html/M-FinalProject.Reader.-ctor.htm" />
+    <HelpKINode Title="events" Url="html/Events.T-FinalProject.Reader.htm" />
+    <HelpKINode Title="fields" Url="html/Fields.T-FinalProject.Reader.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-FinalProject.Reader.htm" />
+    <HelpKINode Title="properties" Url="html/Properties.T-FinalProject.Reader.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Reader.btnAbout field" Url="html/F-FinalProject.Reader.btnAbout.htm" />
+  <HelpKINode Title="Reader.btnAbout_Click method" Url="html/M-FinalProject.Reader.btnAbout_Click.htm" />
+  <HelpKINode Title="Reader.btnBrowse field" Url="html/F-FinalProject.Reader.btnBrowse.htm" />
+  <HelpKINode Title="Reader.btnBrowse_Click method" Url="html/M-FinalProject.Reader.btnBrowse_Click.htm" />
+  <HelpKINode Title="Reader.btnQuit field" Url="html/F-FinalProject.Reader.btnQuit.htm" />
+  <HelpKINode Title="Reader.btnQuit_Click method" Url="html/M-FinalProject.Reader.btnQuit_Click.htm" />
+  <HelpKINode Title="Reader.components field" Url="html/F-FinalProject.Reader.components.htm" />
+  <HelpKINode Title="Reader.Dispose method">
+    <HelpKINode Title="Dispose Method " Url="html/M-FinalProject.Reader.Dispose.htm" />
+    <HelpKINode Title="Dispose Method " Url="html/Overload-FinalProject.Reader.Dispose.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Reader.InitializeComponent method" Url="html/M-FinalProject.Reader.InitializeComponent.htm" />
+  <HelpKINode Title="Reader.issuesDB field" Url="html/F-FinalProject.Reader.issuesDB.htm" />
+  <HelpKINode Title="Reader.pictureBox1 field" Url="html/F-FinalProject.Reader.pictureBox1.htm" />
+  <HelpKINode Title="Reader.Reader constructor" Url="html/M-FinalProject.Reader.-ctor.htm" />
+  <HelpKINode Title="Reader.tagline field" Url="html/F-FinalProject.Reader.tagline.htm" />
+  <HelpKINode Title="readInfo method" Url="html/M-FinalProject.IssueScanner.readInfo.htm" />
+  <HelpKINode Title="resourceCulture field" Url="html/F-FinalProject.Properties.Resources.resourceCulture.htm" />
+  <HelpKINode Title="resourceMan field" Url="html/F-FinalProject.Properties.Resources.resourceMan.htm" />
+  <HelpKINode Title="ResourceManager property" Url="html/P-FinalProject.Properties.Resources.ResourceManager.htm" />
+  <HelpKINode Title="Resources class">
+    <HelpKINode Title="Resources Class" Url="html/T-FinalProject.Properties.Resources.htm" />
+    <HelpKINode Title="Resources Members" Url="html/AllMembers.T-FinalProject.Properties.Resources.htm" />
+    <HelpKINode Title="about Resources class" Url="html/T-FinalProject.Properties.Resources.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-FinalProject.Properties.Resources.htm" />
+    <HelpKINode Title="constructor" Url="html/M-FinalProject.Properties.Resources.-ctor.htm" />
+    <HelpKINode Title="fields" Url="html/Fields.T-FinalProject.Properties.Resources.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-FinalProject.Properties.Resources.htm" />
+    <HelpKINode Title="properties" Url="html/Properties.T-FinalProject.Properties.Resources.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Resources.Culture property" Url="html/P-FinalProject.Properties.Resources.Culture.htm" />
+  <HelpKINode Title="Resources.resourceCulture field" Url="html/F-FinalProject.Properties.Resources.resourceCulture.htm" />
+  <HelpKINode Title="Resources.resourceMan field" Url="html/F-FinalProject.Properties.Resources.resourceMan.htm" />
+  <HelpKINode Title="Resources.ResourceManager property" Url="html/P-FinalProject.Properties.Resources.ResourceManager.htm" />
+  <HelpKINode Title="Resources.Resources constructor" Url="html/M-FinalProject.Properties.Resources.-ctor.htm" />
+  <HelpKINode Title="ResumeDrawing method" Url="html/M-FinalProject.DrawingControl.ResumeDrawing.htm" />
+  <HelpKINode Title="Review field" Url="html/F-FinalProject.frmBrowse.Review.htm" />
+  <HelpKINode Title="selectedAll field" Url="html/F-FinalProject.frmBrowse.selectedAll.htm" />
+  <HelpKINode Title="SendMessage method" Url="html/M-FinalProject.DrawingControl.SendMessage.htm" />
+  <HelpKINode Title="setArea method" Url="html/M-FinalProject.Issue.setArea.htm" />
+  <HelpKINode Title="setBookmarked method" Url="html/M-FinalProject.Issue.setBookmarked.htm" />
+  <HelpKINode Title="setComment method" Url="html/M-FinalProject.Issue.setComment.htm" />
+  <HelpKINode Title="setTitle method" Url="html/M-FinalProject.Issue.setTitle.htm" />
+  <HelpKINode Title="showingBookmarks field" Url="html/F-FinalProject.frmBrowse.showingBookmarks.htm" />
+  <HelpKINode Title="Software field" Url="html/F-FinalProject.frmBrowse.Software.htm" />
+  <HelpKINode Title="Sum field" Url="html/F-FinalProject.frmBrowse.Sum.htm" />
+  <HelpKINode Title="summerSchools field" Url="html/F-FinalProject.frmBrowse.summerSchools.htm" />
+  <HelpKINode Title="Support field" Url="html/F-FinalProject.frmBrowse.Support.htm" />
+  <HelpKINode Title="SuspendDrawing method" Url="html/M-FinalProject.DrawingControl.SuspendDrawing.htm" />
+  <HelpKINode Title="tagline field" Url="html/F-FinalProject.Reader.tagline.htm" />
+  <HelpKINode Title="text field" Url="html/F-FinalProject.Issue.text.htm" />
+  <HelpKINode Title="title field" Url="html/F-FinalProject.Issue.title.htm" />
+  <HelpKINode Title="TOC field" Url="html/F-FinalProject.frmBrowse.TOC.htm" />
+  <HelpKINode Title="uri field" Url="html/F-FinalProject.Issue.uri.htm" />
+  <HelpKINode Title="WM_SETREDRAW field" Url="html/F-FinalProject.DrawingControl.WM_SETREDRAW.htm" />
+  <HelpKINode Title="writeInfo method" Url="html/M-FinalProject.IssueScanner.writeInfo.htm" />
+</HelpKI>

@@ -1,0 +1,202 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HelpTOC>
+
+  <HelpTOCNode Id="126a1b90-c045-45da-b507-226df07558c9" Title="FinalProject Namespace" Url="html/N-FinalProject.htm">
+    <HelpTOCNode Id="6491d5ab-bc31-413d-a42d-ddcddb34e95c" Title="Database Class" Url="html/T-FinalProject.Database.htm">
+      <HelpTOCNode Title="Database Members" Url="html/AllMembers.T-FinalProject.Database.htm" />
+      <HelpTOCNode Title="Database Constructor " Url="html/M-FinalProject.Database.-ctor.htm" />
+      <HelpTOCNode Id="07f26fc4-229a-4ccd-b252-47206ff0344f" Title="Database Fields" Url="html/Fields.T-FinalProject.Database.htm">
+        <HelpTOCNode Title="issueArray Field" Url="html/F-FinalProject.Database.issueArray.htm" />
+        <HelpTOCNode Title="location Field" Url="html/F-FinalProject.Database.location.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="d7d9fed5-818a-4185-bed4-0be26f6a29b2" Title="Database Methods" Url="html/Methods.T-FinalProject.Database.htm">
+        <HelpTOCNode Title="getIssues Method " Url="html/M-FinalProject.Database.getIssues.htm" />
+        <HelpTOCNode Title="getMatchingIssues Method " Url="html/M-FinalProject.Database.getMatchingIssues.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="3a7adfae-a547-4ca8-86cc-6b6504174db9" Title="DBFlowLayoutPanel Class" Url="html/T-FinalProject.DBFlowLayoutPanel.htm">
+      <HelpTOCNode Title="DBFlowLayoutPanel Members" Url="html/AllMembers.T-FinalProject.DBFlowLayoutPanel.htm" />
+      <HelpTOCNode Title="DBFlowLayoutPanel Constructor " Url="html/M-FinalProject.DBFlowLayoutPanel.-ctor.htm" />
+      <HelpTOCNode Title="DBFlowLayoutPanel Methods" Url="html/Methods.T-FinalProject.DBFlowLayoutPanel.htm" />
+      <HelpTOCNode Title="DBFlowLayoutPanel Properties" Url="html/Properties.T-FinalProject.DBFlowLayoutPanel.htm" />
+      <HelpTOCNode Title="DBFlowLayoutPanel Events" Url="html/Events.T-FinalProject.DBFlowLayoutPanel.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="6797e250-d985-43f3-9ae7-227ff9da5c6a" Title="DrawingControl Class" Url="html/T-FinalProject.DrawingControl.htm">
+      <HelpTOCNode Title="DrawingControl Members" Url="html/AllMembers.T-FinalProject.DrawingControl.htm" />
+      <HelpTOCNode Id="ed7be649-afdd-41cb-b03f-c6f4e56b26b2" Title="DrawingControl Fields" Url="html/Fields.T-FinalProject.DrawingControl.htm">
+        <HelpTOCNode Title="WM_SETREDRAW Field" Url="html/F-FinalProject.DrawingControl.WM_SETREDRAW.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="cd2c75c1-906e-458a-9f8f-13866612f28e" Title="DrawingControl Methods" Url="html/Methods.T-FinalProject.DrawingControl.htm">
+        <HelpTOCNode Title="ResumeDrawing Method " Url="html/M-FinalProject.DrawingControl.ResumeDrawing.htm" />
+        <HelpTOCNode Title="SendMessage Method " Url="html/M-FinalProject.DrawingControl.SendMessage.htm" />
+        <HelpTOCNode Title="SuspendDrawing Method " Url="html/M-FinalProject.DrawingControl.SuspendDrawing.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="a8839efc-fe5e-4ff8-9342-641ab0ab5192" Title="frmAbout Class" Url="html/T-FinalProject.frmAbout.htm">
+      <HelpTOCNode Title="frmAbout Members" Url="html/AllMembers.T-FinalProject.frmAbout.htm" />
+      <HelpTOCNode Title="frmAbout Constructor " Url="html/M-FinalProject.frmAbout.-ctor.htm" />
+      <HelpTOCNode Id="c447334e-187a-44e4-922f-49d988ca55e8" Title="frmAbout Fields" Url="html/Fields.T-FinalProject.frmAbout.htm">
+        <HelpTOCNode Title="btnClose Field" Url="html/F-FinalProject.frmAbout.btnClose.htm" />
+        <HelpTOCNode Title="components Field" Url="html/F-FinalProject.frmAbout.components.htm" />
+        <HelpTOCNode Title="lblAbout Field" Url="html/F-FinalProject.frmAbout.lblAbout.htm" />
+        <HelpTOCNode Title="linkEmail Field" Url="html/F-FinalProject.frmAbout.linkEmail.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="6705a638-da1e-4b05-a91e-6ccf8feca6d1" Title="frmAbout Methods" Url="html/Methods.T-FinalProject.frmAbout.htm">
+        <HelpTOCNode Title="btnClose_Click Method " Url="html/M-FinalProject.frmAbout.btnClose_Click.htm" />
+        <HelpTOCNode Id="9d067d37-c0c3-4f28-8974-e44234677fb1" Title="Dispose Method " Url="html/Overload-FinalProject.frmAbout.Dispose.htm">
+          <HelpTOCNode Title="Dispose Method " Url="html/M-FinalProject.frmAbout.Dispose.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Title="InitializeComponent Method " Url="html/M-FinalProject.frmAbout.InitializeComponent.htm" />
+        <HelpTOCNode Title="linkEmail_LinkClicked Method " Url="html/M-FinalProject.frmAbout.linkEmail_LinkClicked.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="frmAbout Properties" Url="html/Properties.T-FinalProject.frmAbout.htm" />
+      <HelpTOCNode Title="frmAbout Events" Url="html/Events.T-FinalProject.frmAbout.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="fac53d50-cbc0-4e3d-891a-f7742d22eb22" Title="frmBrowse Class" Url="html/T-FinalProject.frmBrowse.htm">
+      <HelpTOCNode Title="frmBrowse Members" Url="html/AllMembers.T-FinalProject.frmBrowse.htm" />
+      <HelpTOCNode Title="frmBrowse Constructor " Url="html/M-FinalProject.frmBrowse.-ctor.htm" />
+      <HelpTOCNode Id="923c39e0-c564-4b18-90f1-dad281ffdc7d" Title="frmBrowse Fields" Url="html/Fields.T-FinalProject.frmBrowse.htm">
+        <HelpTOCNode Title="areaPanel Field" Url="html/F-FinalProject.frmBrowse.areaPanel.htm" />
+        <HelpTOCNode Title="browseWindow Field" Url="html/F-FinalProject.frmBrowse.browseWindow.htm" />
+        <HelpTOCNode Title="btnCloseWindow Field" Url="html/F-FinalProject.frmBrowse.btnCloseWindow.htm" />
+        <HelpTOCNode Title="btnSaveNotes Field" Url="html/F-FinalProject.frmBrowse.btnSaveNotes.htm" />
+        <HelpTOCNode Title="btnSelectAll Field" Url="html/F-FinalProject.frmBrowse.btnSelectAll.htm" />
+        <HelpTOCNode Title="btnShowBookmarked Field" Url="html/F-FinalProject.frmBrowse.btnShowBookmarked.htm" />
+        <HelpTOCNode Title="btnStar Field" Url="html/F-FinalProject.frmBrowse.btnStar.htm" />
+        <HelpTOCNode Title="Calls Field" Url="html/F-FinalProject.frmBrowse.Calls.htm" />
+        <HelpTOCNode Title="checkBooks Field" Url="html/F-FinalProject.frmBrowse.checkBooks.htm" />
+        <HelpTOCNode Title="checkBox1 Field" Url="html/F-FinalProject.frmBrowse.checkBox1.htm" />
+        <HelpTOCNode Title="checkBox3 Field" Url="html/F-FinalProject.frmBrowse.checkBox3.htm" />
+        <HelpTOCNode Title="checkBoxes Field" Url="html/F-FinalProject.frmBrowse.checkBoxes.htm" />
+        <HelpTOCNode Title="checkedBoxes Field" Url="html/F-FinalProject.frmBrowse.checkedBoxes.htm" />
+        <HelpTOCNode Title="checkInternships Field" Url="html/F-FinalProject.frmBrowse.checkInternships.htm" />
+        <HelpTOCNode Title="checkJobs Field" Url="html/F-FinalProject.frmBrowse.checkJobs.htm" />
+        <HelpTOCNode Title="components Field" Url="html/F-FinalProject.frmBrowse.components.htm" />
+        <HelpTOCNode Title="Confs Field" Url="html/F-FinalProject.frmBrowse.Confs.htm" />
+        <HelpTOCNode Title="Disc Field" Url="html/F-FinalProject.frmBrowse.Disc.htm" />
+        <HelpTOCNode Title="Diss Field" Url="html/F-FinalProject.frmBrowse.Diss.htm" />
+        <HelpTOCNode Title="focus Field" Url="html/F-FinalProject.frmBrowse.focus.htm" />
+        <HelpTOCNode Title="FYIs Field" Url="html/F-FinalProject.frmBrowse.FYIs.htm" />
+        <HelpTOCNode Title="issuesDB Field" Url="html/F-FinalProject.frmBrowse.issuesDB.htm" />
+        <HelpTOCNode Title="label1 Field" Url="html/F-FinalProject.frmBrowse.label1.htm" />
+        <HelpTOCNode Title="labelCareers Field" Url="html/F-FinalProject.frmBrowse.labelCareers.htm" />
+        <HelpTOCNode Title="labelDiscussion Field" Url="html/F-FinalProject.frmBrowse.labelDiscussion.htm" />
+        <HelpTOCNode Title="labelEvents Field" Url="html/F-FinalProject.frmBrowse.labelEvents.htm" />
+        <HelpTOCNode Title="labelPubs Field" Url="html/F-FinalProject.frmBrowse.labelPubs.htm" />
+        <HelpTOCNode Title="lblNotesSaved Field" Url="html/F-FinalProject.frmBrowse.lblNotesSaved.htm" />
+        <HelpTOCNode Title="notesBox Field" Url="html/F-FinalProject.frmBrowse.notesBox.htm" />
+        <HelpTOCNode Title="panelPreview Field" Url="html/F-FinalProject.frmBrowse.panelPreview.htm" />
+        <HelpTOCNode Title="Qs Field" Url="html/F-FinalProject.frmBrowse.Qs.htm" />
+        <HelpTOCNode Title="Review Field" Url="html/F-FinalProject.frmBrowse.Review.htm" />
+        <HelpTOCNode Title="selectedAll Field" Url="html/F-FinalProject.frmBrowse.selectedAll.htm" />
+        <HelpTOCNode Title="showingBookmarks Field" Url="html/F-FinalProject.frmBrowse.showingBookmarks.htm" />
+        <HelpTOCNode Title="Software Field" Url="html/F-FinalProject.frmBrowse.Software.htm" />
+        <HelpTOCNode Title="Sum Field" Url="html/F-FinalProject.frmBrowse.Sum.htm" />
+        <HelpTOCNode Title="summerSchools Field" Url="html/F-FinalProject.frmBrowse.summerSchools.htm" />
+        <HelpTOCNode Title="Support Field" Url="html/F-FinalProject.frmBrowse.Support.htm" />
+        <HelpTOCNode Title="TOC Field" Url="html/F-FinalProject.frmBrowse.TOC.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="b2b6e86f-887d-4717-8edb-a622742ca9bf" Title="frmBrowse Methods" Url="html/Methods.T-FinalProject.frmBrowse.htm">
+        <HelpTOCNode Title="anyBox_Checked Method " Url="html/M-FinalProject.frmBrowse.anyBox_Checked.htm" />
+        <HelpTOCNode Title="B_Click Method " Url="html/M-FinalProject.frmBrowse.B_Click.htm" />
+        <HelpTOCNode Title="btnCloseWindow_Click Method " Url="html/M-FinalProject.frmBrowse.btnCloseWindow_Click.htm" />
+        <HelpTOCNode Title="btnSaveNotes_Click Method " Url="html/M-FinalProject.frmBrowse.btnSaveNotes_Click.htm" />
+        <HelpTOCNode Title="btnSelectAll_Click Method " Url="html/M-FinalProject.frmBrowse.btnSelectAll_Click.htm" />
+        <HelpTOCNode Title="btnShowBookmarked_Click Method " Url="html/M-FinalProject.frmBrowse.btnShowBookmarked_Click.htm" />
+        <HelpTOCNode Title="btnStar_Click Method " Url="html/M-FinalProject.frmBrowse.btnStar_Click.htm" />
+        <HelpTOCNode Id="dd27ee87-1d9a-40d6-8fd5-0e9b69ac0c80" Title="Dispose Method " Url="html/Overload-FinalProject.frmBrowse.Dispose.htm">
+          <HelpTOCNode Title="Dispose Method " Url="html/M-FinalProject.frmBrowse.Dispose.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Title="getCheckedBoxes Method " Url="html/M-FinalProject.frmBrowse.getCheckedBoxes.htm" />
+        <HelpTOCNode Title="InitializeComponent Method " Url="html/M-FinalProject.frmBrowse.InitializeComponent.htm" />
+        <HelpTOCNode Title="loadIssue Method " Url="html/M-FinalProject.frmBrowse.loadIssue.htm" />
+        <HelpTOCNode Title="notesBox_Enter Method " Url="html/M-FinalProject.frmBrowse.notesBox_Enter.htm" />
+        <HelpTOCNode Title="panelPreview_Update Method " Url="html/M-FinalProject.frmBrowse.panelPreview_Update.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="frmBrowse Properties" Url="html/Properties.T-FinalProject.frmBrowse.htm" />
+      <HelpTOCNode Title="frmBrowse Events" Url="html/Events.T-FinalProject.frmBrowse.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="fcff9208-e0cc-4cb4-be95-2e112bb5fb3c" Title="Issue Class" Url="html/T-FinalProject.Issue.htm">
+      <HelpTOCNode Title="Issue Members" Url="html/AllMembers.T-FinalProject.Issue.htm" />
+      <HelpTOCNode Title="Issue Constructor " Url="html/M-FinalProject.Issue.-ctor.htm" />
+      <HelpTOCNode Id="755c43e7-6545-46f2-883f-933f6eb42e34" Title="Issue Fields" Url="html/Fields.T-FinalProject.Issue.htm">
+        <HelpTOCNode Title="area Field" Url="html/F-FinalProject.Issue.area.htm" />
+        <HelpTOCNode Title="bookmarked Field" Url="html/F-FinalProject.Issue.bookmarked.htm" />
+        <HelpTOCNode Title="comment Field" Url="html/F-FinalProject.Issue.comment.htm" />
+        <HelpTOCNode Title="name Field" Url="html/F-FinalProject.Issue.name.htm" />
+        <HelpTOCNode Title="path Field" Url="html/F-FinalProject.Issue.path.htm" />
+        <HelpTOCNode Title="text Field" Url="html/F-FinalProject.Issue.text.htm" />
+        <HelpTOCNode Title="title Field" Url="html/F-FinalProject.Issue.title.htm" />
+        <HelpTOCNode Title="uri Field" Url="html/F-FinalProject.Issue.uri.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="2756999d-4d93-43ab-9f27-1aff358b54e0" Title="Issue Methods" Url="html/Methods.T-FinalProject.Issue.htm">
+        <HelpTOCNode Title="getArea Method " Url="html/M-FinalProject.Issue.getArea.htm" />
+        <HelpTOCNode Title="getBookmarked Method " Url="html/M-FinalProject.Issue.getBookmarked.htm" />
+        <HelpTOCNode Title="getComment Method " Url="html/M-FinalProject.Issue.getComment.htm" />
+        <HelpTOCNode Title="getName Method " Url="html/M-FinalProject.Issue.getName.htm" />
+        <HelpTOCNode Title="getTitle Method " Url="html/M-FinalProject.Issue.getTitle.htm" />
+        <HelpTOCNode Title="getURI Method " Url="html/M-FinalProject.Issue.getURI.htm" />
+        <HelpTOCNode Title="setArea Method " Url="html/M-FinalProject.Issue.setArea.htm" />
+        <HelpTOCNode Title="setBookmarked Method " Url="html/M-FinalProject.Issue.setBookmarked.htm" />
+        <HelpTOCNode Title="setComment Method " Url="html/M-FinalProject.Issue.setComment.htm" />
+        <HelpTOCNode Title="setTitle Method " Url="html/M-FinalProject.Issue.setTitle.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="bc1a126c-6d72-4209-82de-cc2d59637f4f" Title="IssueScanner Class" Url="html/T-FinalProject.IssueScanner.htm">
+      <HelpTOCNode Title="IssueScanner Members" Url="html/AllMembers.T-FinalProject.IssueScanner.htm" />
+      <HelpTOCNode Title="IssueScanner Constructor " Url="html/M-FinalProject.IssueScanner.-ctor.htm" />
+      <HelpTOCNode Id="889888e2-cae1-4721-a3be-ff982984a827" Title="IssueScanner Fields" Url="html/Fields.T-FinalProject.IssueScanner.htm">
+        <HelpTOCNode Title="path Field" Url="html/F-FinalProject.IssueScanner.path.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="6b0385a3-0cb4-44b7-9d67-6646adefa2f4" Title="IssueScanner Methods" Url="html/Methods.T-FinalProject.IssueScanner.htm">
+        <HelpTOCNode Title="readInfo Method " Url="html/M-FinalProject.IssueScanner.readInfo.htm" />
+        <HelpTOCNode Title="writeInfo Method " Url="html/M-FinalProject.IssueScanner.writeInfo.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="d36e7a20-7c38-4231-8d64-02f0122ec7ac" Title="Program Class" Url="html/T-FinalProject.Program.htm">
+      <HelpTOCNode Title="Program Members" Url="html/AllMembers.T-FinalProject.Program.htm" />
+      <HelpTOCNode Id="979cc03a-cd14-461a-8c24-db6b5839f4cd" Title="Program Methods" Url="html/Methods.T-FinalProject.Program.htm">
+        <HelpTOCNode Title="Main Method " Url="html/M-FinalProject.Program.Main.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="fda24434-34f7-46eb-9032-39e81230818a" Title="Reader Class" Url="html/T-FinalProject.Reader.htm">
+      <HelpTOCNode Title="Reader Members" Url="html/AllMembers.T-FinalProject.Reader.htm" />
+      <HelpTOCNode Title="Reader Constructor " Url="html/M-FinalProject.Reader.-ctor.htm" />
+      <HelpTOCNode Id="bd57f51e-9c5b-4cc6-98cb-74afff8cef29" Title="Reader Fields" Url="html/Fields.T-FinalProject.Reader.htm">
+        <HelpTOCNode Title="btnAbout Field" Url="html/F-FinalProject.Reader.btnAbout.htm" />
+        <HelpTOCNode Title="btnBrowse Field" Url="html/F-FinalProject.Reader.btnBrowse.htm" />
+        <HelpTOCNode Title="btnQuit Field" Url="html/F-FinalProject.Reader.btnQuit.htm" />
+        <HelpTOCNode Title="components Field" Url="html/F-FinalProject.Reader.components.htm" />
+        <HelpTOCNode Title="issuesDB Field" Url="html/F-FinalProject.Reader.issuesDB.htm" />
+        <HelpTOCNode Title="pictureBox1 Field" Url="html/F-FinalProject.Reader.pictureBox1.htm" />
+        <HelpTOCNode Title="tagline Field" Url="html/F-FinalProject.Reader.tagline.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="67a23330-0114-4add-9ff9-c1383503f27e" Title="Reader Methods" Url="html/Methods.T-FinalProject.Reader.htm">
+        <HelpTOCNode Title="btnAbout_Click Method " Url="html/M-FinalProject.Reader.btnAbout_Click.htm" />
+        <HelpTOCNode Title="btnBrowse_Click Method " Url="html/M-FinalProject.Reader.btnBrowse_Click.htm" />
+        <HelpTOCNode Title="btnQuit_Click Method " Url="html/M-FinalProject.Reader.btnQuit_Click.htm" />
+        <HelpTOCNode Id="724bea7f-5962-4f93-808b-23a0b2173264" Title="Dispose Method " Url="html/Overload-FinalProject.Reader.Dispose.htm">
+          <HelpTOCNode Title="Dispose Method " Url="html/M-FinalProject.Reader.Dispose.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Title="InitializeComponent Method " Url="html/M-FinalProject.Reader.InitializeComponent.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="Reader Properties" Url="html/Properties.T-FinalProject.Reader.htm" />
+      <HelpTOCNode Title="Reader Events" Url="html/Events.T-FinalProject.Reader.htm" />
+    </HelpTOCNode>
+  </HelpTOCNode>
+  <HelpTOCNode Id="78138bdd-049d-43d9-b7e4-14b750e701ff" Title="FinalProject.Properties Namespace" Url="html/N-FinalProject.Properties.htm">
+    <HelpTOCNode Id="e7f283ac-4897-4bf4-a427-cc818ac40c05" Title="Resources Class" Url="html/T-FinalProject.Properties.Resources.htm">
+      <HelpTOCNode Title="Resources Members" Url="html/AllMembers.T-FinalProject.Properties.Resources.htm" />
+      <HelpTOCNode Title="Resources Constructor " Url="html/M-FinalProject.Properties.Resources.-ctor.htm" />
+      <HelpTOCNode Id="f498681e-b3e5-440f-8651-68eeeded6781" Title="Resources Fields" Url="html/Fields.T-FinalProject.Properties.Resources.htm">
+        <HelpTOCNode Title="resourceCulture Field" Url="html/F-FinalProject.Properties.Resources.resourceCulture.htm" />
+        <HelpTOCNode Title="resourceMan Field" Url="html/F-FinalProject.Properties.Resources.resourceMan.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="Resources Methods" Url="html/Methods.T-FinalProject.Properties.Resources.htm" />
+      <HelpTOCNode Id="a84d8268-8704-4443-b300-2530b005d1e1" Title="Resources Properties" Url="html/Properties.T-FinalProject.Properties.Resources.htm">
+        <HelpTOCNode Title="Culture Property " Url="html/P-FinalProject.Properties.Resources.Culture.htm" />
+        <HelpTOCNode Title="ResourceManager Property " Url="html/P-FinalProject.Properties.Resources.ResourceManager.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+  </HelpTOCNode>
+</HelpTOC>

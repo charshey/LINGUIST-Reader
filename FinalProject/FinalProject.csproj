@@ -77,12 +77,6 @@
       <DependentUpon>Reader.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
-    <Compile Include="SaveIssue.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="SaveIssue.Designer.cs">
-      <DependentUpon>SaveIssue.cs</DependentUpon>
-    </Compile>
     <EmbeddedResource Include="About.resx">
       <DependentUpon>About.cs</DependentUpon>
     </EmbeddedResource>
@@ -95,9 +89,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Reader.resx">
       <DependentUpon>Reader.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="SaveIssue.resx">
-      <DependentUpon>SaveIssue.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

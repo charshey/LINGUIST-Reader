@@ -51,7 +51,6 @@
             this.checkJobs = new System.Windows.Forms.CheckBox();
             this.Support = new System.Windows.Forms.CheckBox();
             this.checkBox3 = new System.Windows.Forms.CheckBox();
-            this.FYIs = new System.Windows.Forms.CheckBox();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.labelPubs = new System.Windows.Forms.Label();
             this.labelEvents = new System.Windows.Forms.Label();
@@ -129,7 +128,6 @@
             this.areaPanel.Controls.Add(this.checkJobs);
             this.areaPanel.Controls.Add(this.Support);
             this.areaPanel.Controls.Add(this.checkBox3);
-            this.areaPanel.Controls.Add(this.FYIs);
             this.areaPanel.Controls.Add(this.checkBox1);
             this.areaPanel.Controls.Add(this.labelPubs);
             this.areaPanel.Controls.Add(this.labelEvents);
@@ -313,7 +311,7 @@
             // 
             this.checkBox3.AutoSize = true;
             this.checkBox3.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox3.Location = new System.Drawing.Point(89, 45);
+            this.checkBox3.Location = new System.Drawing.Point(89, 61);
             this.checkBox3.Name = "checkBox3";
             this.checkBox3.Size = new System.Drawing.Size(59, 19);
             this.checkBox3.TabIndex = 8;
@@ -321,22 +319,11 @@
             this.checkBox3.UseVisualStyleBackColor = true;
             this.checkBox3.CheckedChanged += new System.EventHandler(this.anyBox_Checked);
             // 
-            // FYIs
-            // 
-            this.FYIs.AutoSize = true;
-            this.FYIs.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FYIs.Location = new System.Drawing.Point(13, 70);
-            this.FYIs.Name = "FYIs";
-            this.FYIs.Size = new System.Drawing.Size(43, 19);
-            this.FYIs.TabIndex = 7;
-            this.FYIs.Text = "FYI";
-            this.FYIs.UseVisualStyleBackColor = true;
-            // 
             // checkBox1
             // 
             this.checkBox1.AutoSize = true;
             this.checkBox1.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox1.Location = new System.Drawing.Point(13, 45);
+            this.checkBox1.Location = new System.Drawing.Point(13, 61);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(39, 19);
             this.checkBox1.TabIndex = 5;
@@ -388,7 +375,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(10, 17);
+            this.label1.Location = new System.Drawing.Point(10, 33);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(110, 16);
             this.label1.TabIndex = 0;
@@ -491,7 +478,7 @@
             this.Controls.Add(this.browseWindow);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmBrowse";
-            this.Text = "Browse";
+            this.Text = "Browse the LINGUIST List";
             this.areaPanel.ResumeLayout(false);
             this.areaPanel.PerformLayout();
             this.ResumeLayout(false);
@@ -525,7 +512,6 @@
         private DBFlowLayoutPanel panelPreview;
         private System.Windows.Forms.Button btnStar;
         private System.Windows.Forms.CheckBox checkBox3;
-        private System.Windows.Forms.CheckBox FYIs;
         private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.RichTextBox notesBox;

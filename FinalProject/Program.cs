@@ -9,23 +9,25 @@ namespace FinalProject
 {
     static class Program
     {
-
+        ///<summary>
+        ///
         /// Clare Harshey
         /// Indiana University
         /// CSCI-A590
         /// Final Project
         /// Last Edited: 12/8/2017
-        /// <summary>
+        ///
         /// The goal of this program is to be a reader application to access and save personalized notes on issues of the 
         /// LINGUIST List. For this version of the application, HTML issues are accessed locally from the "Issues" folder
         /// in the project directory. See README and User Guide for more details.
+        /// 
         /// </summary>
 
         [STAThread]
         static void Main()
         {
             // get path for issues folder in project directory
-            string path = Path.GetFullPath(Path.Combine(System.IO.Directory.GetCurrentDirectory(), @"..\..\..\")) + @"\Issues";
+            string path = Path.GetFullPath(System.IO.Directory.GetCurrentDirectory() + @"\Issues");
 
             // create the issue database with issue objects
             Database issuesDB = new Database(path);

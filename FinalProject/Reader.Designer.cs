@@ -1,5 +1,8 @@
 ﻿namespace FinalProject
 {
+    // This is the designer file: I have not commented this personally
+    // because it's automatically generated, self-explanatory background information
+
     partial class Reader
     {
         /// <summary>

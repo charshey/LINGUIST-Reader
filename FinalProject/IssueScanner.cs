@@ -57,7 +57,7 @@ namespace FinalProject
                     // if the bookmark string here is a valid bool, set the bookmark bool of the issue to that value
                     if (Boolean.TryParse(parts[2], out bool flag))
                     {
-                        thisIssue.getBookmarked(flag);
+                        thisIssue.setBookmarked(flag);
                     }
                 }
             }
